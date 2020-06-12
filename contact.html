@@ -18,6 +18,18 @@
             color:white;
         }
         
+        .form-block{
+            width: 600px;
+            margin: auto;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        #form-heading{
+            font-family: ;
+            font-size: 20px;
+            height: 3px;
+        }
+
     </style>
 
     <head>
@@ -35,16 +47,34 @@
             <img id="nav-bar-logo" src="images/white-logo.png">
         </div>
 
-        <div class="contact-form">
+        <div class="form-block">
+            <form id="email-form" action="">
+                <p id="form-heading">Name</p>
+                <input size="40" type="text" required placeholder="First Name">
+                <input size="40" type="text" required placeholder="Last Name">
 
-            <form>
+                <p id="form-heading">Email</p>
+                <input size="82" type="email" required placeholder="address@email.com">
 
+                <p id="form-heading">Subject</p>
+                <input list="subject" required>
+                    <datalist id="subject">
+                        <option value="Song Critique">
+                        <option value="Song Mix & Master">
+                        <option value="1on1 Production Session">
+                        <option value="Whitelabel Production">
+                        <option value="Event DJ">
+                        <option value="General Inquiry">
+                    </datalist>
+
+                <p id="form-heading">Message</p>
+                <input size="82" height="5" type="text" required placeholder="Email message">
                 
-
+                <p>
+                <button type="submit">Submit</button>
+                </p>
             </form>
-
         </div>
-        
 
         <div class="nav-links">
             <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>

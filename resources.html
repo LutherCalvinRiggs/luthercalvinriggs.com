@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <style>
+/* Nav & Link CSS */
+        .navbar{
+            /* position:fixed; */
+        }
         #nav-bar-logo {
-            height: 7%;
-            width: 7%;    
+            height: 5%;
+            width: 5%;    
             margin: 20px;        
         }
 
@@ -17,7 +21,78 @@
             margin-right: 10px;
             color:white;
         }
+
+        #free-button{
+
+        }
+
+        #template-button{
+
+        }
         
+/* Layout boxes */
+        .resource-list{
+            margin: auto;
+            width:80%;
+        }
+
+        .free-resources{
+            border-color: orange;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .free-resource-block{
+            border-color: green;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .templates{
+            width:80%;
+            margin: auto;
+        }
+
+        .template-block{
+            text-align:center;
+            border-color: purple;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        #description{
+            width: 70%;
+            margin: auto;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+/* Heading & Title CSS */
+        h2{
+            text-align: center;
+            font-size: 70px;
+            font-family: ;
+        }
+
+        #resource-title{
+            font-size: 20px;
+            font-family: ;
+        }
+
+        #template-title{
+            font-size: 32px;
+            font-family: ;
+        }
+
+/* Image CSS */
+        #free-resource-image{
+            width:25%;
+        }
+
+        #template-image{
+            width: 70%;
+        }
+
     </style>
 
     <head>
@@ -25,58 +100,55 @@
     </head>
 
     <body>
-
-        <div class="nav-links">
-            <a id="links" href="https://luthercalvinriggs.com">Home</a>
-            <a id="links" href="https://luthercalvinriggs.com/music">Music</a>
-            <a id="links" href="https://luthercalvinriggs.com/services">Services</a>
-            <a id="links" href="https://luthercalvinriggs.com/resources">Resources</a>
-            <a id="links" href="https://luthercalvinriggs.com/contact">Contact</a>
-            <img id="nav-bar-logo" src="images/white-logo.png">
+        <div class="navbar">
+            <div class="nav-links">
+                <a id="links" href="https://luthercalvinriggs.com">Home</a>
+                <a id="links" href="https://luthercalvinriggs.com/music">Music</a>
+                <a id="links" href="https://luthercalvinriggs.com/services">Services</a>
+                <a id="links" href="https://luthercalvinriggs.com/resources">Resources</a>
+                <a id="links" href="https://luthercalvinriggs.com/contact">Contact</a>
+                <img id="nav-bar-logo" src="images/white-logo.png">
+            </div>
         </div>
 
         <div class="resource-list">
-            <div class="free-resources">
-                <h2>Free Resources</h2>
-                <div class="resource-block">
-                    <div class="artist-agreement">
-                        <p>Free Artist Agreement & Split Sheet</p>
-                        <img src="" alt="free artist agreement and split sheet">
-                        <div class="resource-link">
-                            <button href="">Free Download</button>
-                        </div>
+            <h2>Free Resources</h2>
+            <section class="free-resources">
+                <div class="free-resource-block">
+                    <p id="resource-title">Free Artist Agreement & Split Sheet</p>
+                    <img id="free-resource-image" src="images/document-sign.png" alt="free artist agreement and split sheet">
+                    <div class="resource-link">
+                        <button id="free-button" type="button" href="https://gum.co/GwCghA">Download Artist Agreement</button>
                     </div>
                 </div>
             
-                <div class="resource-block">
-                    <div class="info-pack">
-                        <p>Free Studio Gear Info Pack</p>
-                        <img src="" alt="free studio gear info pack">
-                        <div class="resource-link">
-                            <button href="">Free Download</button>
-                        </div>
+                <div class="free-resource-block">
+                    <p id="resource-title">Free Studio Gear Info Pack</p>
+                    <img id="free-resource-image" src="images/studio-gear.png" alt="free studio gear info pack">
+                    <div class="resource-link">
+                        <button id="free-button" type="button" href="https://gum.co/mMkDM">Download Info Pack</button>
                     </div>
                 </div>
 
-                <div class="resource-block">
-                    <div class="routing-map">
-                        <p>Free Digital Audio Routing Map</p>
-                        <img src="" alt="free digital audio routing map">
-                        <div class="resource-link">
-                            <button href="">Free Download</button>
-                        </div>
+                <div class="free-resource-block">
+                    <p id="template-title">Free Digital Audio Routing Map</p>
+                    <img id="free-resource-image" src="images/patch-bay.png" alt="free digital audio routing map">
+                    <div class="resource-link">
+                        <button id="free-button" type="button" href="https://gum.co/XfLnJ">Download Routing Map</button>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="template-block">
+            <section class="templates">
                 <h2>Ableton Templates</h2>
                 <div class="block-one">
-                    <div class="ableton-template">
-                        <p>Personal Ableton Production Template</p>
-                        <img src="" alt="personal ableton production template">
+                    <div class="template-block">
+                        <p id="template-title">Ableton Live Personal Production Template</p>
+                        <img id="template-image" src="images/ableton-production-template.png" alt="ableton personal production template">
+                        <p>Audio Demo</p>
+                        <p id="description">My peronsal Ableton Live 10 music production template complete with digital audio routing and bussing, as well as FX processing chains and pre-loaded samples. This is the default session that I use to start all of my new ideas.</p>
                         <div class="resource-link">
-                            <button href="">Free Download</button>
+                            <button id="template-button" type="button" href="https://gum.co/HkAuh">Purchase Ableton Live Template</button>
                         </div>
                     </div>
                 </div>
@@ -84,24 +156,28 @@
                 <hr>
 
                 <div class="block-two">
-                    <div class="ableton-template">
-                        <p>Ableton Hip Hop Production Template</p>
-                        <img src="" alt="hip hop ableton production template">
+                    <div class="template-block">
+                        <p id="template-title">Ableton Live Hip Hop Production Template</p>
+                        <img id="template-image" src="images/ableton-hip-hop-production-session.png" alt="ableton hip hop production template">
+                        <p>Audio Demo</p>
+                        <p id="description">An Ableton Live 10 session template for mixing Hip Hop. Complete with audio stems, FX processing and digital audio routing. I have also included the master bounce to allow you to change the FX settings and compare them to the original production.</p>
                         <div class="resource-link">
-                            <button href="">Free Download</button>
+                            <button id="template-button" type="button" href="https://gum.co/eoxGU">Purchase Ableton Live Session</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="template-block">
+            <section class="templates">
                 <h2>Pro Tools Templates</h2>
                 <div class="block-one">
-                    <div class="pro-tools-template">
-                        <p>Personal Pro Tools Mixing Template</p>
-                        <img src="" alt="personal pro tools mixing template">
+                    <div class="template-block">
+                        <p id="template-title">Pro Tools Personal Mixing Template</p>
+                        <img id="template-image" src="images/pro-tools-mixing-template.png" alt="pro tools personal mixing template">
+                        <p>Audio Demo</p>
+                        <p id="description">My personal Pro Tools mixing template complete with I/O settings, digital audio routing, bussin and FX processing chains. This is the default template that I use when mixing music for clients.</p>
                         <div class="resource-link">
-                            <button href="">Free Download</button>
+                            <button id="template-button" type="button" href="https://gum.co/bFORD">Purchase Pro Tools Template</button>
                         </div>
                     </div>
                 </div>
@@ -109,15 +185,17 @@
                 <hr>
 
                 <div class="block-two">
-                    <div class="pro-tools-template">
-                        <p>Pro Tools Dance Music Mixing Template</p>
-                        <img src="" alt="dance music pro tools mixing template">
+                    <div class="template-block">
+                        <p id="template-title">Pro Tools Dance Music Mixing Template</p>
+                        <img id="template-image" src="images/pro-tools-dance-mixing-session.png" alt="pro tools dance music mixing template">
+                        <p>Audio Demo</p>
+                        <p id="description">A Pro Tools session template complete with audio stems, FX processing, bus routing and I/O settings. In this session, you can see how I process the audio using various plugins, audio and auxiliary tracks, track sends and I/O busses.</p>
                         <div class="resource-link">
-                            <button href="">Free Download</button>
+                            <button id="template-button" type="button" href="https://gum.co/zYPOu">Purchase Pro Tools Session</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
         <div class="nav-links">
