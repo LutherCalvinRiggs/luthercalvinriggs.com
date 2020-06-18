@@ -1,87 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        /* Header, Footer, Nav & Social */
-            header{
-                position: relative;
-                height: 130px;
-                background-color: black;
-                top:0;
-            }
+     <style>
+        header{
+            position: relative;
+            height: 130px;
+            background-color: black;
+            top:0;
+        }
 
-            .nav-links{
-                position: relative;
-                text-align: center;
-                padding: 60px;
-            }
+        body{
+            background:black;
+            position: relative;
+            padding: bottom 100px;
+            min-height: 100%;
+        }
 
-            #nav-bar-logo {
-                height: 100px;
-                width: 100px;    
-                margin: 20px; 
-                position: absolute;
-                top: 0;
-                right: 0;       
-            }
-    
-            #links {
-                margin-right: 10px;
-                color:white;
-            }
-            
-            footer{
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            /* position: relative;
+            text-align: center;
+            padding: 60px; */
+        }
 
-            .social-links{
-                position: relative;
-                margin: auto;
-                text-align: center;
-                background-color: black;
-                padding: 30px;                    
-            }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
-        /* Layout boxes */
-            body{
-                background:black;
-                position: relative;
-                padding: bottom 100px;
-                min-height: 100%;
-            }
-
-            .content-area{
-                position:absolute;
-                /* Adjust the height to allow the text to fit the viewing block */
-                height: 2200px;
-                width: 100%;
-            }
-
-            .service-list{
-                background-color: transparent;
-                color: white;
-                height: 100%;
-                width: 45%;
-                position: absolute;
-                left: 50%;
-                bottom:0;
-                border-color:red;
-                border-width: 2px;
-                border-style: solid;
-                z-index:-2;
-            }
-
-            .foreground-image{
-                position: fixed;
-                height: 700px;
-                width: 100%;
-                z-index:0;
-            }
-
-
-
-        /* Heading & Title CSS */
         h1{
             position: absolute;
             color: transparent;
@@ -89,80 +36,167 @@
 
         h2{
             text-align: center;
-            font-size: 2.5em;
+            font-size: 2.0em;
+            font-family: 'Kanit', sans-serif;
         }
 
         p{
-            font-size: 1.1em;
+            font-size: 1.2em;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        .nav-button-block{
+            margin: auto;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        .content-area{
+            position:relative;
+            /* Adjust the height to allow the text to fit the viewing block */
+            height: 3700px;
+            width: 100%;
+        }
+
+        .service-list{
+            background-color: transparent;
+            color: white;
+            height: 100%;
+            width: 45%;
+            position: absolute;
+            left: 50%;
+            bottom:0;
+            z-index:-2;
+        }
+
+        .service-image-block{
+            text-align: center;
+        }
+
+        .spacer{
+            height: 40px;
+        }
+
+        .foreground-image{
+            position: fixed;
+            height: 700px;
+            width: 100%;
+            z-index:0;
         }
         
-        /* Image CSS */
-                
+        .social-links{
+            position: relative;
+            margin: auto;
+            text-align: center;
+            background-color: black;
+            padding: 30px;                    
+        }
+
+        #nav-links {
+            margin-right: 10px;
+            color:white;
+            font-size: 24px;
+        }
+
+        #nav-bar-logo {
+            height: 95px;
+            width: auto;    
+            margin: 20px; 
+        }
+
+        #service-image {
+            max-width: 100%;
+            height: auto;
+        }
         
+        #list-image{
+            margin:10%;
+            padding-top: 250px;
+            height: auto;
+            width: 80%;
+        }
+
     </style>
 
     <head>
-
+        <!-- Nav Button Font <nav>-->
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <!-- Service Heading Font <h2>-->
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     </head>
 
     <body>
         
         <header>
-            <div class="nav-links">
-                <a id="links" href="https://luthercalvinriggs.com">Home</a>
-                <a id="links" href="https://luthercalvinriggs.com/music">Music</a>
-                <a id="links" href="https://luthercalvinriggs.com/services">Services</a>
-                <a id="links" href="https://luthercalvinriggs.com/resources">Resources</a>
-                <a id="links" href="https://luthercalvinriggs.com/contact">Contact</a>
+            <h1>Prossional Audio Services</h1>
+            <nav>
+                <div class="nav-button-block">
+                    <a id="nav-links" href="https://luthercalvinriggs.com">Home</a>
+                    <a id="nav-links" href="https://luthercalvinriggs.com/music">Music</a>
+                    <a id="nav-links" href="https://luthercalvinriggs.com/services">Services</a>
+                    <a id="nav-links" href="https://luthercalvinriggs.com/resources">Resources</a>
+                    <a id="nav-links" href="https://luthercalvinriggs.com/contact">Contact</a>
+                </div>
                 <img id="nav-bar-logo" src="images/white-logo.png">
-            </div>
+            </nav>
         </header>
 
         <main>
-            <h1>Professional Audio Services</h1>
 
             <div class="content-area">
                 <div class="service-list">
                     <div class="service-block">
                         <div class="song-critique">
                             <h2>Song Critique</h2>
+                            <div class="service-image-block">
+                                <img id="service-image" src="images/service-song-critique.jpg" alt="song critique">
+                            </div>
                             <p>My opinion on your track's composition, arrangment, sonics, theory, mixing and master. </p>
                             <p>Additionally, I can host a 60 minute Zoom consultation where I will further explain what I hear in your music and assist you in fixing any details that you wish to focus on.</p>
                         </div>
+                        <div class="spacer"></div>
                     </div>
-                
+                <hr>
                     <div class="service-block">
                         <div class="song-mix-master">
                             <h2>Song Mix & Master</h2>
+                            <img id="service-image" src="images/service-song-mix-master.png" alt="song mix and master">
                             <p>Full mix and master of your song, including three revisions.</p>
                             <p>Deliverable files include the main mix, a clean version,a TV track, an instrumental track, and a capella, and audio stems. </p>
                         </div>
+                        <div class="spacer"></div>
                     </div>
-
+                <hr>
                     <div class="service-block">
                         <div class="production-session">
                             <h2>Production Session</h2>
+                            <img id="service-image" src="images/service-production-session.JPG" alt="music production session">
                             <p>For those that want 1on1 help and instruction, I will meet with you in person or virtually and assist you with any aspect of your music.</p>
                             <p>All of your original audio and any ideas that we create will remain solely your property. This is a consultation, not a collaboration.</p>
                         </div>
+                        <div class="spacer"></div>
                     </div>
-
+                <hr>
                     <div class="service-block">
                         <div class="whitelabel-production">
                             <h2>Whitelabel Production</h2>
+                            <img id="service-image" src="images/service-whitelabel-production.jpg" alt="whitelabel song production">
                             <p>The prodution of a white-label, commerically ready audio work.</p>
                             <p>I will write the original music, coordinate the vocalist, recording all sessions, and mix and master the final track.</p>
                         </div>
+                        <div class="spacer"></div>
                     </div>
-
+                <hr>
                     <div class="service-block">
                         <div class="event-dj">
                             <h2>Event DJ</h2>
+                            <img id="service-image" src="images/service-event-dj.JPG" alt="event dj">
                             <p>Private DJ for corporate, charity, social and celebratory events.</p>
                         </div>
+                        <div class="spacer"></div>
                     </div>
+                    <img id="list-image" src="images/white-logo.png">
                 </div>
-                <img class="foreground-image" src="images/services-page-foreground-image2.PNG">
+                    <img class="foreground-image" src="images/services-page-foreground-image2.PNG">
             </div>
             
         </main>
