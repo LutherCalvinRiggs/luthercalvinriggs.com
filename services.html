@@ -24,11 +24,11 @@
         }
         
         main{
-            width: 100%;
+            width: 90%;
             height: 100%;
             display: grid;
             /* Must specify sizes before area */
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 55% 54%;
             grid-template-areas: "lefthalf righthalf";
         }
 
@@ -70,11 +70,11 @@
         .foreground-image{
             position: fixed;
             /* Height needs to change with screen size. Can it push off screen to the bottom as horizontal axis grows on a laptop? */
-            height: 700px;
+            height: 90%;
             width: 100%;
-            z-index:0;
+            z-index:0;   
         }
-        
+
         .service-block{
             padding: 5px;
             height: auto;
@@ -97,7 +97,7 @@
         }
 
         .spacer2{
-            /*300 for mobile, 130 for laptop*/ 
+            /* See Media Query */ 
             height: 300px;
         }
 
@@ -127,10 +127,12 @@
         }
         
         #list-image{
-            margin:10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
-            /* Decrease width as the viewport size grows horizontally */
-            width: 80%;
+            width: 60%;
+            padding: 40px;
         }
 
         #call-to-action{
@@ -140,6 +142,85 @@
         #action-button{
             font-size: 1.5em;
             font-family: 'Open Sans Condensed', sans-serif;
+        }
+        
+
+        @media screen and (min-width: 1300px) {
+        /* styling for medium browser */
+            .spacer2{
+                height: 350px;
+            }
+
+            #list-image{
+                width: 40%;
+            }
+
+            p{
+                font-size: 2.2em;
+            }
+        }
+
+
+
+        @media screen and (max-width: 1200px) {
+        /* styling for medium HORIZONTAL tablet */
+            .spacer2{
+                height: 310px;
+            }
+
+            p{
+                font-size: 2.2em;
+                border-color: red;
+                border-style: solid;
+            }
+        }
+
+        @media screen and (min-height: 1300px) {
+        /* styling for large tablet */
+            .spacer2{
+                height: 700px;
+            }
+
+            p{
+                font-size: 2.2em;
+            }
+        }
+        
+        @media screen and (max-width: 850px) {
+        /* styling for small-medium VERTICAL tablet */
+            .spacer2{
+                height: 450px;
+            }
+
+            .service-list{
+            width: 99%;
+            }
+
+            p{
+                font-size: 2.2em;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+        /* styling for mobile landscape */
+            .spacer2{
+                height: 80px;
+            }
+
+            .service-list{
+            width: 99%;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+        /* styling for mobile portrait */
+            .spacer2{
+                height: 250px;
+            }
+
+            .service-list{
+            width: 89%;
+            }
         }
     </style>
 
