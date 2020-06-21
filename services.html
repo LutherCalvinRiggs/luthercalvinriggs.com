@@ -136,12 +136,19 @@
         }
 
         #call-to-action{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             text-align:center;
+            background-color: hsl(236, 10%, 89%);
+            width: 45%;
+            border-radius: 7px;
         }
 
         #action-button{
-            font-size: 1.5em;
+            font-size: 4.0em;
             font-family: 'Open Sans Condensed', sans-serif;
+            color: black;
         }
         
 
@@ -162,9 +169,19 @@
             p{
                 font-size: 2.2em;
             }
+            #nav-links{
+                font-size: 2.6em;
+                padding: 13px;
+            }
+
+            #call-to-action{
+            width: 55%;
+            }
+
+            #action-button{
+            font-size: 3.4em;
+            }
         }
-
-
 
         @media screen and (max-width: 1200px) {
         /* styling for medium HORIZONTAL tablet */
@@ -178,6 +195,18 @@
 
             p{
                 font-size: 2.2em;
+            }
+            #nav-links{
+                font-size: 2.2em;
+                padding: 10px;
+            }
+
+            #call-to-action{
+            width: 65%;
+            }
+
+            #action-button{
+            font-size: 2.8em;
             }
         }
 
@@ -194,9 +223,15 @@
             p{
                 font-size: 2.2em;
             }
+            
+            #nav-links{
+                font-size: 2.2em;
+            }
+
+
         }
 
-        @media screen and (max-width: 850px) {
+        @media screen and (max-width: 900px) {
         /* styling for small-medium VERTICAL tablet */
             .spacer2{
                 height: 450px;
@@ -213,6 +248,19 @@
             p{
                 font-size: 2.2em;
             }
+
+            #nav-links{
+                font-size: 1.8em;
+                padding: 3px;
+            }
+
+            #call-to-action{
+            width: 65%;
+            }
+
+            #action-button{
+            font-size: 2.4em;
+            }
         }
 
         @media screen and (max-width: 750px) {
@@ -224,6 +272,21 @@
             .service-list{
             width: 99%;
             }
+            
+            #nav-links{
+                font-size: 1.2em;
+            }
+
+            #nav-bar-logo{
+                height: 85px;
+            }
+            #call-to-action{
+            width: 65%;
+            }
+
+            #action-button{
+            font-size: 2.0em;
+            }
         }
 
         @media screen and (max-width: 479px) {
@@ -231,14 +294,30 @@
             .spacer2{
                 height: 250px;
             }
+
             .service-list{
             width: 89%;
             }
+
             h2{
                 font-size: 1.2em;
             }
+
             p{
                 font-size: 1.2em;
+            }
+
+            #nav-links{
+                font-size: 1.6em;
+                padding: 3px;
+            }
+
+            #call-to-action{
+            width: 65%;
+            }
+
+            #action-button{
+            font-size: 1.0em;
             }
         }
     </style>
@@ -256,11 +335,11 @@
             <h1>Prossional Audio Services</h1>
             <nav>
                 <div class="nav-button-block">
-                    <a id="nav-links" href="https://luthercalvinriggs.com">Home</a>
-                    <a id="nav-links" href="https://luthercalvinriggs.com/music">Music</a>
-                    <a id="nav-links" href="https://luthercalvinriggs.com/services">Services</a>
-                    <a id="nav-links" href="https://luthercalvinriggs.com/resources">Resources</a>
-                    <a id="nav-links" href="https://luthercalvinriggs.com/contact">Contact</a>
+                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com">Home</a>
+                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/music">Music</a>
+                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/services">Services</a>
+                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/resources">Resources</a>
+                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/contact">Contact</a>
                 </div>
                 <img id="nav-bar-logo" src="images/white-logo.png">
             </nav>
@@ -322,7 +401,7 @@
                 <div class="call-to-action">
                     <img id="list-image" src="images/white-logo.png">
                     <div id="call-to-action">
-                        <a id="action-button" href="https://luthercalvinriggs.com/contact">Contact Me</a>
+                        <a id="action-button" style="text-decoration: none" target="_blank" href="https://luthercalvinriggs.com/contact">Contact Me</a>
                     </div>
                 </div>
                 <div class="spacer2"></div>
