@@ -1,224 +1,252 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        /* Nav & Link CSS */
-                .navbar{
-                    /* position:fixed; */
-                }
-                #nav-bar-logo {
-                    height: 5%;
-                    width: 5%;    
-                    margin: 20px;        
-                }
-        
-                .nav-links{
-                    text-align: center;
-                    background-color: black;
-                    padding: 30px;
-                }
-        
-                #links {
-                    margin-right: 10px;
-                    color:white;
-                }
-                
-        /* Layout boxes */
-       
-        .speaker-animation-block{
-            position: relative;
-            height: 600px;
-            width: 100%;
-            background-image:url("/images/dj-show.png");
-        }
-
-
-       /* Speaker Graphic */
-        .speaker-cabinet{
-            margin: auto;
-            background: linear-gradient(0.25turn,hsl(230, 20%, 11%),hsl(230, 25%, 16%));
-            height: 100%;
-            width: 500px;
-        }
-
-        .speaker-cabinet::before{
-            background: linear-gradient(0.75turn,hsl(230, 5%, 45%),hsl(230, 10%, 38%));
-            content:"";
-            position: absolute;
-            margin: auto;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 600px;
-            width: 22%;
-        }
-
-        .speaker-cabinet::after{
-            background: linear-gradient(0.75turn,hsl(230, 5%, 45%),hsl(230, 10%, 38%));
-            content:"";
-            position: absolute;
-            margin: auto;
-            border-radius: 50%;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 175px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 380px;
-            width: 380px;
-        }
-
-        .woofer{
-            background: radial-gradient(hsl(230, 5%, 35%), hsl(230, 5%, 10%) 1000px);
-            content:"";
-            position: absolute;
-            margin: auto;
-            border-radius: 50%;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 175px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 330px;
-            width: 330px;
-        }
-
-        .woofer:before{
-            /* background-color: hsl(230, 5%, 18%); */
-            background-image: url(/patterns/carbon_fibre.png);
-            filter: blur(2px);
-            content:"";
-            position: absolute;
-            margin: auto;
-            border-radius: 50%;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 0px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 310px;
-            width: 310px;
-            animation-name: thump-speaker;
-            animation-duration: 480ms;
-            animation-iteration-count: infinite;
-        }
-
-        .woofer:after{
-            /* background-color: hsl(230, 5%, 25%); */
-            background-image: url(/patterns/crossed_stripes.png);
-            filter: blur(0.5px);
-            content:"";
-            position: absolute;
-            margin: auto;
-            border-radius: 50%;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 0px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 130px;
-            width: 130px;
-            animation-name: thump-speaker;
-            animation-duration: 480ms;
-            animation-iteration-count: infinite;
-        }
-
-        .tweeter{
-            background: radial-gradient(hsl(230, 5%, 35%), hsl(230, 5%, 20%) 900px);
-            content:"";
-            position: absolute;
-            margin: auto;
-            border-radius: 50%;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 0;
-            right: 0;
-            bottom: 380px;
-            left: 0;
-            height: 100px;
-            width: 100px;
-        }
-
-        .tweeter:before{
-            /* background-color: hsl(230, 5%, 25%); */
-            background-image: url(/patterns/crossed_stripes.png);
-            filter: blur(0.5px);            
-            content:"";
-            position: absolute;
-            margin: auto;
-            border-radius: 50%;
-            /* The top, right, bottom, and left properties is how you center this within the parent element */
-            top: 0px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 78px;
-            width: 78px;
-            animation-name: thump-speaker;
-            animation-duration: 120ms;
-            animation-iteration-count: infinite;
-        }
-
-        #speaker-logo{
-            position: absolute;
-            margin: auto;
-            /* The top, right, bottom, and left properties is how you position the image within the parent element */
-            top: 176px;
-            right: 0;
-            bottom: 0;
-            left: 10px;
-            height: 90px;
-            width: 90px;
-            animation-name: thump-logo;
-            animation-duration: 480ms;
-            animation-iteration-count: infinite;
-        }
-
-        /* Animation */
-        @keyframes thump-logo{
-            0%{
-                transform:scale(1.1);
-            }
-
-            100%{
-
-            }
-        }
-
-        @keyframes thump-speaker{
-            0%{
-                transform:scale(1.1);
-                transform:rotate(0.01turn);
-            }
-
-            100%{
-
-            }
-        }
-
-        /* Heading & Title CSS */
-                
-        
-        /* Image CSS */
-                
-        
-    </style>
-
+<html lang="en">
     <head>
+        <title>Luther Calvin Riggs - Producer / DJ / Developer</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Luther Calvin Riggs' personal website">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Luther Calvin Riggs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style Sheets -->
+        
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <style>
+            /* Background Image for index.html */
+                body{
+                    /* background-image: url("/images/index-page-background.png"); */
+                    background-color: black;
+                    height: 100vh;
+                    width: auto;
+                }
+
+            /* Layout boxes */
+                .speaker-animation-block{
+                    position: relative;
+                    height: 600px;
+                    width: 100%;
+                    /* background-image:url("/images/dj-show.png"); */
+                }
+
+
+            /* Speaker Graphic */
+                .speaker-cabinet{
+                    margin: auto;
+                    background: linear-gradient(0.25turn,hsl(230, 20%, 11%),hsl(230, 25%, 16%));
+                    height: 100%;
+                    width: 500px;
+                }
+
+                .speaker-cabinet::before{
+                    background: linear-gradient(0.75turn,hsl(230, 5%, 45%),hsl(230, 10%, 38%));
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 600px;
+                    width: 23%;
+                    border: 1px solid
+                }
+
+                @media screen and (max-width: 1200px){
+                    .speaker-cabinet::before{
+                        width: 27%;
+                    }
+                }
+
+                @media screen and (max-width: 950px){
+                    .speaker-cabinet::before{
+                        width: 32%;
+                    }
+                }
+
+                @media screen and (max-width: 650px){
+                    .speaker-cabinet::before{
+                        width: 45%;
+                    }
+                }
+
+                .speaker-cabinet::after{
+                    background: linear-gradient(0.75turn,hsl(230, 5%, 45%),hsl(230, 10%, 38%));
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    border-radius: 50%;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 175px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 380px;
+                    width: 380px;
+                }
+
+                .woofer{
+                    background: radial-gradient(hsl(230, 5%, 35%), hsl(230, 5%, 10%) 1000px);
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    border-radius: 50%;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 175px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 330px;
+                    width: 330px;
+                }
+
+                .woofer:before{
+                    /* background-color: hsl(230, 5%, 18%); */
+                    background-image: url(/patterns/carbon_fibre.png);
+                    filter: blur(2px);
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    border-radius: 50%;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 0px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 310px;
+                    width: 310px;
+                    animation-name: thump-speaker;
+                    animation-duration: 480ms;
+                    animation-iteration-count: infinite;
+                }
+
+                .woofer:after{
+                    /* background-color: hsl(230, 5%, 25%); */
+                    background-image: url(/patterns/crossed_stripes.png);
+                    filter: blur(0.5px);
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    border-radius: 50%;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 0px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 130px;
+                    width: 130px;
+                    animation-name: thump-speaker;
+                    animation-duration: 480ms;
+                    animation-iteration-count: infinite;
+                }
+
+                .tweeter{
+                    background: radial-gradient(hsl(230, 5%, 35%), hsl(230, 5%, 20%) 900px);
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    border-radius: 50%;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 0;
+                    right: 0;
+                    bottom: 380px;
+                    left: 0;
+                    height: 100px;
+                    width: 100px;
+                }
+
+                .tweeter:before{
+                    /* background-color: hsl(230, 5%, 25%); */
+                    background-image: url(/patterns/crossed_stripes.png);
+                    filter: blur(0.5px);            
+                    content:"";
+                    position: absolute;
+                    margin: auto;
+                    border-radius: 50%;
+                    /* The top, right, bottom, and left properties is how you center this within the parent element */
+                    top: 0px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 78px;
+                    width: 78px;
+                    animation-name: thump-speaker;
+                    animation-duration: 120ms;
+                    animation-iteration-count: infinite;
+                }
+
+                #speaker-logo{
+                    position: absolute;
+                    margin: auto;
+                    /* The top, right, bottom, and left properties is how you position the image within the parent element */
+                    top: 176px;
+                    right: 0;
+                    bottom: 0;
+                    left: 10px;
+                    height: 90px;
+                    width: 90px;
+                    animation-name: thump-logo;
+                    animation-duration: 480ms;
+                    animation-iteration-count: infinite;
+                }
+
+             /* Animation */
+                @keyframes thump-logo{
+                    0%{
+                        transform:scale(1.1);
+                    }
+
+                    100%{
+
+                    }
+                }
+
+                @keyframes thump-speaker{
+                    0%{
+                        transform:scale(1.1);
+                        transform:rotate(0.01turn);
+                    }
+
+                    100%{
+
+                    }
+                }
+
+            /* Heading & Title CSS */
+                        
+                
+            /* Image CSS */
+                        
+                
+        </style>
 
     </head>
 
     <body>
-        <div class="nav-links">
-            <a id="links" href="https://luthercalvinriggs.com">Home</a>
-            <a id="links" href="https://luthercalvinriggs.com/music">Music</a>
-            <a id="links" href="https://luthercalvinriggs.com/services">Services</a>
-            <a id="links" href="https://luthercalvinriggs.com/resources">Resources</a>
-            <a id="links" href="https://luthercalvinriggs.com/contact">Contact</a>
-            <!-- <img id="nav-bar-logo" src="images/white-logo.png"> -->
-        </div>
+        <nav id="nav-bar">
+            <ul id="nav-menu" class="nav-link-list">
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/music">Music</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/services">Services</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/resources">Resources</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/contact">Contact</a>
+                </li>
+                <!-- <img id="nav-bar-logo" src="images/white-logo.png"> -->
+            </ul>
+        </nav>
 
-        <div class="speaker-animation-block">
+        <main class="speaker-animation-block">
             <div class="speaker-cabinet"></div>
             <div class="woofer"></div>
             <div class="speaker-logo">
@@ -227,22 +255,35 @@
             <div class="tweeter"></div>
             <div class="speaker-cone"></div>
             <div class="speaker-center"></div>
-        </div>
+        </main>
 
         <!--
         <div class="index-logo">
             <img id="background-logo" src="images/index-logo.png">
         </div>
-    -->
+        -->
+
+        <footer id="footer-bar">
+            <ul id="footer-menu" class="nav-link-list">
+                <li class="nav-link">
+                    <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
+                </li>
+            </div>
+        </footer>
     </body>
-    <footer>
-        <div class="nav-links">
-            <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
-            <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
-            <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
-            <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
-            <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
-            <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
-        </div>
-    </footer>
 </html>
