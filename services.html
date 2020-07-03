@@ -1,359 +1,412 @@
 <!DOCTYPE html>
-<html>
-     <style>
-        header{
-            position: relative;
-            height: 130px;
-            background-color: black;
-            top:0;
-        }
-
-        body{
-            background:black;
-            position: relative;
-            padding: bottom 100px;
-            min-height: 100%;
-        }
-
-        nav{
-            display: flex;
-            justify-content: flex-end;
-            /* position: relative;
-            text-align: center;
-            padding: 60px; */
-        }
-        
-        main{
-            width: 90%;
-            height: 100%;
-            display: grid;
-            /* Must specify sizes before area */
-            grid-template-columns: 55% 54%;
-            grid-template-areas: "lefthalf righthalf";
-        }
-
-        footer{
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        h1{
-            position: absolute;
-            color: transparent;
-        }
-
-        h2{
-            text-align: center;
-            font-size: 2.0em;
-            font-family: 'Kanit', sans-serif;
-        }
-
-        p{
-            font-size: 1.2em;
-            font-family: 'Open Sans Condensed', sans-serif;
-        }
-
-        .nav-button-block{
-            margin: auto;
-            font-family: 'Open Sans Condensed', sans-serif;
-        }
-
-        .service-list{
-            grid-area: righthalf;
-            background-color: transparent;
-            color: white;
-            height: 100%;
-            width: 99%;
-        }
-
-        .foreground-image{
-            position: fixed;
-            /* Height needs to change with screen size. Can it push off screen to the bottom as horizontal axis grows on a laptop? */
-            height: 90%;
-            width: 100%;
-            z-index:0;   
-        }
-
-        .service-block{
-            padding: 5px;
-            height: auto;
-            /* Replace border with shadow 
-            border-color: grey;
-            border-style: solid;
-            border-width: .5px;*/
-        }
-
-        .service-image-block{
-            text-align: center;
-        }
-
-        .spacer1{
-            height: 10px;
-        }
-        
-        .call-to-action{
-            padding-top: 250px;
-        }
-
-        .spacer2{
-            /* See Media Query */ 
-            height: 300px;
-        }
-
-        .social-links{
-            position: relative;
-            margin: auto;
-            text-align: center;
-            background-color: black;
-            padding: 30px;                    
-        }
-
-        #nav-links {
-            margin-right: 10px;
-            color:white;
-            font-size: 1.5em;
-        }
-
-        #nav-bar-logo {
-            height: 95px;
-            width: auto;    
-            margin: 20px; 
-        }
-
-        #service-image {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        #list-image{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
-            width: 60%;
-            padding: 40px;
-        }
-
-        #call-to-action{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align:center;
-            background-color: hsl(236, 10%, 89%);
-            width: 45%;
-            border-radius: 7px;
-        }
-
-        #action-button{
-            font-size: 4.0em;
-            font-family: 'Open Sans Condensed', sans-serif;
-            color: black;
-        }
-        
-
-        @media screen and (min-width: 1300px) {
-        /* styling for medium-large browser and large horizontal tablet */
-            .spacer2{
-                height: 350px;
-            }
-
-            #list-image{
-                width: 40%;
-            }
-
-            h2{
-                font-size: 3.8em;
-            }
-
-            p{
-                font-size: 2.2em;
-            }
-            #nav-links{
-                font-size: 2.6em;
-                padding: 13px;
-            }
-
-            #call-to-action{
-            width: 55%;
-            }
-
-            #action-button{
-            font-size: 3.4em;
-            }
-        }
-
-        @media screen and (max-width: 1200px) {
-        /* styling for medium HORIZONTAL tablet */
-            .spacer2{
-                height: 310px;
-            }
-
-            h2{
-                font-size: 3.6em;
-            }
-
-            p{
-                font-size: 2.2em;
-            }
-            #nav-links{
-                font-size: 2.2em;
-                padding: 10px;
-            }
-
-            #call-to-action{
-            width: 65%;
-            }
-
-            #action-button{
-            font-size: 2.8em;
-            }
-        }
-
-        @media screen and (min-height: 1300px) {
-        /* styling for large tablet */
-            .spacer2{
-                height: 700px;
-            }
-
-            h2{
-                font-size: 3.8em;
-            }
-
-            p{
-                font-size: 2.2em;
-            }
-            
-            #nav-links{
-                font-size: 2.2em;
-            }
-
-
-        }
-
-        @media screen and (max-width: 900px) {
-        /* styling for small-medium VERTICAL tablet */
-            .spacer2{
-                height: 450px;
-            }
-
-            .service-list{
-            width: 99%;
-            }
-
-            h2{
-                font-size: 2.8em;
-            }
-
-            p{
-                font-size: 2.2em;
-            }
-
-            #nav-links{
-                font-size: 1.8em;
-                padding: 3px;
-            }
-
-            #call-to-action{
-            width: 65%;
-            }
-
-            #action-button{
-            font-size: 2.4em;
-            }
-        }
-
-        @media screen and (max-width: 750px) {
-        /* styling for mobile landscape */
-            .spacer2{
-                height: 80px;
-            }
-
-            .service-list{
-            width: 99%;
-            }
-            
-            #nav-links{
-                font-size: 1.2em;
-            }
-
-            #nav-bar-logo{
-                height: 85px;
-            }
-            #call-to-action{
-            width: 65%;
-            }
-
-            #action-button{
-            font-size: 2.0em;
-            }
-        }
-
-        @media screen and (max-width: 479px) {
-        /* styling for mobile portrait */
-            .spacer2{
-                height: 250px;
-            }
-
-            .service-list{
-            width: 89%;
-            }
-
-            h2{
-                font-size: 1.2em;
-            }
-
-            p{
-                font-size: 1.2em;
-            }
-
-            #nav-links{
-                font-size: 1.6em;
-                padding: 3px;
-            }
-
-            #call-to-action{
-            width: 65%;
-            }
-
-            #action-button{
-            font-size: 1.0em;
-            }
-        }
-    </style>
-
+<html lang="en">
     <head>
-        <!-- Nav Button Font <nav>-->
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-        <!-- Service Heading Font <h2>-->
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+        <title>Luther Calvin Riggs - Producer / DJ / Developer</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Luther Calvin Riggs' personal website">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Luther Calvin Riggs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style Sheets -->
+        
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- <style>
+            body{
+                background:black;
+                position: relative;
+                padding: bottom 100px;
+                min-height: 100%;
+            }
+            
+            main{
+                width: 90%;
+                height: 100%;
+                display: grid;
+                /* Must specify sizes before area */
+                grid-template-columns: 55% 54%;
+                grid-template-areas: "lefthalf righthalf";
+            }
+
+            h2{
+                text-align: center;
+                font-size: 2.0em;
+                font-family: 'Kanit', sans-serif;
+            }
+
+            p{
+                font-size: 1.2em;
+                font-family: 'Open Sans Condensed', sans-serif;
+            }
+
+            ?
+
+            
+
+            .foreground-image{
+                position: fixed;
+                /* Height needs to change with screen size. Can it push off screen to the bottom as horizontal axis grows on a laptop? */
+                height: 90%;
+                width: 100%;
+                z-index:0;   
+            }
+
+            .service-block{
+                padding: 5px;
+                height: auto;
+                /* Replace border with shadow 
+                border-color: grey;
+                border-style: solid;
+                border-width: .5px;*/
+            }
+
+            .service-image-block{
+                text-align: center;
+            }
+
+            .spacer1{
+                height: 10px;
+            }
+            
+            .call-to-action{
+                padding-top: 250px;
+            }
+
+            .spacer2{
+                /* See Media Query */ 
+                height: 300px;
+            }
+
+            #service-image {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            #list-image{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                width: 60%;
+                padding: 40px;
+            }
+
+            #call-to-action{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align:center;
+                background-color: hsl(236, 10%, 89%);
+                width: 45%;
+                border-radius: 7px;
+            }
+
+            #action-button{
+                font-size: 4.0em;
+                font-family: 'Open Sans Condensed', sans-serif;
+                color: black;
+            }
+            
+
+            @media screen and (min-width: 1300px) {
+            /* styling for medium-large browser and large horizontal tablet */
+                .spacer2{
+                    height: 350px;
+                }
+
+                #list-image{
+                    width: 40%;
+                }
+
+                h2{
+                    font-size: 3.8em;
+                }
+
+                p{
+                    font-size: 2.2em;
+                }
+                #nav-links{
+                    font-size: 2.6em;
+                    padding: 13px;
+                }
+
+                #call-to-action{
+                width: 55%;
+                }
+
+                #action-button{
+                font-size: 3.4em;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+            /* styling for medium HORIZONTAL tablet */
+                .spacer2{
+                    height: 310px;
+                }
+
+                h2{
+                    font-size: 3.6em;
+                }
+
+                p{
+                    font-size: 2.2em;
+                }
+                #nav-links{
+                    font-size: 2.2em;
+                    padding: 10px;
+                }
+
+                #call-to-action{
+                width: 65%;
+                }
+
+                #action-button{
+                font-size: 2.8em;
+                }
+            }
+
+            @media screen and (min-height: 1300px) {
+            /* styling for large tablet */
+                .spacer2{
+                    height: 700px;
+                }
+
+                h2{
+                    font-size: 3.8em;
+                }
+
+                p{
+                    font-size: 2.2em;
+                }
+                
+                #nav-links{
+                    font-size: 2.2em;
+                }
+
+
+            }
+
+            @media screen and (max-width: 900px) {
+            /* styling for small-medium VERTICAL tablet */
+                .spacer2{
+                    height: 450px;
+                }
+
+                .service-list{
+                width: 99%;
+                }
+
+                h2{
+                    font-size: 2.8em;
+                }
+
+                p{
+                    font-size: 2.2em;
+                }
+
+                #nav-links{
+                    font-size: 1.8em;
+                    padding: 3px;
+                }
+
+                #call-to-action{
+                width: 65%;
+                }
+
+                #action-button{
+                font-size: 2.4em;
+                }
+            }
+
+            @media screen and (max-width: 750px) {
+            /* styling for mobile landscape */
+                .spacer2{
+                    height: 80px;
+                }
+
+                .service-list{
+                width: 99%;
+                }
+                
+                #nav-links{
+                    font-size: 1.2em;
+                }
+
+                #nav-bar-logo{
+                    height: 85px;
+                }
+                #call-to-action{
+                width: 65%;
+                }
+
+                #action-button{
+                font-size: 2.0em;
+                }
+            }
+
+            @media screen and (max-width: 479px) {
+            /* styling for mobile portrait */
+                .spacer2{
+                    height: 250px;
+                }
+
+                .service-list{
+                width: 89%;
+                }
+
+                h2{
+                    font-size: 1.2em;
+                }
+
+                p{
+                    font-size: 1.2em;
+                }
+
+                #nav-links{
+                    font-size: 1.6em;
+                    padding: 3px;
+                }
+
+                #call-to-action{
+                width: 65%;
+                }
+
+                #action-button{
+                font-size: 1.0em;
+                }
+            }
+        </style> -->
+        <style>
+            body{
+                background: black;
+            }
+
+            main{
+                height: 100%;
+            }
+
+            #footer-nav{
+
+            }
+
+            #dj-image{
+                position: fixed;
+                height: 93vh;
+                -webkit-mask-image: linear-gradient(290deg, transparent 10%, black 50%);
+                z-index: -1;
+            }
+
+            .list-of-services{
+                width: 50vw;
+                height: auto;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                margin-left: 750px;
+                border: 1px solid orange;
+                font-size: 40px;
+            }
+
+            @media screen and (max-width: 1375px){
+                .list-of-services{
+                    margin-left: 600px;
+                    width: 48vw;
+                }
+            }
+
+            @media screen and (max-width: 1200px){
+                .list-of-services{
+                    margin-left: 450px;
+                    width: 48vw;
+                }
+
+                #dj-image{
+                    -webkit-mask-image: linear-gradient(290deg, transparent 10%, black 90%);
+                }
+            }
+
+            @media screen and (max-width: 875px){
+                .list-of-services{
+                    margin-left: 350px;
+                    width: 48vw;
+                }
+
+                #dj-image{
+                    -webkit-mask-image: linear-gradient(310deg, transparent 10%, black 80%);
+                }
+            }            
+            
+            @media screen and (max-width: 750px){
+                .list-of-services{
+                    margin-left: 290px;
+                    width: 48vw;
+                }
+
+                #dj-image{
+                    -webkit-mask-image: linear-gradient(310deg, transparent 10%, black 80%);
+                }
+            }
+
+            @media screen and (max-width: 600px){
+                .list-of-services{
+                    margin-left: 250px;
+                    width: 45vw;
+                }
+            }
+
+            @media screen and (max-width: 500px){
+                .list-of-services{
+                    margin: auto;
+                    width: 70vw;
+                }
+
+                #dj-image{
+                    -webkit-mask-image: linear-gradient(310deg, transparent 30%, black 100%);
+                }
+            }
+
+        </style>
     </head>
 
     <body>
-        
-        <header>
-            <h1>Prossional Audio Services</h1>
-            <nav>
-                <div class="nav-button-block">
-                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com">Home</a>
-                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/music">Music</a>
-                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/services">Services</a>
-                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/resources">Resources</a>
-                    <a id="nav-links" style="text-decoration:none" href="https://luthercalvinriggs.com/contact">Contact</a>
-                </div>
-                <img id="nav-bar-logo" src="images/white-logo.png">
-            </nav>
-        </header>
+        <nav id="nav-bar">
+            <ul id="nav-menu" class="nav-link-list">
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/music">Music</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/services">Services</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/resources">Resources</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/contact">Contact</a>
+                </li>
+                <!-- <img id="nav-bar-logo" src="images/white-logo.png"> -->
+            </ul>
+        </nav>
 
         <main>
-            <img class="foreground-image" src="images/services-page-foreground-image2.PNG">
-            <div class="service-list">
+            <div id="music-page-background">
+                <img id="dj-image" src="images/services-page-foreground-image2.PNG">
+                <div id="background-gradient"></div>
+            </div>
+
+            <div class="list-of-services">
                 <div class="service-block">
                     <div class="song-critique">
                         <h2>Song Critique</h2>
-                        <div class="service-image-block">
+                        <!-- <div class="service-image-block">
                             <img id="service-image" src="images/service-song-critique.jpg" alt="song critique">
-                        </div>
+                        </div> -->
                         <p>My opinion on your track's composition, arrangment, sonics, theory, mixing and master. </p>
                         <p>Additionally, I can host a 60 minute Zoom consultation where I will further explain what I hear in your music and assist you in fixing any details that you wish to focus on.</p>
                     </div>
@@ -363,7 +416,7 @@
                 <div class="service-block">
                     <div class="song-mix-master">
                         <h2>Song Mix & Master</h2>
-                        <img id="service-image" src="images/service-song-mix-master.png" alt="song mix and master">
+                        <!-- <img id="service-image" src="images/service-song-mix-master.png" alt="song mix and master"> -->
                         <p>Full mix and master of your song, including three revisions.</p>
                         <p>Deliverable files include the main mix, a clean version,a TV track, an instrumental track, and a capella, and audio stems. </p>
                     </div>
@@ -373,7 +426,7 @@
                 <div class="service-block">
                     <div class="production-session">
                         <h2>Production Session</h2>
-                        <img id="service-image" src="images/service-production-session.JPG" alt="music production session">
+                        <!-- <img id="service-image" src="images/service-production-session.JPG" alt="music production session"> -->
                         <p>For those that want 1on1 help and instruction, I will meet with you in person or virtually and assist you with any aspect of your music.</p>
                         <p>All of your original audio and any ideas that we create will remain solely your property. This is a consultation, not a collaboration.</p>
                     </div>
@@ -383,7 +436,7 @@
                 <div class="service-block">
                     <div class="whitelabel-production">
                         <h2>Whitelabel Production</h2>
-                        <img id="service-image" src="images/service-whitelabel-production.jpg" alt="whitelabel song production">
+                        <!-- <img id="service-image" src="images/service-whitelabel-production.jpg" alt="whitelabel song production"> -->
                         <p>The prodution of a white-label, commerically ready audio work.</p>
                         <p>I will write the original music, coordinate the vocalist, recording all sessions, and mix and master the final track.</p>
                     </div>
@@ -393,29 +446,44 @@
                 <div class="service-block">
                     <div class="event-dj">
                         <h2>Event DJ</h2>
-                        <img id="service-image" src="images/service-event-dj.JPG" alt="event dj">
+                        <!-- <img id="service-image" src="images/service-event-dj.JPG" alt="event dj"> -->
                         <p>Private DJ for corporate, charity, social and celebratory events.</p>
                     </div>
                     <div class="spacer1"></div>
                 </div>
-                <div class="call-to-action">
-                    <img id="list-image" src="images/white-logo.png">
-                    <div id="call-to-action">
-                        <a id="action-button" style="text-decoration: none" target="_blank" href="https://luthercalvinriggs.com/contact">Contact Me</a>
-                    </div>
-                </div>
-                <div class="spacer2"></div>
+                
             </div>
+
+            <!-- <div class="call-to-action">
+                <img id="list-image" src="images/white-logo.png">
+                <div id="call-to-action">
+                    <a id="action-button" style="text-decoration: none" target="_blank" href="https://luthercalvinriggs.com/contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="spacer2"></div> -->
+
         </main>
 
-        <footer>
-            <div class="social-links">
-                <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
-                <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
-                <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
-                <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
-                <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
-                <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
+        <footer id="footer-bar">
+            <ul id="footer-menu" class="nav-link-list">
+                <li class="nav-link">
+                    <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
+                </li>
             </div>
         </footer>
     </body>
