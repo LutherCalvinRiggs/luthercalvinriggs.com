@@ -1,90 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        /* Nav & Link CSS */
-                .navbar{
-                    /* position:fixed; */
-                }
-                #nav-bar-logo {
-                    height: 5%;
-                    width: 5%;    
-                    margin: 20px;        
-                }
-        
-                .nav-links{
-                    text-align: center;
-                    background-color: black;
-                    padding: 30px;
-                }
-        
-                #links {
-                    margin-right: 10px;
-                    color:white;
-                }
-                
-        /* Layout boxes */
-                
-        
-        /* Heading & Title CSS */
-                
-        
-        /* Image CSS */
-                
-        
-    </style>
-
+<html lang="en">
     <head>
+        <title>Luther Calvin Riggs - Producer / DJ / Developer</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Luther Calvin Riggs' personal website">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Luther Calvin Riggs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style Sheets -->
+        
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <style>
+
+            body{
+                background-image: url('images/contact-page-image.jpg')
+                /* background-color: black; */
+            }
+
+            .form-block{
+                width: 40%;  
+                height: 75vh;
+                padding: 10px 30px;
+                background-color: hsla(0, 0%, 20%, 0.84);
+                margin: 0 auto;   
+                border-radius: 5px;
+            }
+
+            .field-label{
+                font-size: 1.4rem;
+                padding-bottom: 5px;
+                color: white;
+            }
+
+            .input-box{
+                font-size: 1rem;
+                width: 98%;
+                margin-bottom: 15px;
+            }
+
+            #message{
+                width: 98%;
+                height: 200px;
+            }
+
+
+        </style>
 
     </head>
 
     <body>
+        <nav id="nav-bar">
+            <ul id="nav-menu" class="nav-link-list">
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/music">Music</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/services">Services</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/resources">Resources</a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://luthercalvinriggs.com/contact">Contact</a>
+                </li>
+                <!-- <img id="nav-bar-logo" src="images/white-logo.png"> -->
+            </ul>
+        </nav>
 
-        <div class="nav-links">
-            <a id="links" href="https://luthercalvinriggs.com">Home</a>
-            <a id="links" href="https://luthercalvinriggs.com/music">Music</a>
-            <a id="links" href="https://luthercalvinriggs.com/services">Services</a>
-            <a id="links" href="https://luthercalvinriggs.com/resources">Resources</a>
-            <a id="links" href="https://luthercalvinriggs.com/contact">Contact</a>
-            <img id="nav-bar-logo" src="images/white-logo.png">
-        </div>
+        <main>
+            <div class="form-block">
+                <form id="contact-form" action="">
 
-        <div class="form-block">
-            <form id="email-form" action="">
-                <p id="form-heading">Name</p>
-                <input size="40" type="text" required placeholder="First Name">
-                <input size="40" type="text" required placeholder="Last Name">
+                    <p class="field-label">First Name</p>
+                    <label for="first-name">
+                        <input id="first-name" class="input-box" name="first-name" type="text" required placeholder="First Name">
+                    </label>
 
-                <p id="form-heading">Email</p>
-                <input size="82" type="email" required placeholder="address@email.com">
+                    <p class="field-label">Last Name</p>
+                    <label for="last-name">
+                        <input id="last-name" class="input-box" name="last-name" type="text" required placeholder="Last Name">
+                    </label>
 
-                <p id="form-heading">Subject</p>
-                <input list="subject" required>
-                    <datalist id="subject">
-                        <option value="Song Critique">
-                        <option value="Song Mix & Master">
-                        <option value="1on1 Production Session">
-                        <option value="Whitelabel Production">
-                        <option value="Event DJ">
-                        <option value="General Inquiry">
-                    </datalist>
+                    <p class="field-label">Email</p>
+                    <label for="email-address">
+                        <input id="email-address" class="input-box" name="email-address" type="email" required placeholder="address@email.com">
+                    </label>
 
-                <p id="form-heading">Message</p>
-                <input size="82" height="5" type="text" required placeholder="Email message">
-                
-                <p>
-                <button type="submit">Submit</button>
-                </p>
-            </form>
-        </div>
+                    <p class="field-label">Subject</p>
+                    <label for="subject-line">
+                        <input id="subject-line" class="input-box" name="subject-line" type="dropbox" list="subject-lines" required placeholder="Select a subject line">
+                            <datalist id="subject-lines">
+                                <option value="Song Critique">
+                                <option value="Song Mix & Master">
+                                <option value="1on1 Production Session">
+                                <option value="Whitelabel Production">
+                                <option value="Event DJ">
+                                <option value="General Inquiry">
+                            </datalist>
+                    </label>
 
-        <div class="nav-links">
-            <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
-            <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
-            <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
-            <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
-            <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
-            <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
-        </div>
+                    <p class="field-label">Message</p>
+                    <label for="message">
+                        <textarea id="message" class="input-box" name="message" type="textarea" required placeholder="Enter your message here:"></textarea>
+                    </label>
+                    
+                    <p>
+                    <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer-bar">
+            <ul id="footer-menu" class="nav-link-list">
+                <li class="nav-link">
+                    <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
+                </li>
+                <li class="nav-link">
+                    <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
+                </li>
+            </div>
+        </footer>
 
     </body>
 
