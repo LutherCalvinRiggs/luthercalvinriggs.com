@@ -26,10 +26,13 @@
 
 /* Nav & Link CSS */
 #nav-bar{
-    width: 100%;
+    width: 80%;
     background: transparent;
     padding: 30px 0;
     z-index: 99;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 #footer-bar{
@@ -39,17 +42,21 @@
     z-index: 99;
 }
 
+#nav-bar-logo{
+    width: 125px;
+    height: 125px;
+}
+
 .nav-link-list {
     width: 70%;
     margin: auto;
-    /* padding: 0 30px; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .nav-link{
-        height: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,12 +113,18 @@ a:hover{
     }
 }
 
+@media screen and (max-width: 1150px){
+    #nav-menu{
+        flex-direction: column;
+    }
+}
+
 /* Medium & small tablets in Portrait mode - Small web browser */
 @media screen and (max-width: 875px){
     .nav-link-list {
         width: 60%;
     }
-    
+
     a{
         font-size: 1.7rem;
     }
@@ -137,5 +150,13 @@ a:hover{
 
 /* Mobile phones in Portrait mode */
 @media screen and (max-width: 500px){
-    
+    #nav-bar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #nav-logo-container{
+        margin: 0 auto;
+        grid-area: 1/1/2/2;
+    }
 } 
