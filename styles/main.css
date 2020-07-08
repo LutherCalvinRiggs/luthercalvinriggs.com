@@ -15,9 +15,6 @@
 
 :root{
     --nav-white: #f0f0f0;
-    /* --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841; */
 }
 
 *{
@@ -26,7 +23,7 @@
 
 /* Nav & Link CSS */
 #nav-bar{
-    width: 80%;
+    width: 70%;
     background: transparent;
     padding: 30px 0;
     z-index: 99;
@@ -37,14 +34,18 @@
 
 #footer-bar{
     width: 100%;
-    background: transparent;
+    /* background-color: hsla(0, 100%, 0%, 0.3); */
     bottom: 0;
     z-index: 99;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #nav-bar-logo{
     width: 125px;
     height: 125px;
+    padding-bottom: 60px;
+    padding-right: 55px;
 }
 
 .nav-link-list {
@@ -66,8 +67,8 @@ a {
     text-transform: uppercase;
     height: 100%;
     width: 100%;
-    font-size: 2rem;
-    padding: 1.5rem;
+    font-size: 1.8rem;
+    padding: 1.0rem;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -76,19 +77,22 @@ a {
     color: var(--nav-white);
 }
 
-.nav-link:hover{
-    background-color: hsla(0, 100%, 0%, 0.3);
-}
-
 a:hover{
     font-family: 'Yellowtail', cursive;
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-transform: capitalize;
     font-style: italic;
 }
 
+footer img{
+    width: 40px;
+    height: auto;
+}
 
-
+footer img:hover{
+    width: 55px;
+    height: auto;
+}
 
 
 /* nav Media Queries for Apple Products */
@@ -96,11 +100,11 @@ a:hover{
 /* Large tablet in Landscape mode - Medium browser */
 @media screen and (max-width: 1375px){
     a{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     a:hover{
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -139,6 +143,25 @@ a:hover{
     .nav-link-list {
         width: 57%;
     }
+
+    a{
+        font-size: 1.2rem;
+    }
+
+    #nav-bar-logo{
+        width: 100px;
+        height: 100px;
+        padding-bottom: 50px;
+        padding-right: 55px;
+    }
+
+    footer img{
+        width: 25px;
+    }
+
+    footer img:hover{
+        width: 35px;
+    }
 }
 
 /* Small mobile phones in Landscape mode */
@@ -158,5 +181,13 @@ a:hover{
     #nav-logo-container{
         margin: 0 auto;
         grid-area: 1/1/2/2;
+    }
+
+    #nav-bar-logo{
+        padding-bottom: 0;
+    }
+
+    footer a{
+        padding: .4rem;
     }
 } 

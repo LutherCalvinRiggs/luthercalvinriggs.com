@@ -13,6 +13,8 @@
         <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
 
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
         <style>
             body{
                 background: black;
@@ -22,12 +24,9 @@
                 height: 100%;
             }
 
-            #footer-nav{
-
-            }
-
-            #dj-image{
+            #services-dj-image{
                 position: fixed;
+                top: 100px;
                 height: 93vh;
                 -webkit-mask-image: linear-gradient(290deg, transparent 10%, black 50%);
                 z-index: -1;
@@ -60,7 +59,7 @@
                     width: 48vw;
                 }
 
-                #dj-image{
+                #services-dj-image{
                     -webkit-mask-image: linear-gradient(290deg, transparent 10%, black 90%);
                 }
             }
@@ -72,7 +71,7 @@
                     width: 48vw;
                 }
 
-                #dj-image{
+                #services-dj-image{
                     -webkit-mask-image: linear-gradient(310deg, transparent 10%, black 80%);
                 }
             }            
@@ -84,7 +83,7 @@
                     width: 48vw;
                 }
 
-                #dj-image{
+                #services-dj-image{
                     -webkit-mask-image: linear-gradient(310deg, transparent 10%, black 80%);
                 }
             }
@@ -114,7 +113,7 @@
                     width: 70vw;
                 }
 
-                #dj-image{
+                #services-dj-image{
                     -webkit-mask-image: linear-gradient(310deg, transparent 30%, black 100%);
                 }
             }
@@ -125,7 +124,7 @@
                 padding: 40px 0;
             }
 
-            h2{
+            .services-h2{
                 font-size: 4rem;
                 text-align: center;
                 margin-bottom: 35px;
@@ -146,32 +145,32 @@
                 margin: 0 auto;
             }
 
-            p{
+            .services-p{
                 font-size: 3.2rem;
                 padding-bottom: 25px;
             }
 
-            hr{
+            .services-hr{
                 width: 95%;
                 margin: 40px auto;
             }
 
             /* Large tablet in Landscape mode - Medium browser */
             @media screen and (max-width: 1375px){
-                p{
+                .services-p{
                     font-size: 2.4rem;
                 }
             }
 
             /* Medium & small tablets in Portrait mode - Small web browser */
             @media screen and (max-width: 875px){
-                h2{
+                .services-h2{
                     font-size: 2.7rem;
                     text-align: center;
                     margin-bottom: 35px;
                 }
 
-                p{
+                .services-p{
                     font-size: 2.2rem;
                     text-align: center;
                 }
@@ -179,24 +178,27 @@
 
             /* Larger mobile phones in Landscape mode */
             @media screen and (max-width: 750px){
-                h2{
+                .services-h2{
                     font-size: 2.2rem;
                 }
 
-                p{
+                .services-p{
                     font-size: 1.6rem;
                 }
             }
 
             /* Mobile phones in Portrait mode */
             @media screen and (max-width: 500px){
-                p{
+                main{
+                    margin-top: 150px;
+                }
+                
+                .services-p{
                     font-size: 1.8rem;
                 }
             }
-
-
         </style>
+        
     </head>
 
     <body>
@@ -231,71 +233,79 @@
 
         <main>
             <div id="music-page-background">
-                <img id="dj-image" src="images/services-page-foreground-image2.PNG">
+                <img id="services-dj-image" src="images/services-page-foreground-image2.PNG">
                 <div id="background-gradient"></div>
             </div>
 
             <div class="list-of-services">
                 <div class="service-block">
                     <div id="song-critique">
-                        <h2>Song Critique</h2>
+                        <h2 class="services-h2">Song Critique</h2>
                         <div class="service-image-block">
                             <img class="service-image" src="images/service-song-critique.jpg" alt="song critique">
                         </div>
                         <div class="service-description">
-                            <p>My opinion on your track's composition, arrangment, sonics, theory, mixing and master. </p>
-                            <p>Additionally, I can host a 60 minute Zoom consultation where I will further explain what I hear in your music and assist you in fixing any details that you wish to focus on.</p>
+                            <p class="services-p">My opinion on your track's composition, arrangment, sonics, theory, mixing and master. </p>
+                            <p class="services-p">Additionally, I can host a 60 minute Zoom consultation where I will further explain what I hear in your music and assist you in fixing any details that you wish to focus on.</p>
                         </div>
                     </div>
                 </div>
-                <hr>
+               
+                <hr class="services-hr">
+
                 <div class="service-block">
                     <div id="song-mix-master">
-                        <h2>Song Mix & Master</h2>
+                        <h2 class="services-h2">Song Mix & Master</h2>
                         <div class="service-image-block">
                             <img class="service-image" src="images/service-song-mix-master.png" alt="song mix and master">
                         </div>
                         <div class="service-description">
-                            <p>Full mix and master of your song, including three revisions.</p>
-                            <p>Deliverable files include the main mix, a clean version,a TV track, an instrumental track, and a capella, and audio stems. </p>
+                            <p class="services-p">Full mix and master of your song, including three revisions.</p>
+                            <p class="services-p">Deliverable files include the main mix, a clean version,a TV track, an instrumental track, and a capella, and audio stems. </p>
                         </div>
                     </div>
                 </div>
-                <hr>
+
+                <hr class="services-hr">
+                
                 <div class="service-block">
                     <div id="production-session">
-                        <h2>Production Session</h2>
+                        <h2 class="services-h2">Production Session</h2>
                         <div class="service-image-block">
                             <img class="service-image" src="images/service-production-session.JPG" alt="music production session">
                         </div>
                         <div class="service-description">
-                            <p>For those that want 1on1 help and instruction, I will meet with you in person or virtually and assist you with any aspect of your music.</p>
-                            <p>All of your original audio and any ideas that we create will remain solely your property. This is a consultation, not a collaboration.</p>
+                            <p class="services-p">For those that want 1on1 help and instruction, I will meet with you in person or virtually and assist you with any aspect of your music.</p>
+                            <p class="services-p">All of your original audio and any ideas that we create will remain solely your property. This is a consultation, not a collaboration.</p>
                         </div>
                     </div>
                 </div>
-                <hr>
+
+                <hr class="services-hr">
+                
                 <div class="service-block">
                     <div id="whitelabel-production">
-                        <h2>Whitelabel Production</h2>
+                        <h2 class="services-h2">Whitelabel Production</h2>
                         <div class="service-image-block">
                             <img class="service-image" src="images/service-whitelabel-production.jpg" alt="whitelabel song production">
                         </div>
                         <div class="service-description">
-                            <p>The prodution of a white-label, commerically ready audio work.</p>
-                            <p>I will write the original music, coordinate the vocalist, recording all sessions, and mix and master the final track.</p>
+                            <p class="services-p">The prodution of a white-label, commerically ready audio work.</p>
+                            <p class="services-p">I will write the original music, coordinate the vocalist, recording all sessions, and mix and master the final track.</p>
                         </div>
                     </div>
                 </div>
-                <hr>
+
+                <hr class="services-hr">
+                
                 <div class="service-block">
                     <div id="event-dj">
-                        <h2>Event DJ</h2>
+                        <h2 class="services-h2">Event DJ</h2>
                         <div class="service-image-block">
                             <img class="service-image" src="images/service-event-dj.JPG" alt="event dj">
                         </div>
                         <div class="service-description">
-                            <p>Private DJ for corporate, charity, social and celebratory events.</p>
+                            <p class="services-p">Private DJ for corporate, charity, social and celebratory events.</p>
                         </div>
                     </div>
                 </div>
@@ -315,25 +325,41 @@
         <footer id="footer-bar">
             <ul id="footer-menu" class="nav-link-list">
                 <li class="nav-link">
-                    <a id="links" href="https://www.twitter.com/LCRiggsMusic">Twitter</a>
+                    <a id="links" href="https://twitter.com/LCRiggsMusic">
+                        <img src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
+                    </a>
                 </li>
                 <li class="nav-link">
-                    <a id="links" href="https://soundcloud.com/lutherriggs">Soundcloud</a>
+                    <a id="links" href="https://soundcloud.com/lutherriggs">
+                        <img src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
+                    </a>
+                </li>
+                <!-- <li class="nav-link">
+                    <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">
+                        <img src="https://code.iconify.design/1/1.0.7/iconify.min.js" alt="audiomack logo">
+                        <!-- <img class="iconify" data-icon="simple-icons:audiomack" data-inline="false" data-width="50" data-height="50" alt="audiomack logo"> -->
+                    </a>
                 </li>
                 <li class="nav-link">
-                    <a id="links" href="https://audiomack.com/artist/luthercalvinriggs">Audiomack</a>
+                    <a id="links" href="https://open.spotify.com/user/1249617844">
+                        <img src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
+                    </a>
                 </li>
                 <li class="nav-link">
-                    <a id="links" href="https://open.spotify.com/user/1249617844">Spotify</a>
+                    <a id="links" href="https://youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">
+                        <img src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
+                    </a>
                 </li>
                 <li class="nav-link">
-                    <a id="links" href="https://www.youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">Youtube</a>
-                </li>
-                <li class="nav-link">
-                    <a id="links" href="https://github.com/LutherCalvinRiggs">GitHub</a>
+                    <a id="links" href="https://instagram.com/luthercalvinriggs/">
+                        <img src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
+                    </a>
                 </li>
             </div>
         </footer>
+
+        <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
+        
     </body>
 
 </html>
