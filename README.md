@@ -1,2 +1,4 @@
-# personal-website
-Personal website (luthercalvinriggs.com)
+# Luther Calvin Riggs Artist Website
+
+This is the code for musical artist Luther Calvin Riggs's website.
+www.luthercalvinriggs.com
