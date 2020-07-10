@@ -16,7 +16,14 @@
         <style>
             html{
                 background: url(images/page-image-resources.png);
-                background-size: auto 105%;
+                background-color: black;
+                background-attachment: fixed;
+                background-clip: border-box;
+                background-origin: border-box;
+                background-color: black;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
                 color: white;
             }
 
@@ -32,13 +39,17 @@
             #free-resource-list{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                width: 100%;
+                width: 80%;
                 margin: 0 auto;
-                padding-bottom: 100px;
+                padding-bottom: 150px;
+            }
+
+            .free-resource-block{
+                margin-top: 80px;
             }
 
             .free-resource-title{
-                font-size: 2.5rem;
+                font-size: 1.8rem;
                 width: 100%;
                 margin: auto;
                 padding-bottom: 20px;
@@ -48,21 +59,22 @@
                 width: 90%;
                 height: auto;
                 padding: 5px;
-                /* background:white; */
                 box-shadow: 0px 0px 10px white;
             }
 
             .section-heading{
-                font-size: 5rem;
+                font-size: 3rem;
                 text-transform: uppercase;
-                margin: 100px auto;
+                margin: 0 auto;
+                border-bottom: 2px solid grey;
+                width: 45%;
             }
 
             .daw-section-label{
-                font-size: 3.5rem;
-                margin: 50px auto 0 auto;
+                font-size: 2.5rem;
+                margin: 0 auto 0 auto;
                 border-bottom: 2px solid white;
-                width: 55%;
+                width: 40%;
                 padding-bottom: 10px;
             }
 
@@ -71,6 +83,7 @@
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: 10px;
                 padding:  50px;
+                margin: auto;
             }
 
             .template-image-box{
@@ -105,18 +118,9 @@
                 padding-bottom: 20px;
             }
 
-            .spacer{
-                height: 50px;
-            }
-
-            .spacer-line{
-                width: 25%;
-                margin: 30px auto;
-            }
-
             .free-resource-btn{
                 font-size: 1rem;
-                width: 65%;
+                width: 200px;
                 margin: 20px auto;
                 border: none;
                 border-radius: 3px;
@@ -151,8 +155,13 @@
             }
 
             @media screen and (max-width: 1500px){
+                #page-title{
+                    font-size: 4rem;
+                    margin-bottom: 150px;
+                }
+
                 .free-resource-title{
-                    font-size: 2rem;
+                    /* font-size: 2rem; */
                 }
 
                 .template-title{
@@ -164,9 +173,15 @@
                 }
             }
 
+            @media screen and (max-width: 1275px){
+                .free-resource-title{
+                    width: 60%;
+                }
+            }
+
             @media screen and (max-width: 1200px){
                 .free-resource-title{
-                    font-size: 1.5rem;
+                    /* font-size: 1.5rem; */
                 }
 
                 .daw-section-label{
@@ -174,31 +189,39 @@
                 }
             }
             
-            @media screen and (max-width: 1000px){
+            @media screen and (max-width: 1100px){
                 #free-resource-list{
                     display: flex;
                     flex-direction: column;
+                    width: 100%;
                 }
-                
-                .free-resource-block{
-                    padding: 30px;
+
+                .free-resource-title{
+                    width: 100%;
                 }
 
                 #free-resource-image{
-                    width: 60%;
-                    height: auto;
+                    width: 350px;
+                    margin: 0 auto;
                 }
 
+            }
+
+
+            @media screen and (max-width: 1000px){
                 .template-info-block{
                     grid-template-columns: 1fr;
+                    background-color:hsla(0, 0%, 100%, 0.1);
+                    border-radius: 20px;
+                    width: 65%;
                 }
 
                 #image-right{
-                    padding-top: 50px;
+                    margin-top: 50px;
                 }
 
                 #image-left{
-                    padding-bottom: 50px;
+                    margin-bottom: 50px;
                 }
 
                 .spacer{
@@ -206,13 +229,17 @@
                 }
 
                 .free-resource-title{
-                    font-size: 2.5rem;
+                    /* font-size: 2.5rem; */
                 }
             }
 
             @media screen and (max-width: 800px){
+                #page-title{
+                    margin-bottom: 50px;
+                }
+                
                 .section-heading{
-                    font-size: 4rem;
+                    /* font-size: 4rem; */
                 }
 
                 .daw-section-label{
@@ -221,12 +248,13 @@
             }
 
             @media screen and (max-width: 500px){
-                .section-heading{
-                    font-size: 2.5rem;
+                #page-title{
+                    font-size: 3rem;
+                    margin-bottom: 75px;
                 }
 
-                .free-resource-title{
-                    font-size: 1.3rem;
+                .section-heading{
+                    font-size: 2.5rem;
                 }
 
                 .daw-section-label{
@@ -247,9 +275,6 @@
     <body>
         <nav id="nav-bar">
             <ul id="nav-menu" class="nav-link-list">
-                <!-- <li class="nav-link">
-                    <a href="https://luthercalvinriggs.com">Home</a>
-                </li> -->
                 <li class="nav-link">
                     <a href="https://luthercalvinriggs.com/music">Music</a>
                 </li>
@@ -277,8 +302,18 @@
         <main>
             <div id="full-resource-list">
                 
+                <!-- <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div> 
+                <div class="spacer"></div> -->
+                <div class="spacer"></div>
+                <div class="spacer"></div>
                 <div class="spacer"></div>
 
+                <div id="page-title">
+                    <h1>Artist Resources</h1> 
+                </div>
+                
                 <div class="section-heading">
                     <h2>Free Resources</h2> 
                 </div>
@@ -288,7 +323,7 @@
                         <h4 class="free-resource-title"> Artist Split Sheet</h4>
                             <img id="free-resource-image" src="images/document-sign.png" alt="free artist agreement and split sheet">
                         <div class="free-resource-link">
-                            <a id="artist-agreement-button" class="free-resource-btn" target="_blank"  href="https://gum.co/GwCghA">Download Artist Agreement</a>
+                            <a id="artist-agreement-button" class="free-resource-btn" target="_blank"  href="https://gum.co/GwCghA">Download <br>Artist Agreement</a>
                         </div>
                     </div>
                 
@@ -296,7 +331,7 @@
                         <h4 class="free-resource-title"> Studio Gear Info Pack</h4>
                             <img id="free-resource-image" src="images/studio-gear.png" alt="free studio gear info pack">
                         <div class="free-resource-link">
-                            <a id="info-pack-button" class="free-resource-btn" target="_blank" href="https://gum.co/mMkDM">Download Info Pack</a>
+                            <a id="info-pack-button" class="free-resource-btn" target="_blank" href="https://gum.co/mMkDM">Download <br>Info Pack</a>
                         </div>
                     </div>
 
@@ -304,21 +339,19 @@
                         <h4 class="free-resource-title"> Digital Audio Routing Map</h4>
                             <img id="free-resource-image" src="images/patch-bay.png" alt="free digital audio routing map">
                         <div class="free-resource-link">
-                            <a id="routing-map-button" class="free-resource-btn" target="_blank" href="https://gum.co/XfLnJ">Download Routing Map</a>
+                            <a id="routing-map-button" class="free-resource-btn" target="_blank" href="https://gum.co/XfLnJ">Download <br>Routing Map</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="spacer"></div>
                 
-                <div class="section-heading">
-                    <h2>DAW Session Templates</h2> 
-                </div>
+                
                 
 
                 <div class="daw-resource-list">
-                    <div class="daw-section-label">
-                        <h3>Abeleton Live Templates</h3>
+                    
+                    <div class="section-heading">
+                        <h2>Ableton Live Templates</h2> 
                     </div>
 
                     <div class="image-left-daw-block">
@@ -339,8 +372,6 @@
                         </div>
                     </div>
                     
-                    <hr class="spacer-line">
-                    <!-- <div class="spacer"></div> -->
 
                     <div class="image-right-daw-block">
                         <div class="full-template-block">
@@ -362,10 +393,10 @@
                     </div>
 
                     <div class="spacer"></div>
-                    <div class="spacer"></div>
 
-                    <div class="daw-section-label">
-                        <h3>Pro Tools Templates</h3>
+
+                    <div class="section-heading">
+                        <h2>Pro Tools Templates</h2> 
                     </div>
 
                     <div class="image-left-daw-block">
@@ -386,8 +417,6 @@
                         </div>
                     </div>
 
-                    <hr class="spacer-line">
-                    <!-- <div class="spacer"></div> -->
 
                     <div class="image-right-daw-block">
                         <div class="full-template-block">
@@ -417,33 +446,33 @@
         </main>
 
         <footer id="footer-bar">
-            <ul id="footer-menu" class="nav-link-list">
-                <li class="nav-link">
+            <ul id="footer-menu" class="footer-link-list">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
                         <img src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://soundcloud.com/lutherriggs">
                         <img src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://audiomack.com/artist/luthercalvinriggs">
                         <img class="iconify" data-icon="simple-icons:audiomack" data-inline="false" data-width="50" data-height="50" alt="audiomack logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://open.spotify.com/playlist/2yNeSBityQoNLahiens5tN?si=xw3JYRwcTBqxns0j2bduoA">
                         <img src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">
                         <img src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://instagram.com/luthercalvinriggs/">
                         <img src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
                     </a>

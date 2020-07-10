@@ -14,7 +14,139 @@
         <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
 
         <style>
-            
+
+            html{
+                background-image: url("images/page-image-music.png");
+                background-attachment: fixed;
+                background-clip: border-box;
+                background-origin: border-box;
+                background-color: black;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            body{
+                background: hsla(0, 0%, 0%, 0.6);
+                background-size: auto;
+            }
+
+            #music-page-background{
+                width: 100vw;
+                height: auto;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: -99;
+            }
+
+            #page-content{
+                text-align: center;
+            }
+
+            /* #page-title{
+                color: white;
+                font-size: 5rem;
+                text-transform: uppercase;
+                text-align:center;
+                font-family: 'Yellowtail', cursive;
+            } */
+
+            #audio-track-list{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;                  /* alternate comment out with overflow-y */
+                /* overflow-y: hidden; */
+                justify-content: space-evenly;
+                width: 90vw;
+                margin: 0 auto;
+            }
+
+            .audio-track-block{
+                margin: 20px;
+            }
+
+            #thump-animation{
+                width: 350px;
+                height: 350px;
+                margin: 0px auto 15px auto;
+                padding: 0px;
+                border: 2px solid white;
+                border-radius: 5px;
+            }
+
+            .cover-art{
+                width: 100%;
+                height: 100%;
+            }
+
+            #thump-animation:hover{
+                border: 2px solid white;
+                animation-name: thump;
+                animation-duration: 480ms;
+                animation-iteration-count: infinite;
+                
+            }
+
+            @keyframes thump {
+                0% {
+                    box-shadow: 0px 0px 100px hsl(0, 0%, 0%, .1);
+                    z-index: -1;
+                }
+                5% {
+                    box-shadow: 0px 0px 500px silver;
+                    z-index: -1;
+                }
+                100% {
+                    box-shadow: 0px 0px 100px hsl(0, 0%, 0%, .1);
+                    z-index: -1;
+
+                }
+            }
+
+            .audio-player{
+                width: 100%;
+                margin: 0px auto 15px auto;
+            }
+
+            .audio-track-block a{
+                width: 70%;
+                height: auto;
+                padding: 10px;
+                font-size: 14px;
+                margin: 0 auto 50px auto;
+                color: var(--nav-white);
+                background-color: black;
+                border: 1px solid var(--nav-white);
+                border-radius: 5px;
+            }
+
+            .audio-track-block a:hover{
+                color: black;
+                background-color: var(--nav-white);
+                font-size: 1rem;
+                font-style: normal;
+                animation-name: button-hover;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+
+            /* @keyframes button-hover {
+                0% {
+                    background-color: white;
+                    color: black
+                }
+                50% {
+                    background-color: hsla(0, 100%, 90%, 0.7);
+                    color: white;
+                }
+                100% {
+                    background-color: white;
+                    color: black;
+                }
+            } */
+
             /* Large tablet in Landscape mode - Medium browser */
             @media screen and (max-width: 1375px){
                 
@@ -44,7 +176,7 @@
             @media screen and (max-width: 500px){
                 
             }
-            
+
 
         </style>
 
@@ -81,39 +213,473 @@
         </nav>
 
         <main>
-          
+            
+            <div id="page-content">
+                <!-- <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div> -->
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
 
+                <div id="page-title">
+                    <h1>Music</h1> 
+                </div>
 
+                <div id="audio-track-list">
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/42-make-up-your-mind-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/42-make-up-your-mind-remix.mp3" type="audio/mpeg">
+                            Make Up Your Mind (Luther Calvin Riggs Remix) - 2AM, Shannon Gibbons
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Make Up Your Mind</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/41-malamente-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/41-malamente-remix.mp3" type="audio/mpeg">
+                            Malamente (Luther Calvin Riggs Remix) - Rosalia 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Malamente</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/40-explosion-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/40-explosion-remix.mp3" type="audio/mpeg">
+                            eXplosion (Luther Calvin Riggs Remix) - Black Eyed Peas, Anitta 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: eXplosion</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/39-my-type-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/39-my-type-remix.mp3" type="audio/mpeg">
+                            My Type (Luther Calvin Riggs Remix) - City Girls, Saweetie
+                        </audio>
+                        <a class="download-gate-link" href="">Download: My Type</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/38-loco-contigo-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/38-loco-contigo-remix.mp3" type="audio/mpeg">
+                            Loco Contigo (Luther Calvin Riggs Remix) - DJ Snake, J Balvin, Tyga 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Loco Contigo</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/37-truth-hurts-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/37-truth-hurts-remix.mp3" type="audio/mpeg">
+                            Truth Hurts (Luther Calvin Riggs Remix) - Lizzo
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Truth Hurts</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/36-cash-shit-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/36-cash-shit-remix.mp3" type="audio/mpeg">
+                            Cash Sh#t (Luther Calvin Riggs Remix) - Megan Thee Stallion, DaBaby
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Cash Sh#t</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/35-i-warned-myself-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/35-i-warned-myself-remix.mp3" type="audio/mpeg">
+                            I Warned Myself (Luther Calvin Riggs Remix) - Charlie Puth
+                        </audio>
+                        <a class="download-gate-link" href="">Download: I Warned Myself</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/34-hot-girl-summer-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/34-hot-girl-summer-remix.mp3" type="audio/mpeg">
+                            Hot Girl Summer (Luther Calvin Riggs Remix) - Megan Thee Stallion, Nicki Minaj, Ty Dolla $ign 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Hot Girl Summer</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/33-taste-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/33-taste-remix.mp3" type="audio/mpeg">
+                            Taste (Luther Calvin Riggs Remix) - Tyga, Offset 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Taste</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/32-money-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/32-money-remix.mp3" type="audio/mpeg">
+                            Money (Luther Calvin Riggs Remix) - Cardi B 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Money</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/31-baby-shark-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/31-baby-shark-remix.mp3" type="audio/mpeg">
+                            Baby Shark (Luther Calvin Riggs Remix) - Various Artists
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Baby Shark</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/30-mai-tai.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/30-mai-tai.mp3" type="audio/mpeg">
+                            Mai Tai - Luther Calvin Riggs
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Mai Tai</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/29-twerk-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/29-twerk-remix.mp3" type="audio/mpeg">
+                            Twerk (Luther Calvin Riggs Remix) - City Girls, Cardi B
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Twerk</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/28-thotiana-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/28-thotiana-remix.mp3" type="audio/mpeg">
+                            Thotiana (Luther Calvin Riggs Remix) - Blueface, Cardi B, YG 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Thotiana</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/27-starboy-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/27-starboy-remix.mp3" type="audio/mpeg">
+                            Starboy (Luther Calvin Riggs Remix) - The Weeknd
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Starboy</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/26-took-the-night-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/26-took-the-night-remix.mp3" type="audio/mpeg">
+                            Took The Night (Luther Calvin Riggs Remix) - Chelley
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Took The Night</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/25-no-letting-go-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/25-no-letting-go-remix.mp3" type="audio/mpeg">
+                            No Letting Go (Luther Calvin Riggs Remix) - Wayne Wonder
+                        </audio>
+                        <a class="download-gate-link" href="">Download: No Letting Go</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/24-rich-girl-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/24-rich-girl-remix.mp3" type="audio/mpeg">
+                            Rich Girl (Luther Calvin Riggs Remix) - Louchie Lou, Michie One
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Rich Girl</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/23-girls-like-you-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/23-girls-like-you-remix.mp3" type="audio/mpeg">
+                            Girls Like You (Luther Calvin Riggs Remix) - Maroon 5, Cardi B 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Girls Like You</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/22-cuando-tu-quieres-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/22-cuando-tu-quieres-remix.mp3" type="audio/mpeg">
+                            Cuando Tu Quieres (Luther Calvin Riggs Remix) - J Balvin
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Cuando Tu Quieres</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/21-jackie-chan-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/21-jackie-chan-remix.mp3" type="audio/mpeg">
+                            Jackie Chan (Luther Calvin Riggs Remix) - Tiesto, Dzeko, Preme, Post Malone
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Jackie Chan</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/20-dont-miss-you-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/20-dont-miss-you-remix.mp3" type="audio/mpeg">
+                            Don't Miss You (Luther Calvin Riggs Remix) - Marian Hill
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Don't Miss You</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/19-changes-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/19-changes-remix.mp3" type="audio/mpeg">
+                            Changes (Luther Calvin Riggs Remix) - Matt Kearney
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Changes</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/18-el-anillo-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/18-el-anillo-remix.mp3" type="audio/mpeg">
+                            El Anillo (Luther Calvin Riggs Remix) - Jennifer Lopez
+                        </audio>
+                        <a class="download-gate-link" href="">Download: El Anillo</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/17-no-tears-left-to-cry-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/17-no-tears-left-to-cry-remix.mp3" type="audio/mpeg">
+                            No Tears Left To Cry (Luther Calvin Riggs Remix) - Ariana Grande
+                        </audio>
+                        <a class="download-gate-link" href="">Download: No Tears Left To Cry</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/16-barbie-tingz-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/16-barbie-tingz-remix.mp3" type="audio/mpeg">
+                            Barbie Tingz (Luther Calvin Riggs Remix) - Nicki Minaj
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Barbie Tingz</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/15-miss-you-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/15-miss-you-remix.mp3" type="audio/mpeg">
+                            Miss You (Luther Calvin Riggs + Select Vibes Remix) - Diplo, Cashmere Cat, Tory Lanez
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Miss You</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/14-i-like-it-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/14-i-like-it-remix.mp3" type="audio/mpeg">
+                            I Like It (Luther Calvin Riggs Remix) - Cardi B
+                        </audio>
+                        <a class="download-gate-link" href="">Download: I Like It</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/13-havana-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/13-havana-remix.mp3" type="audio/mpeg">
+                            Havana (Luther Calvin Riggs + Select Vibes Remix) - Camilla Cabello, Young Thug
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Havana</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/12-attention-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/12-attention-remix.mp3" type="audio/mpeg">
+                            Attention (Luther Calvin Riggs + Select Vibes Remix) - Charlie Puth
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Attention</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/11-mans-not-hot-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/11-mans-not-hot-remix.mp3" type="audio/mpeg">
+                            Man's Not Hot (Luther Calvin Riggs + Select Vibes Remix) - Big Shaq
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Man's Not Hot</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/10-x-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/10-x-remix.mp3" type="audio/mpeg">
+                            X (Luther Calvin Riggs + Select Vibes Remix) - Nicky Jam, J Balvin
+                        </audio>
+                        <a class="download-gate-link" href="">Download: X</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/9-signs-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/9-signs-remix.mp3" type="audio/mpeg">
+                            Signs (Luther Calvin Riggs + Select Vibes Remix) - Drake
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Signs</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/8-everyday-we-lit-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/8-everyday-we-lit-remix.mp3" type="audio/mpeg">
+                            Everyday We Lit (Luther Calvin Riggs Remix) - YFN Lucci, PNB Rock, Lil Yachty, Wiz Khalifa
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Everyday We Lit</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/7-neoh-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/7-neoh-remix.mp3" type="audio/mpeg">
+                            NEOH (Luther Calvin Riggs Remix) - HVNRVN
+                        </audio>
+                        <a class="download-gate-link" href="">Download: NEOH</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/6-trust-nobody-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/6-trust-nobody-remix.mp3" type="audio/mpeg">
+                            Trust Nobody (Luther Calvin Riggs Remix) - Cashmere Cat, Selena Gomez, Tory lanez 
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Trust Nobody</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/5-lovely-day-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/5-lovely-day-remix.mp3" type="audio/mpeg">
+                            Lovely Day (Luther Calvin Riggs Remix) - Bill Withers
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Lovely Day</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/4-overflow-back-to-cali-bootleg.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/4-overflow-back-to-cali-bootleg.mp3" type="audio/mpeg">
+                            Overflow Back to Cali (Luther Calvin Riggs Mashup) - Notorious B.I.G. vs Chris Reece
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Overflow Back to Cali</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/3-cash-in-remix.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/3-cash-in-remix.mp3" type="audio/mpeg">
+                            Cash In (Luther Calvin Riggs Remix) - Solange
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Cash In</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/2-requinto.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/2-requinto.mp3" type="audio/mpeg">
+                            Requinto - Luther Calvin Riggs
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Requinto</a>
+                    </div>
+
+                    <div class="audio-track-block">
+                        <div id="thump-animation">
+                            <img class="cover-art" src="images/audio-cover-art/1-pour-some-sugar-on-me-bootleg.png"></img>
+                        </div>
+                        <audio class="audio-player" controls src="audio/1-pour-some-sugar-on-me-bootleg.mp3" type="audio/mpeg">
+                            Pour Some Doughie On Me (Luther Calvin Riggs Mashup) - Def Leppard vs Cali Swag District
+                        </audio>
+                        <a class="download-gate-link" href="">Download: Pour Some Doughie On Me</a>
+                    </div>
+
+                </div>
+            </div>
         </main>
 
         <footer id="footer-bar">
-            <ul id="footer-menu" class="nav-link-list">
-                <li class="nav-link">
+            <ul id="footer-menu" class="footer-link-list">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
                         <img src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://soundcloud.com/lutherriggs">
                         <img src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://audiomack.com/artist/luthercalvinriggs">
                         <img class="iconify" data-icon="simple-icons:audiomack" data-inline="false" data-width="50" data-height="50" alt="audiomack logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://open.spotify.com/playlist/2yNeSBityQoNLahiens5tN?si=xw3JYRwcTBqxns0j2bduoA">
                         <img src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">
                         <img src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="footer-link">
                     <a id="links" target="_blank" href="https://instagram.com/luthercalvinriggs/">
                         <img src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
                     </a>
