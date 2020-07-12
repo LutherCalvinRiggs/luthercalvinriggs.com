@@ -13,6 +13,9 @@
         <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
 
+        <!-- Script for Audiomack Logo -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
         <style>
             html{
                 background: url(images/page-image-resources.png);
@@ -31,12 +34,20 @@
                 background: hsla(0, 0%, 0%, 0.6);
             }
 
-            #full-resource-list{
+            .section-heading{
+                width: 45%;
+                font-size: 3rem;
+                text-transform: uppercase;
+                margin: 0 auto;
+                border-bottom: 2px solid white;
+            }
+
+            .full-resource-list{
                 display: block;
                 text-align: center;
             }
 
-            #free-resource-list{
+            .free-resource-list{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 width: 80%;
@@ -45,44 +56,50 @@
             }
 
             .free-resource-block{
-                margin-top: 80px;
+                margin: 80px 10px 0 10px;
+                height: 100%;
+                width: 1fr;
             }
 
             .free-resource-title{
-                font-size: 1.8rem;
+                font-size: 2.4rem;
                 width: 100%;
                 margin: auto;
                 padding-bottom: 20px;
             }
 
-            #free-resource-image{
+            .free-resource-image{
                 width: 90%;
                 height: auto;
                 padding: 5px;
-                box-shadow: 0px 0px 10px white;
+                border: 2px solid white;
             }
 
-            .section-heading{
-                font-size: 3rem;
-                text-transform: uppercase;
-                margin: 0 auto;
-                border-bottom: 2px solid grey;
-                width: 45%;
+            .free-resource-link{
+                margin: 20px;
             }
 
-            .daw-section-label{
-                font-size: 2.5rem;
-                margin: 0 auto 0 auto;
-                border-bottom: 2px solid white;
-                width: 40%;
-                padding-bottom: 10px;
+            .free-resource-btn{
+                font-size: 1.8rem;
+                border: none;
+                border-radius: 3px;
+                color: black;
+                background-color: hsl(0, 0%, 90.9%);
+                padding: 10px;
+            }
+
+            .free-resource-btn:hover{
+                font-size: 1rem;
+                font-family: 'Anton', sans-serif;
+                background-color: grey;
+                color: white;
             }
 
             .template-info-block{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 0.5fr 0.5fr;
                 grid-column-gap: 10px;
-                padding:  50px;
+                padding: 75px;
                 margin: auto;
             }
 
@@ -91,11 +108,10 @@
             }
 
             .daw-image{
-                width: 100%;
+                width: 80%;
                 height: auto;
                 margin: auto;
-                padding: 10px;
-                box-shadow: 0px 0px 10px white;
+                border: 2px solid white;
             }
 
             .template-title{
@@ -118,28 +134,8 @@
                 padding-bottom: 20px;
             }
 
-            .free-resource-btn{
-                font-size: 1rem;
-                width: 200px;
-                margin: 20px auto;
-                border: none;
-                border-radius: 3px;
-                color: black;
-                background-color: hsl(0, 0%, 90.9%);
-                padding: 10px;
-            }
-
-            .free-resource-btn:hover{
-                font-size: 1rem;
-                font-family: 'Anton', sans-serif;
-                background-color: grey;
-                color: white;
-            }
-
             .daw-template-btn{
-                font-size: 1rem;
-                width: 65%;
-                margin: 20px auto;
+                font-size: 1.4rem;
                 border: none;
                 border-radius: 3px;
                 color: black;
@@ -148,72 +144,105 @@
             }
 
             .daw-template-btn:hover{
-                font-size: 1rem;
+                font-size: 1.4rem;
                 font-family: 'Anton', sans-serif;
                 background-color: grey;
                 color: white;
             }
 
-            @media screen and (max-width: 1500px){
-                /* #page-title{
-                    font-size: 4rem;
-                    margin-bottom: 150px;
-                } */
+            .daw-template-spacer{
+                width: 45%;
+                margin: 30px auto;
+                border: 1.5px solid white;
+            }
 
+            @media screen and (max-width: 1375px){
+                .section-heading{
+                    width: 50%;
+                    font-size: 2.6rem;
+                }
+                
                 .free-resource-title{
-                    /* font-size: 2rem; */
+                    width: 80%;
+                }
+
+                .free-resource-btn{
+                    font-size: 1.2rem;
+                }
+                
+                .template-title{
+                    font-size: 2.2rem;
+                }
+
+                .description{
+                    font-size: 1.5rem;
+                }
+
+                .daw-template-btn{
+                    font-size: 1.0rem;
+                }
+
+                .daw-template-btn:hover{
+                    font-size: 1.0rem;
+                }
+            }
+
+            @media screen and (max-width: 1200px){                
+                .section-heading{
+                    width: 50%;
+                    font-size: 2.4rem;
+                }
+                
+                .free-resource-btn{
+                    font-size: 1.0rem;
+                }
+                
+                .daw-section-label{
+                    font-size: 3.8rem;
                 }
 
                 .template-title{
-                    font-size: 2.2rem;
+                    font-size: 2.0rem;
                 }
 
                 .description{
                     font-size: 1.4rem;
                 }
             }
-
-            @media screen and (max-width: 1275px){
-                .free-resource-title{
-                    width: 60%;
-                }
-            }
-
-            @media screen and (max-width: 1200px){
-                .free-resource-title{
-                    /* font-size: 1.5rem; */
-                }
-
-                .daw-section-label{
-                    font-size: 3.8rem;
-                }
-            }
             
-            @media screen and (max-width: 1100px){
-                #free-resource-list{
+            @media screen and (max-width: 1050px){
+                .free-resource-list{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     width: 100%;
+                }
+                
+                .free-resource-block{
+                    margin-top: 80px;
+                    height: 100%;
+                    width: 60%;
                 }
 
                 .free-resource-title{
                     width: 100%;
                 }
 
-                #free-resource-image{
-                    width: 350px;
+                .free-resource-image{
                     margin: 0 auto;
                 }
 
-            }
-
-
-            @media screen and (max-width: 1000px){
+                .free-resource-btn{
+                    font-size: 1.4rem;
+                }
+                
                 .template-info-block{
-                    grid-template-columns: 1fr;
-                    background-color:hsla(0, 0%, 100%, 0.1);
+                    display: flex;
+                    flex-direction: column;
                     border-radius: 20px;
                     width: 65%;
+                    padding: 10px;
+                    margin: 0 auto;
                 }
 
                 #image-right{
@@ -228,18 +257,27 @@
                     height: 75px;
                 }
 
-                .free-resource-title{
-                    /* font-size: 2.5rem; */
+                .template-info-block{
+                    width: 70%;
+                }
+
+                .template-image-box{
+                    width: 100%;
+                }
+
+                .template-description{
+                    width: 80%;
+                }
+
+                .daw-template-spacer{
+                    margin: 75px auto;
                 }
             }
 
-            @media screen and (max-width: 800px){
-                #page-title{
-                    margin-bottom: 50px;
-                }
-                
+            @media screen and (max-width: 850px){
                 .section-heading{
-                    /* font-size: 4rem; */
+                    width: 60%;
+                    font-size: 2.0rem;
                 }
 
                 .daw-section-label{
@@ -253,8 +291,17 @@
                     margin-bottom: 75px;
                 }
 
-                .section-heading{
-                    font-size: 2.5rem;
+                .free-resource-block{
+                    width: 75%;
+                }
+
+                .free-resource-title{
+                    width: 70%;
+                    font-size: 2.0rem;                
+                }
+
+                .free-resource-btn{
+                    font-size: 0.8rem;
                 }
 
                 .daw-section-label{
@@ -262,11 +309,56 @@
                 }
 
                 .template-title{
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
+                }
+
+                .description{
+                    font-size: 1.2rem;
+                }
+
+                .daw-template-btn{
+                    font-size: 0.8rem;
                 }
             }
 
-            
+            @media screen and (max-width: 400px){
+                .section-heading{
+                    width: 60%;
+                    font-size: 1.8rem;
+                }
+
+                .free-resource-btn{
+                    font-size: 0.7rem;
+                }
+
+                .template-title{
+                    font-size: 1.2rem;
+                }
+
+                .description{
+                    font-size: .8rem;
+                }
+                
+            }
+
+            @media screen and (max-width: 350px){
+                .section-heading{
+                    width: 60%;
+                    font-size: 1.6rem;
+                }
+                
+                .free-resource-title{
+                    font-size: 1.6rem;                
+                }
+
+                .free-resource-btn{
+                    font-size: 0.7rem;
+                }
+
+                .daw-template-btn{
+                    font-size: 0.6rem;
+                }
+            }
 
         </style>
 
@@ -300,7 +392,7 @@
         </nav>
 
         <main>
-            <div id="full-resource-list">
+            <div class="full-resource-list">
 
                 <div id="page-title">
                     <h1>Artist Resources</h1> 
@@ -310,35 +402,32 @@
                     <h2>Free Resources</h2> 
                 </div>
                 
-                <div id="free-resource-list">
+                <div class="free-resource-list">
                     <div class="free-resource-block">
                         <h4 class="free-resource-title"> Artist Split Sheet</h4>
-                            <img id="free-resource-image" src="images/document-sign.png" alt="free artist agreement and split sheet">
+                            <img class="free-resource-image" src="images/document-sign.png" alt="free artist agreement and split sheet">
                         <div class="free-resource-link">
-                            <a id="artist-agreement-button" class="free-resource-btn" target="_blank"  href="https://gum.co/GwCghA">Download <br>Artist Agreement</a>
+                            <a id="artist-agreement-button" class="free-resource-btn" target="_blank"  href="https://gum.co/GwCghA">Download Artist Agreement</a>
                         </div>
                     </div>
                 
                     <div class="free-resource-block">
                         <h4 class="free-resource-title"> Studio Gear Info Pack</h4>
-                            <img id="free-resource-image" src="images/studio-gear.png" alt="free studio gear info pack">
+                            <img class="free-resource-image" src="images/studio-gear.png" alt="free studio gear info pack">
                         <div class="free-resource-link">
-                            <a id="info-pack-button" class="free-resource-btn" target="_blank" href="https://gum.co/mMkDM">Download <br>Info Pack</a>
+                            <a id="info-pack-button" class="free-resource-btn" target="_blank" href="https://gum.co/mMkDM">Download Info Pack</a>
                         </div>
                     </div>
 
                     <div class="free-resource-block">
                         <h4 class="free-resource-title"> Digital Audio Routing Map</h4>
-                            <img id="free-resource-image" src="images/patch-bay.png" alt="free digital audio routing map">
+                            <img class="free-resource-image" src="images/patch-bay.png" alt="free digital audio routing map">
                         <div class="free-resource-link">
-                            <a id="routing-map-button" class="free-resource-btn" target="_blank" href="https://gum.co/XfLnJ">Download <br>Routing Map</a>
+                            <a id="routing-map-button" class="free-resource-btn" target="_blank" href="https://gum.co/XfLnJ">Download Routing Map</a>
                         </div>
                     </div>
                 </div>
 
-                
-                
-                
 
                 <div class="daw-resource-list">
                     
@@ -364,6 +453,7 @@
                         </div>
                     </div>
                     
+                    <hr class="daw-template-spacer">
 
                     <div class="image-right-daw-block">
                         <div class="full-template-block">
@@ -409,6 +499,7 @@
                         </div>
                     </div>
 
+                    <hr class="daw-template-spacer">
 
                     <div class="image-right-daw-block">
                         <div class="full-template-block">
@@ -437,42 +528,40 @@
 
         </main>
 
-        <footer id="footer-bar">
+        <footer id="contact-footer-nav-bar" class="footer-nav-bar">
             <ul id="footer-menu" class="footer-link-list">
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
-                        <img src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
+                        <img class="footer-social-icon" src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://soundcloud.com/lutherriggs">
-                        <img src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
+                        <img class="footer-social-icon" src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://audiomack.com/artist/luthercalvinriggs">
-                        <img class="iconify" data-icon="simple-icons:audiomack" data-inline="false" data-width="50" data-height="50" alt="audiomack logo">
+                        <img class="iconify footer-social-icon" data-icon="simple-icons:audiomack"  alt="audiomack logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://open.spotify.com/playlist/2yNeSBityQoNLahiens5tN?si=xw3JYRwcTBqxns0j2bduoA">
-                        <img src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
+                        <img class="footer-social-icon" src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">
-                        <img src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
+                        <img class="footer-social-icon" src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://instagram.com/luthercalvinriggs/">
-                        <img src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
+                        <img class="footer-social-icon" src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
                     </a>
                 </li>
             </div>
         </footer>
-
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     </body>
 

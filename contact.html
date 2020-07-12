@@ -13,10 +13,13 @@
         <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
 
+        <!-- Script for Audiomack Logo -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        
         <style>
 
             html{
-                background: url(images/page-image-contact.png);
+                background: url(images/page-image-services.png);
                 background-color: black;
                 background-attachment: fixed;
                 background-clip: border-box;
@@ -34,12 +37,11 @@
 
             .form-block{
                 width: 40%;  
-                height: 75vh;
-                padding: 30px;
+                height: auto;
+                padding: 30px 10px;
                 background-color: hsla(0, 0%, 20%, 0.84);
-                margin: 0 auto;   
+                margin: 300px auto 100px 50%;   
                 border-radius: 5px;
-                margin-bottom: 50px;
             }
 
             .field-label{
@@ -57,6 +59,58 @@
             #message{
                 width: 98%;
                 height: 200px;
+            }
+
+            #contact-footer-nav-bar{
+                padding-top: 0px;
+            }
+
+            /* Large tablet in Landscape mode - Medium browser */
+            @media screen and (max-width: 1375px){
+                .form-block{
+                    margin: 300px auto 50px 50%;
+                }
+
+            /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
+            @media screen and (max-width: 1200px){
+                .form-block{
+                    margin: 100px auto 50px 50%;
+                }
+            }
+
+            @media screen and (max-width: 1050px){
+                
+            }
+
+            /* Medium & small tablets in Portrait mode - Small web browser */
+            @media screen and (max-width: 875px){
+                
+            }            
+
+            /* Larger mobile phones in Landscape mode */
+            @media screen and (max-width: 750px){
+                .form-block{
+                    width: 80%;
+                    margin: 100px auto 50px auto;
+                }
+            }
+
+            /* Small mobile phones in Landscape mode */
+            @media screen and (max-width: 600px){
+                
+            }
+
+            /* Mobile phones in Portrait mode */
+            @media screen and (max-width: 500px){
+                
+            } 
+
+            @media screen and (max-width: 400px){
+
+            }
+
+            @media screen and (max-width: 350px){
+                
             }
 
         </style>
@@ -139,42 +193,40 @@
             </div>
         </main>
 
-        <footer id="footer-bar">
+        <footer id="contact-footer-nav-bar" class="footer-nav-bar">
             <ul id="footer-menu" class="footer-link-list">
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
-                        <img src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
+                        <img class="footer-social-icon" src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://soundcloud.com/lutherriggs">
-                        <img src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
+                        <img class="footer-social-icon" src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://audiomack.com/artist/luthercalvinriggs">
-                        <img class="iconify" data-icon="simple-icons:audiomack" data-inline="false" data-width="50" data-height="50" alt="audiomack logo">
+                        <img class="iconify footer-social-icon" data-icon="simple-icons:audiomack"  alt="audiomack logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://open.spotify.com/playlist/2yNeSBityQoNLahiens5tN?si=xw3JYRwcTBqxns0j2bduoA">
-                        <img src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
+                        <img class="footer-social-icon" src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">
-                        <img src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
+                        <img class="footer-social-icon" src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://instagram.com/luthercalvinriggs/">
-                        <img src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
+                        <img class="footer-social-icon" src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
                     </a>
                 </li>
             </div>
         </footer>
-
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     </body>
 

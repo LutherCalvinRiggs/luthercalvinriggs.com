@@ -13,11 +13,12 @@
         <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
 
+        <!-- Script for Audiomack Logo -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
+        
         <style>
             html{
-                background: url(images/page-image-services.png);
+                background: url(images/page-image-contact.png);
                 background-color: black;
                 background-attachment: fixed;
                 background-clip: border-box;
@@ -33,183 +34,133 @@
                 background: hsla(0, 0%, 0%, 0.6);
             }
 
-            main{
-                height: 100%;
-            }
-
-            #services-dj-image{
-                position: fixed;
-                top: 100px;
-                height: 93vh;
-                -webkit-mask-image: linear-gradient(290deg, transparent 10%, black 50%);
-                z-index: -1;
-            }
-
             .list-of-services{
-                width: 50vw;
-                height: auto;
                 color: white;
                 display: flex;
                 flex-direction: column;
-                margin-top: 50px;
-                margin-left: 750px;
-                /* border: 1px solid orange; */
+                margin: 0 auto;
+                padding: 0 300px;                           /**/
                 font-size: 40px;
-            }
-
-            /* Large tablet in Landscape mode - Medium browser */
-            @media screen and (max-width: 1375px){
-                .list-of-services{
-                    margin-left: 600px;
-                    width: 48vw;
-                }
-            }
-
-            /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
-            @media screen and (max-width: 1200px){
-                .list-of-services{
-                    margin-left: 450px;
-                    width: 48vw;
-                }
-
-                #services-dj-image{
-                    -webkit-mask-image: linear-gradient(290deg, transparent 10%, black 90%);
-                }
-            }
-
-            /* Medium & small tablets in Portrait mode - Small web browser */
-            @media screen and (max-width: 875px){
-                .list-of-services{
-                    margin-left: 350px;
-                    width: 48vw;
-                }
-
-                #services-dj-image{
-                    -webkit-mask-image: linear-gradient(310deg, transparent 10%, black 80%);
-                }
-            }            
-            
-            /* Larger mobile phones in Landscape mode */
-            @media screen and (max-width: 750px){
-                .list-of-services{
-                    margin-left: 290px;
-                    width: 48vw;
-                }
-
-                #services-dj-image{
-                    -webkit-mask-image: linear-gradient(310deg, transparent 10%, black 80%);
-                }
-            }
-
-            /* Small mobile phones in Landscape mode */
-            @media screen and (max-width: 600px){
-                .list-of-services{
-                    margin-left: 250px;
-                    width: 45vw;
-                }
-            }
-
-            /* Mobile phones in Portrait mode */
-            @media screen and (max-width: 500px){
-                #nav-bar{
-                    height: 100px;
-                }
-
-                .nav-link-list{
-                    justify-content: flex-end;
-                    width: 60%;
-                }
-
-                .list-of-services{
-                    padding-top: 200px;
-                    margin: auto;
-                    width: 70vw;
-                }
-
-                #services-dj-image{
-                    -webkit-mask-image: linear-gradient(310deg, transparent 30%, black 100%);
-                }
             }
 
             .service-block{
                 display: flex;
-                flex-direction: column;
-                padding: 40px 0;
+                flex-direction: row;                        /**/
+                justify-content: space-between;
+                margin-bottom: 150px;
             }
 
-            .services-h2{
-                font-size: 3rem;
+            .service-title{
+                font-size: 3rem;                            /**/
                 text-align: center;
                 margin-bottom: 35px;
             }
 
             .service-image-block{
+                margin: auto 20px;  
                 text-align: center;
-                margin-bottom: 35px;
             }
 
             .service-image{
+                width: 550px;                             /**/
+                height: auto;                              /**/
+                border: 2px solid white;
+            }
+
+            .service-description-block{
                 width: 80%;
-                height: auto;
-                box-shadow: 0px 0px 20px grey;
+                margin: 50px 30px 50px 30px;
             }
 
             .service-description{
-                width: 80%;
-                margin: 0 auto;
-            }
-
-            .services-p{
-                font-size: 2.2rem;
+                font-size: 2.0rem;                          /**/
                 padding-bottom: 25px;
             }
 
-            .services-hr{
+            .service-hr{
                 width: 95%;
                 margin: 40px auto;
             }
 
             /* Large tablet in Landscape mode - Medium browser */
             @media screen and (max-width: 1375px){
-                .services-p{
-                    font-size: 1.8rem;
+                .list-of-services{
+                    padding: 0 200px; 
+                }
+
+                .service-image{
+                    width: 350px; 
+                }
+
+                .service-description{
+                    font-size: 1.6rem;
+                }
+            }
+
+            /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
+            @media screen and (max-width: 1200px){
+                .list-of-services{
+                    padding: 0 100px; 
+                }
+
+                .service-description{
+                    font-size: 1.6rem;
+                }
+            }
+
+            @media screen and (max-width: 1050px){
+                .service-description{
+                    font-size: 1.4rem;
                 }
             }
 
             /* Medium & small tablets in Portrait mode - Small web browser */
             @media screen and (max-width: 875px){
-                .services-h2{
-                    font-size: 2.7rem;
-                    text-align: center;
-                    margin-bottom: 35px;
+                .service-block{
+                    flex-direction: column;
                 }
 
-                .services-p{
-                    font-size: 1.6rem;
+                .service-image-block{
+                    margin: auto;  
+                }
+
+                .service-description-block{
+                    margin: 50px auto;                    
+                }
+                .service-description{
+                    font-size: 1.4rem;
                 }
             }            
 
             /* Larger mobile phones in Landscape mode */
             @media screen and (max-width: 750px){
-                .services-h2{
-                    font-size: 2.2rem;
-                }
+                
+            }
 
-                .services-p{
-                    font-size: 1.2rem;
-                }
+            /* Small mobile phones in Landscape mode */
+            @media screen and (max-width: 600px){
+                
             }
 
             /* Mobile phones in Portrait mode */
             @media screen and (max-width: 500px){
-                main{
-                    margin-top: 150px;
+                .list-of-services{
+                    padding: 0 30px; 
                 }
                 
-                .services-p{
-                    font-size: 1.4rem;
+                .service-image{
+                    width: 90%;
                 }
+            } 
+
+            @media screen and (max-width: 400px){
+
             }
+
+            @media screen and (max-width: 350px){
+                
+            }
+
         </style>
 
     </head>
@@ -248,126 +199,107 @@
             </div>
 
             <div class="list-of-services">
-                <div class="service-block">
-                    <div id="song-critique">
-                        <h2 class="services-h2">Song Critique</h2>
-                        <div class="service-image-block">
-                            <img class="service-image" src="images/service-song-critique.jpg" alt="song critique">
-                        </div>
-                        <div class="service-description">
-                            <p class="services-p">My opinion on your track's composition, arrangment, sonics, theory, mixing and master. </p>
-                            <p class="services-p">Additionally, I can host a 60 minute Zoom consultation where I will further explain what I hear in your music and assist you in fixing any details that you wish to focus on.</p>
-                        </div>
+                
+                <h2 class="service-title">Song Critique</h2>
+                <div class="service-block" id="song-critique-service-block">
+                    <div class="service-image-block">
+                        <img class="service-image" src="images/service-song-critique.jpg" alt="song critique">
+                    </div>
+                    <div class="service-description-block">
+                        <p class="service-description">My opinion on your track's composition, arrangment, sonics, theory, mixing and master. </p>
+                        <p class="service-description">Additionally, I can host a 60 minute Zoom consultation where I will further explain what I hear in your music and assist you in fixing any details that you wish to focus on.</p>
                     </div>
                 </div>
                
-                <hr class="services-hr">
+                <!-- <hr class="services-hr"> -->
 
-                <div class="service-block">
-                    <div id="song-mix-master">
-                        <h2 class="services-h2">Song Mix & Master</h2>
-                        <div class="service-image-block">
-                            <img class="service-image" src="images/service-song-mix-master.png" alt="song mix and master">
-                        </div>
-                        <div class="service-description">
-                            <p class="services-p">Full mix and master of your song, including three revisions.</p>
-                            <p class="services-p">Deliverable files include the main mix, a clean version,a TV track, an instrumental track, and a capella, and audio stems. </p>
-                        </div>
+                <h2 class="service-title">Song Mix & Master</h2>
+                <div class="service-block" id="song-mix-master-service-block">
+                    <div class="service-image-block">
+                        <img class="service-image" src="images/service-song-mix-master.png" alt="song mix and master">
+                    </div>
+                    <div class="service-description-block">
+                        <p class="service-description">Full mix and master of your song, including three revisions.</p>
+                        <p class="service-description">Deliverable files include the main mix, a clean version,a TV track, an instrumental track, and a capella, and audio stems. </p>
                     </div>
                 </div>
 
-                <hr class="services-hr">
+                <!-- <hr class="services-hr"> -->
                 
-                <div class="service-block">
-                    <div id="production-session">
-                        <h2 class="services-h2">Production Session</h2>
-                        <div class="service-image-block">
-                            <img class="service-image" src="images/service-production-session.JPG" alt="music production session">
-                        </div>
-                        <div class="service-description">
-                            <p class="services-p">For those that want 1on1 help and instruction, I will meet with you in person or virtually and assist you with any aspect of your music.</p>
-                            <p class="services-p">All of your original audio and any ideas that we create will remain solely your property. This is a consultation, not a collaboration.</p>
-                        </div>
+                <h2 class="service-title">Production Session</h2>
+                <div class="service-block" id="production-session-service-block">
+                    <div class="service-image-block">
+                        <img class="service-image" src="images/service-production-session.JPG" alt="music production session">
+                    </div>
+                    <div class="service-description-block">
+                        <p class="service-description">For those that want 1on1 help and instruction, I will meet with you in person or virtually and assist you with any aspect of your music.</p>
+                        <p class="service-description">All of your original audio and any ideas that we create will remain solely your property. This is a consultation, not a collaboration.</p>
                     </div>
                 </div>
 
-                <hr class="services-hr">
+                <!-- <hr class="services-hr"> -->
                 
-                <div class="service-block">
-                    <div id="whitelabel-production">
-                        <h2 class="services-h2">Whitelabel Production</h2>
-                        <div class="service-image-block">
-                            <img class="service-image" src="images/service-whitelabel-production.jpg" alt="whitelabel song production">
-                        </div>
-                        <div class="service-description">
-                            <p class="services-p">The prodution of a white-label, commerically ready audio work.</p>
-                            <p class="services-p">I will write the original music, coordinate the vocalist, recording all sessions, and mix and master the final track.</p>
-                        </div>
+                <h2 class="service-title">Whitelabel Production</h2>
+                <div class="service-block" id="whitelabel-production-service-block">
+                    <div class="service-image-block">
+                        <img class="service-image" src="images/service-whitelabel-production.jpg" alt="whitelabel song production">
+                    </div>
+                    <div class="service-description-block">
+                        <p class="service-description">The prodution of a white-label, commerically ready audio work.</p>
+                        <p class="service-description">I will write the original music, coordinate the vocalist, recording all sessions, and mix and master the final track.</p>
                     </div>
                 </div>
 
-                <hr class="services-hr">
+                <!-- <hr class="services-hr"> -->
                 
-                <div class="service-block">
-                    <div id="event-dj">
-                        <h2 class="services-h2">Event DJ</h2>
+                <h2 class="service-title">Event DJ</h2>
+                <div class="service-block" id="event-dj-service-block">
                         <div class="service-image-block">
                             <img class="service-image" src="images/service-event-dj.JPG" alt="event dj">
                         </div>
-                        <div class="service-description">
-                            <p class="services-p">Private DJ for corporate, charity, social and celebratory events.</p>
+                        <div class="service-description-block">
+                            <p class="service-description">Private DJ for corporate, charity, social and celebratory events.</p>
                         </div>
-                    </div>
                 </div>
                 
             </div>
 
-            <!-- <div class="call-to-action">
-                <img id="list-image" src="images/white-logo.png">
-                <div id="call-to-action">
-                    <a id="action-button" style="text-decoration: none" target="_blank" href="https://luthercalvinriggs.com/contact">Contact Me</a>
-                </div>
-            </div>
-            <div class="spacer2"></div> -->
-
         </main>
 
-        <footer id="footer-bar">
+        <footer id="contact-footer-nav-bar" class="footer-nav-bar">
             <ul id="footer-menu" class="footer-link-list">
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
-                        <img src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
+                        <img class="footer-social-icon" src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://soundcloud.com/lutherriggs">
-                        <img src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
+                        <img class="footer-social-icon" src="images/icon-soundcloud-240px-white-iconmonstr.png" alt="soundcloud logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://audiomack.com/artist/luthercalvinriggs">
-                        <img class="iconify" data-icon="simple-icons:audiomack" data-inline="false" data-width="50" data-height="50" alt="audiomack logo">
+                        <img class="iconify footer-social-icon" data-icon="simple-icons:audiomack"  alt="audiomack logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://open.spotify.com/playlist/2yNeSBityQoNLahiens5tN?si=xw3JYRwcTBqxns0j2bduoA">
-                        <img src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
+                        <img class="footer-social-icon" src="images/icon-spotify-240px-white-iconmonstr.png" alt="spotify logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://youtube.com/channel/UC-ELW__Jt7XupQvX8C7PGdg">
-                        <img src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
+                        <img class="footer-social-icon" src="images/icon-youtube-240px-white-iconmonstr.png" alt="youtube logo">
                     </a>
                 </li>
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://instagram.com/luthercalvinriggs/">
-                        <img src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
+                        <img class="footer-social-icon" src="images/icon-instagram-240px-white-iconmonstr.png" alt="instagram logo">
                     </a>
                 </li>
             </div>
         </footer>
-
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         
     </body>
 

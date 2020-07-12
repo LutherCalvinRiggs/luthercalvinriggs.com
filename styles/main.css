@@ -19,6 +19,9 @@
 
 *{
     font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-weight: 300;
 }
 
 /* Nav & Link CSS */
@@ -79,16 +82,12 @@
     text-align: center;
     font-family: 'Yellowtail', cursive;
     font-style: italic;
-    margin: 35vh auto 35vh auto;
-    /* border: 2px solid red; */
+    margin: 60vh auto 10vh auto;
 }
 
-#footer-bar{
-    width: 100%;
-    bottom: 0;
+.footer-nav-bar{
     z-index: 99;
-    /* padding-top: 50px; */
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
 .footer-link-list{
@@ -100,10 +99,12 @@
     text-decoration: none;
 }
 
-footer img{
-    width: 40px;
+.footer-social-icon{
+    width: 60px;
     height: auto;
+    color: white;
 }
+
 
 /* Large tablet in Landscape mode - Medium browser */
 @media screen and (max-width: 1375px){
@@ -117,7 +118,11 @@ footer img{
 
     #page-title{
         font-size: 6rem;
-        /* margin: 175px auto 250px auto; */
+        margin: 55vh auto 20vh auto;
+    }
+    
+    .footer-social-icon{
+        width: 50px;
     }
 }
 
@@ -125,14 +130,18 @@ footer img{
 @media screen and (max-width: 1200px){
     #page-title{
         font-size: 6rem;
-        margin: 30vh auto 35vh auto;
+        margin: 60vh auto 10vh auto;
+    }
+
+    .footer-social-icon{
+        width: 40px;
     }
 }
 
 @media screen and (max-width: 1050px){
     #page-title{
         font-size: 6rem;
-        margin: 35vh auto 40vh auto;
+        margin: 60vh auto 10vh auto;
     }
 }
 
@@ -147,7 +156,8 @@ footer img{
     }
 
     #page-title{
-        margin: 35vh auto 40vh auto;
+        margin: 45vh auto 35vh auto;
+        font-size: 4rem;
     }
 }            
 
@@ -171,7 +181,7 @@ footer img{
     }
 
     #page-title{
-        margin: 15vh auto 20vh auto;
+        margin: 30vh auto 15vh auto;
     }
 }
 
@@ -183,6 +193,10 @@ footer img{
 
     .nav-link a:hover{
         font-size: 1.6rem;
+    }
+
+    #page-title{
+        margin: 10vh auto 20vh auto;
     }
 }
 
@@ -219,20 +233,21 @@ footer img{
         margin: 25vh auto 35vh auto;
     }
 
-    .social-links{
-        padding: .4rem;
+    .footer-link-list{
+        width: 90%;
+    }
+
+    .footer-social-icon{
+        width: 30px;
     }
 } 
 
 @media screen and (max-width: 400px){
-    #page-title{
-        /* margin: 50px auto 50px auto; */
-    }
+
 }
 
 @media screen and (max-width: 350px){
     #page-title{
-        font-size: 5rem;
-        /* margin: 30px auto 50px auto; */
+        font-size: 3.0rem;
     }
 }
