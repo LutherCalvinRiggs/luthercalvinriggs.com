@@ -124,12 +124,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;                    
-    height: 100vh;
+    height: 85vh;
     text-align: center;
 }
 
 #index-page-animated-logo{
-    margin: 43vh auto auto auto;
+    margin: 23vh auto auto auto;
     width: 18vw;
     height: auto;
     animation-name: thump-logo;
@@ -487,8 +487,12 @@
     }
 
     /* Index Page CSS */
+    #index-page-content-area{
+        height: 79vh;
+    }
+
     #index-page-animated-logo{
-        margin: 45vh auto auto auto;
+        margin: 23vh auto auto auto;
         width: 18vw; 
     }
 
@@ -558,8 +562,12 @@
     }
 
     /* Index Page CSS */
+    #index-page-content-area{
+        height: 79vh;
+    }
+
     #index-page-animated-logo{
-        margin: 45vh auto auto auto;
+        margin: 23vh auto auto auto;
         width: 18vw; 
     }
 
@@ -702,8 +710,12 @@
     }
 
     /* Index Page CSS */
+    #index-page-content-area{
+        height: 79vh;
+    }
+
     #index-page-animated-logo{
-        margin: 40vh auto auto auto;
+        margin: 23vh auto auto auto;
         width: 25vw; 
     }
 
@@ -762,8 +774,12 @@
     }
 
     /* Index Page CSS */
+    #index-page-content-area{
+        height: 62vh;
+    }
+
     #index-page-animated-logo{
-        margin: 42vh auto auto auto;
+        margin: 3vh auto auto auto;
         width: 15vw; 
     }
 
@@ -787,6 +803,16 @@
 
     .page-title{
         margin: 10vh auto 20vh auto;
+    }
+
+    /* Index Page CSS */
+    #index-page-content-area{
+        height: 52vh;
+    }
+
+    #index-page-animated-logo{
+        margin: -5vh auto auto auto;
+        width: 15vw; 
     }
 
     /* Music Page CSS */
@@ -833,8 +859,12 @@
     }
 
     /* Index Page CSS */
+    #index-page-content-area{
+        height: 72vh;
+    }
+
     #index-page-animated-logo{
-        margin: 40vh auto auto auto;
+        margin: 20vh auto auto auto;
         width: 30vw; 
     }
 
