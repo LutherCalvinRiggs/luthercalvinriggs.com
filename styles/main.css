@@ -24,7 +24,7 @@
     font-weight: 300;
 }
 
-/* Nav & Link CSS */
+/* Nav, Footer & Link CSS */
 .nav-bar{
     width: 70%;
     background: transparent;
@@ -40,7 +40,7 @@
     height: 125px;
 }
 
-.nav-link-list{                          /* #nav-menu */
+.nav-link-list{
     width: 30%;
     margin: auto;
     flex-direction: row;
@@ -82,7 +82,7 @@
     text-align: center;
     font-family: 'Yellowtail', cursive;
     font-style: italic;
-    margin: 60vh auto 10vh auto;
+    margin: 58vh auto 10vh auto;
 }
 
 .footer-nav-bar{
@@ -105,9 +105,322 @@
     color: white;
 }
 
+/* Music Page CSS */
+#music-page-content-area{
+    text-align: center;
+}
+
+#music-page-audio-track-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;                        /* remove `wrap` for horizontal scroll */
+    /* overflow-y: hidden; */
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.audio-track-block{
+    margin: 20px;
+}
+
+.audio-track-cover-art{
+    width: 350px;
+    height: 350px;
+    margin: 0px auto 15px auto;
+    padding: 0px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.audio-track-cover-art:hover{
+    border: 2px solid white;
+    animation-name: thump;
+    animation-duration: 480ms;
+    animation-iteration-count: infinite;
+}
+
+.audio-cover-art{
+    width: 100%;
+    height: 100%;
+}
+
+    @keyframes thump {
+        0% {
+            box-shadow: 0px 0px 100px hsl(0, 0%, 0%, .1);
+            z-index: -1;
+        }
+        5% {
+            box-shadow: 0px 0px 500px silver;
+            z-index: -1;
+        }
+        100% {
+            box-shadow: 0px 0px 100px hsl(0, 0%, 0%, .1);
+            z-index: -1;
+        }
+    }
+
+.audio-player{
+    width: 100%;
+    margin: 0px auto 15px auto;
+}
+
+.audio-track-block a{
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 auto 50px auto;
+    color: var(--nav-white);
+    background-color: black;
+    border: 1px solid var(--nav-white);
+    border-radius: 5px;
+}
+
+.audio-track-block a:hover{
+    color: black;
+    background-color: var(--nav-white);
+    font-size: 1rem;
+    font-style: normal;
+    animation-name: button-hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.audio-download-gate-link{
+    visibility: hidden;
+}
+
+/* Resources Page CSS */
+.section-heading{
+    width: 45%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+}
+
+.full-resource-list{
+    display: block;
+    text-align: center;
+}
+
+.free-resource-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.free-resource-block{
+    margin: 80px 10px 0 10px;
+    height: 100%;
+    width: 1fr;
+}
+
+.free-resource-title{
+    font-size: 2.4rem;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.free-resource-image{
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.free-resource-link{
+    margin: 20px;
+}
+
+.free-resource-btn{
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    background-color: hsl(0, 0%, 90.9%);
+    padding: 10px;
+}
+
+.free-resource-btn:hover{
+    font-size: 1.8rem;
+    font-family: 'Anton', sans-serif;
+    background-color: grey;
+    color: white;
+}
+
+.template-info-block{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-column-gap: 10px;
+    padding: 75px;
+    margin: auto;
+}
+
+.template-image-box{
+    margin: auto;
+}
+
+.template-image{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 2px solid white;
+}
+
+.template-title{
+    font-size: 2.8rem;
+    padding-bottom: 20px;
+}
+
+.template-description-box{
+    margin: auto;
+    width: 80%;
+}
+
+.template-description{
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.template-audio-sample{
+    width: 100%;
+    margin: 0px auto 25px auto;
+}
+
+.template-link-btn{
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    background-color: hsl(0, 0%, 90.9%);
+    padding: 10px;
+}
+
+.template-link-btn:hover{
+    font-size: 1.4rem;
+    font-family: 'Anton', sans-serif;
+    background-color: grey;
+    color: white;
+}
+
+.daw-template-spacer{
+    width: 15%;
+    margin: 30px auto;
+    border: 1.5px solid white;
+}
+
+/* Services Page CSS */
+.service-list{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 300px;                           
+    font-size: 40px;
+}
+
+.service-block{
+    display: flex;
+    flex-direction: row;                        
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.service-title{
+    font-size: 3rem;                            
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.service-image-block{
+    margin: auto 20px;  
+    text-align: center;
+}
+
+.service-image{
+    width: 550px;                             
+    height: auto;                              
+    border: 2px solid white;
+}
+
+.service-description-block{
+    width: 80%;
+    margin: 50px 30px 50px 30px;
+}
+
+.service-description{
+    font-size: 2.0rem;                          
+    padding-bottom: 25px;
+}
+
+.service-hr{
+    width: 95%;
+    margin: 40px auto;
+}
+
+#resource-page-link-to-contact{
+    text-align: center;
+    margin: 0px auto 100px auto;
+}
+
+.btn-to-contact-page{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    background-color: hsla(0, 100%, 0%, 0.5);
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.btn-to-contact-page:hover{
+    font-size: 1.2rem;
+    font-family: 'Anton', sans-serif;
+    background-color: hsla(0, 100%, 100%, 0.3);
+    color: white;
+    border: 3px solid black;
+    text-transform: uppercase;
+}
+
+/* Contact Page CSS */
+.contact-form-block{
+    width: 40%;  
+    height: auto;
+    padding: 30px 10px;
+    background-color: hsla(0, 0%, 20%, 0.84);
+    margin: 300px auto 100px 50%;   
+    border-radius: 5px;
+}
+
+.contact-form-field-label{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.contact-form-input-box{
+    font-size: 1rem;
+    width: 98%;
+    margin-bottom: 15px;
+}
+
+#contact-form-message-area{
+    width: 98%;
+    height: 200px;
+}
+
+#contact-footer-nav-bar{
+    padding-top: 0px;
+}
 
 /* Large tablet in Landscape mode - Medium browser */
 @media screen and (max-width: 1375px){
+    /* Nav, Footer & Link CSS */
     .nav-link a{
         font-size: 1.2rem;
     }
@@ -124,10 +437,63 @@
     .footer-social-icon{
         width: 50px;
     }
+
+    /* Resources Page CSS */
+    .section-heading{
+        width: 50%;
+        font-size: 2.6rem;
+    }
+    
+    .free-resource-title{
+        width: 80%;
+    }
+
+    .free-resource-btn{
+        font-size: 1.2rem;
+    }
+
+    .free-resource-btn:hover{
+        font-size: 1.2rem;
+    }
+    
+    .template-title{
+        font-size: 2.2rem;
+    }
+
+    .template-description{
+        font-size: 1.5rem;
+    }
+
+    .template-link-btn{
+        font-size: 1.0rem;
+    }
+
+    .template-link-btn:hover{
+        font-size: 1.0rem;
+    }
+
+    /* Services Page CSS */
+    .service-list{
+        padding: 0 200px; 
+    }
+
+    .service-image{
+        width: 350px; 
+    }
+
+    .service-description{
+        font-size: 1.6rem;
+    }
+
+    /* Contact Page CSS */
+    .contact-form-block{
+        margin: 300px auto 50px 50%;
+    }
 }
 
 /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
 @media screen and (max-width: 1200px){
+    /* Nav, Footer & Link CSS */
     .page-title{
         font-size: 6rem;
         margin: 60vh auto 10vh auto;
@@ -136,17 +502,131 @@
     .footer-social-icon{
         width: 40px;
     }
+
+    /* Resources Page CSS */
+    .section-heading{
+        width: 50%;
+        font-size: 2.4rem;
+    }
+    
+    .free-resource-btn{
+        font-size: 1.0rem;
+    }
+
+    .free-resource-btn:hover{
+        font-size: 1.0rem;
+    }
+    
+    .daw-section-label{
+        font-size: 3.8rem;
+    }
+
+    .template-title{
+        font-size: 2.0rem;
+    }
+
+    .template-description{
+        font-size: 1.4rem;
+    }
+
+    /* Services Page CSS */
+    .service-list{
+        padding: 0 100px; 
+    }
+
+    .service-description{
+        font-size: 1.6rem;
+    }
+
+    /* Contact Page CSS */
+    .contact-form-block{
+        margin: 100px auto 50px 50%;
+    }
 }
 
 @media screen and (max-width: 1050px){
+    /* Nav, Footer & Link CSS */
     .page-title{
         font-size: 6rem;
         margin: 60vh auto 10vh auto;
+    }
+
+    /* Resources Page CSS */
+    .free-resource-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .free-resource-block{
+        margin-top: 80px;
+        height: 100%;
+        width: 60%;
+    }
+
+    .free-resource-title{
+        width: 100%;
+    }
+
+    .free-resource-image{
+        margin: 0 auto;
+    }
+
+    .free-resource-btn{
+        font-size: 1.4rem;
+    }
+
+    .free-resource-btn:hover{
+        font-size: 1.4rem;
+    }
+    
+    .template-info-block{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        width: 65%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    #template-image-right{
+        margin-top: 50px;
+    }
+
+    #template-image-left{
+        margin-bottom: 50px;
+    }
+
+    .spacer{
+        height: 75px;
+    }
+
+    .template-info-block{
+        width: 70%;
+    }
+
+    .template-image-box{
+        width: 100%;
+    }
+
+    .template-description-box{
+        width: 80%;
+    }
+
+    .daw-template-spacer{
+        margin: 75px auto;
+    }
+
+    /* Services Page CSS */
+    .service-description{
+        font-size: 1.4rem;
     }
 }
 
 /* Medium & small tablets in Portrait mode - Small web browser */
 @media screen and (max-width: 875px){
+    /* Nav, Footer & Link CSS */
     .nav-link a{
         font-size: 1.0rem;
     }
@@ -159,10 +639,40 @@
         margin: 45vh auto 35vh auto;
         font-size: 4rem;
     }
+
+    /* Resources Page CSS */
+    .section-heading{
+        width: 60%;
+        font-size: 2.0rem;
+    }
+
+    .daw-section-label{
+        font-size: 3.0rem;
+    }
+
+    /* Services Page CSS */
+    .service-block{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .service-image-block{
+        margin: auto;  
+    }
+
+    .service-description-block{
+        margin: 50px auto;  
+        width: 60%;                  
+    }
+    .service-description{
+        font-size: 1.4rem;
+    }
+
 }            
 
 /* Larger mobile phones in Landscape mode */
 @media screen and (max-width: 750px){
+    /* Nav, Footer & Link CSS */
     .nav-link-list{
         flex-direction: column;
     }    
@@ -183,10 +693,17 @@
     .page-title{
         margin: 30vh auto 15vh auto;
     }
+
+    /* Contact Page CSS */
+    .contact-form-block{
+        width: 80%;
+        margin: 100px auto 50px auto;
+    }
 }
 
 /* Small mobile phones in Landscape mode */
 @media screen and (max-width: 600px){
+    /* Nav, Footer & Link CSS */
     .nav-link a{
         font-size: 1.0rem;
     }
@@ -198,17 +715,22 @@
     .page-title{
         margin: 10vh auto 20vh auto;
     }
+
+    /* Music Page CSS */
+    #audio-track-list{
+        width: 80%;
+    }
 }
 
 /* Mobile phones in Portrait mode */
 @media screen and (max-width: 500px){
+    /* Nav, Footer & Link CSS */
     .nav-bar{
         width: 90%;
     }
     
     .nav-logo-container{
         margin: 0 auto;
-        /* grid-area: 1/1/2/2; */
     }
 
     #nav-bar-logo{
@@ -236,14 +758,111 @@
     .footer-social-icon{
         width: 30px;
     }
+
+    /* Music Page CSS */
+    .audio-track-cover-art{
+        width: 95%;
+        height: auto;
+    }
+
+    /* Resources Page CSS */
+    #page-title{
+        font-size: 3rem;
+        margin-bottom: 75px;
+    }
+
+    .free-resource-block{
+        width: 75%;
+    }
+
+    .free-resource-title{
+        width: 70%;
+        font-size: 2.0rem;                
+    }
+
+    .free-resource-btn{
+        font-size: 0.7rem;
+    }
+
+    .free-resource-btn:hover{
+        font-size: 0.7rem;
+    }
+
+    .daw-section-label{
+        font-size: 2.4rem;
+    }
+
+    .template-title{
+        font-size: 1.5rem;
+    }
+
+    .template-description{
+        font-size: 1.2rem;
+    }
+
+    .template-link-btn{
+        font-size: 0.7rem;
+    }
+
+    .template-link-btn:hover{
+        font-size: 0.7rem;
+    }
+
+    /* Services Page CSS */
+    .service-list{
+        padding: 0 30px; 
+    }
+
+    .service-image{
+        width: 90%;
+    }
+
+    .service-description-block{
+        width: 80%;
+    }
+
+    .btn-to-contact-page{
+        font-size: 1.0rem;
+    }
+
+    .btn-to-contact-page:hover{
+        font-size: 0.8rem;
+    }
 } 
 
 @media screen and (max-width: 400px){
+    /* Resources Page CSS */
+    .section-heading{
+        width: 60%;
+        font-size: 1.8rem;
+    }
 
+    .template-title{
+        font-size: 1.2rem;
+    }
+
+    .template-description{
+        font-size: .8rem;
+    }
 }
 
 @media screen and (max-width: 350px){
+    /* Nav, Footer & Link CSS */
     .page-title{
         font-size: 3.0rem;
+    }
+
+    /* Resources Page CSS */
+    .section-heading{
+        width: 60%;
+        font-size: 1.6rem;
+    }
+    
+    .free-resource-title{
+        font-size: 1.6rem;                
+    }
+
+    .template-link-btn{
+        font-size: 0.6rem;
     }
 }

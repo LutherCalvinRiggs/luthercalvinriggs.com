@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Luther Calvin Riggs - Producer / DJ / Developer</title>
+        <title>Luther Calvin Riggs: Contact Me</title>
         <meta charset="UTF-8">
         <meta name="description" content="Contact form to connect with Luther Calvin Riggs">
         <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -33,85 +33,6 @@
 
             body{
                 background: hsla(0, 0%, 0%, 0.6);
-            }
-
-            .contact-form-block{
-                width: 40%;  
-                height: auto;
-                padding: 30px 10px;
-                background-color: hsla(0, 0%, 20%, 0.84);
-                margin: 300px auto 100px 50%;   
-                border-radius: 5px;
-            }
-
-            .field-label{
-                font-size: 1.4rem;
-                padding-bottom: 5px;
-                color: white;
-            }
-
-            .input-box{
-                font-size: 1rem;
-                width: 98%;
-                margin-bottom: 15px;
-            }
-
-            #contact-message{
-                width: 98%;
-                height: 200px;
-            }
-
-            #contact-footer-nav-bar{
-                padding-top: 0px;
-            }
-
-            /* Large tablet in Landscape mode - Medium browser */
-            @media screen and (max-width: 1375px){
-                .contact-form-block{
-                    margin: 300px auto 50px 50%;
-                }
-            }
-
-            /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
-            @media screen and (max-width: 1200px){
-                .contact-form-block{
-                    margin: 100px auto 50px 50%;
-                }
-            }
-
-            @media screen and (max-width: 1050px){
-                
-            }
-
-            /* Medium & small tablets in Portrait mode - Small web browser */
-            @media screen and (max-width: 875px){
-                
-            }            
-
-            /* Larger mobile phones in Landscape mode */
-            @media screen and (max-width: 750px){
-                .contact-form-block{
-                    width: 80%;
-                    margin: 100px auto 50px auto;
-                }
-            }
-
-            /* Small mobile phones in Landscape mode */
-            @media screen and (max-width: 600px){
-                
-            }
-
-            /* Mobile phones in Portrait mode */
-            @media screen and (max-width: 500px){
-                
-            } 
-
-            @media screen and (max-width: 400px){
-
-            }
-
-            @media screen and (max-width: 350px){
-                
             }
 
         </style>
@@ -152,26 +73,26 @@
             </div>
 
             <div class="contact-form-block">
-                <form id="contact-form" action="">
+                <form id="contact-form" action="">                              <!---->
 
-                    <p class="field-label">First Name</p>
+                    <p class="contact-form-field-label">First Name</p>
                     <label for="contact-first-name">
-                        <input id="contact-first-name" class="input-box" name="first-name" type="text" required placeholder="First Name">
+                        <input id="contact-first-name" class="contact-form-input-box" name="first-name" type="text" required placeholder="First Name">
                     </label>
 
-                    <p class="field-label">Last Name</p>
+                    <p class="contact-form-field-label">Last Name</p>
                     <label for="contact-last-name">
-                        <input id="contact-last-name" class="input-box" name="last-name" type="text" required placeholder="Last Name">
+                        <input id="contact-last-name" class="contact-form-input-box" name="last-name" type="text" required placeholder="Last Name">
                     </label>
 
-                    <p class="field-label">Email</p>
+                    <p class="contact-form-field-label">Email</p>
                     <label for="contact-email-address">
-                        <input id="contact-email-address" class="input-box" name="email-address" type="email" required placeholder="address@email.com">
+                        <input id="contact-email-address" class="contact-form-input-box" name="email-address" type="email" required placeholder="address@email.com">
                     </label>
 
-                    <p class="field-label">Subject</p>
+                    <p class="contact-form-field-label">Subject</p>
                     <label for="contact-subject-line">
-                        <input id="contact-subject-line" class="input-box" name="subject-line" type="dropbox" list="subject-lines" required placeholder="Select a subject line">
+                        <input id="contact-subject-line" class="contact-form-input-box" name="subject-line" type="dropbox" list="subject-lines" required placeholder="Select a subject line">
                             <datalist id="subject-lines">
                                 <option value="Song Critique">
                                 <option value="Song Mix & Master">
@@ -182,9 +103,9 @@
                             </datalist>
                     </label>
 
-                    <p class="field-label">Message</p>
+                    <p class="contact-form-field-label">Message</p>
                     <label for="contact-message">
-                        <textarea id="contact-message" class="input-box" name="message" type="textarea" required placeholder="Enter your message here:">
+                        <textarea id="contact-form-message-area" class="contact-form-input-box" name="message" type="textarea" required placeholder="Enter your message here:">
                         </textarea>
                     </label>
                     
