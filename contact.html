@@ -35,7 +35,7 @@
                 background: hsla(0, 0%, 0%, 0.6);
             }
 
-            .form-block{
+            .contact-form-block{
                 width: 40%;  
                 height: auto;
                 padding: 30px 10px;
@@ -56,7 +56,7 @@
                 margin-bottom: 15px;
             }
 
-            #message{
+            #contact-message{
                 width: 98%;
                 height: 200px;
             }
@@ -67,13 +67,14 @@
 
             /* Large tablet in Landscape mode - Medium browser */
             @media screen and (max-width: 1375px){
-                .form-block{
+                .contact-form-block{
                     margin: 300px auto 50px 50%;
                 }
+            }
 
             /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
             @media screen and (max-width: 1200px){
-                .form-block{
+                .contact-form-block{
                     margin: 100px auto 50px 50%;
                 }
             }
@@ -89,7 +90,7 @@
 
             /* Larger mobile phones in Landscape mode */
             @media screen and (max-width: 750px){
-                .form-block{
+                .contact-form-block{
                     width: 80%;
                     margin: 100px auto 50px auto;
                 }
@@ -118,8 +119,8 @@
     </head>
 
     <body>
-        <nav id="nav-bar">
-            <ul id="nav-menu" class="nav-link-list">
+        <nav class="nav-bar">
+            <ul class="nav-link-list">
                 <li class="nav-link">
                     <a href="https://luthercalvinriggs.com/music">Music</a>
                 </li>
@@ -128,13 +129,13 @@
                 </li>
             </ul>
 
-            <div id="nav-logo-container">
+            <div class="nav-logo-container">
                 <a href="https://luthercalvinriggs.com">
-                    <img id="nav-bar-logo" src="images/white-logo.png">
+                    <img id="nav-bar-logo" src="images/logo-white-no-background.png">
                 </a>
             </div>
 
-            <ul id="nav-menu" class="nav-link-list">
+            <ul class="nav-link-list">
                 <li class="nav-link">
                     <a href="https://luthercalvinriggs.com/resources">Resources</a>
                 </li>
@@ -146,31 +147,31 @@
 
         <main>
             
-            <div id="page-title">
+            <div class="page-title" id="contact-page-title">
                 <h1>Contact</h1> 
             </div>
 
-            <div class="form-block">
+            <div class="contact-form-block">
                 <form id="contact-form" action="">
 
                     <p class="field-label">First Name</p>
-                    <label for="first-name">
-                        <input id="first-name" class="input-box" name="first-name" type="text" required placeholder="First Name">
+                    <label for="contact-first-name">
+                        <input id="contact-first-name" class="input-box" name="first-name" type="text" required placeholder="First Name">
                     </label>
 
                     <p class="field-label">Last Name</p>
-                    <label for="last-name">
-                        <input id="last-name" class="input-box" name="last-name" type="text" required placeholder="Last Name">
+                    <label for="contact-last-name">
+                        <input id="contact-last-name" class="input-box" name="last-name" type="text" required placeholder="Last Name">
                     </label>
 
                     <p class="field-label">Email</p>
-                    <label for="email-address">
-                        <input id="email-address" class="input-box" name="email-address" type="email" required placeholder="address@email.com">
+                    <label for="contact-email-address">
+                        <input id="contact-email-address" class="input-box" name="email-address" type="email" required placeholder="address@email.com">
                     </label>
 
                     <p class="field-label">Subject</p>
-                    <label for="subject-line">
-                        <input id="subject-line" class="input-box" name="subject-line" type="dropbox" list="subject-lines" required placeholder="Select a subject line">
+                    <label for="contact-subject-line">
+                        <input id="contact-subject-line" class="input-box" name="subject-line" type="dropbox" list="subject-lines" required placeholder="Select a subject line">
                             <datalist id="subject-lines">
                                 <option value="Song Critique">
                                 <option value="Song Mix & Master">
@@ -182,8 +183,9 @@
                     </label>
 
                     <p class="field-label">Message</p>
-                    <label for="message">
-                        <textarea id="message" class="input-box" name="message" type="textarea" required placeholder="Enter your message here:"></textarea>
+                    <label for="contact-message">
+                        <textarea id="contact-message" class="input-box" name="message" type="textarea" required placeholder="Enter your message here:">
+                        </textarea>
                     </label>
                     
                     <p>
@@ -194,7 +196,7 @@
         </main>
 
         <footer id="contact-footer-nav-bar" class="footer-nav-bar">
-            <ul id="footer-menu" class="footer-link-list">
+            <ul class="footer-link-list">
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
                         <img class="footer-social-icon" src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
@@ -230,4 +232,4 @@
 
     </body>
 
-</html>
+</html> 

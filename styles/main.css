@@ -25,7 +25,7 @@
 }
 
 /* Nav & Link CSS */
-#nav-bar{
+.nav-bar{
     width: 70%;
     background: transparent;
     padding: 30px 0;
@@ -40,7 +40,7 @@
     height: 125px;
 }
 
-#nav-menu{
+.nav-link-list{                          /* #nav-menu */
     width: 30%;
     margin: auto;
     flex-direction: row;
@@ -76,7 +76,7 @@
     height: 10rem;
 }
 
-#page-title{
+.page-title{
     color: white;
     font-size: 10rem;
     text-align: center;
@@ -116,7 +116,7 @@
         font-size: 1.8rem;
     }
 
-    #page-title{
+    .page-title{
         font-size: 6rem;
         margin: 55vh auto 20vh auto;
     }
@@ -128,7 +128,7 @@
 
 /* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
 @media screen and (max-width: 1200px){
-    #page-title{
+    .page-title{
         font-size: 6rem;
         margin: 60vh auto 10vh auto;
     }
@@ -139,7 +139,7 @@
 }
 
 @media screen and (max-width: 1050px){
-    #page-title{
+    .page-title{
         font-size: 6rem;
         margin: 60vh auto 10vh auto;
     }
@@ -155,7 +155,7 @@
         font-size: 1.6rem;
     }
 
-    #page-title{
+    .page-title{
         margin: 45vh auto 35vh auto;
         font-size: 4rem;
     }
@@ -180,7 +180,7 @@
         width: 35px;
     }
 
-    #page-title{
+    .page-title{
         margin: 30vh auto 15vh auto;
     }
 }
@@ -195,18 +195,18 @@
         font-size: 1.6rem;
     }
 
-    #page-title{
+    .page-title{
         margin: 10vh auto 20vh auto;
     }
 }
 
 /* Mobile phones in Portrait mode */
 @media screen and (max-width: 500px){
-    #nav-bar{
+    .nav-bar{
         width: 90%;
     }
     
-    #nav-logo-container{
+    .nav-logo-container{
         margin: 0 auto;
         /* grid-area: 1/1/2/2; */
     }
@@ -214,7 +214,7 @@
     #nav-bar-logo{
         width: 100px;
         height: 100px;
-        margin: 0;
+        margin: 10px;
     }
 
     .nav-link a{
@@ -225,11 +225,7 @@
         font-size: 1.4rem;
     }
 
-    #nav-bar-logo{
-        margin: 10px;
-    }
-
-    #page-title{
+    .page-title{
         margin: 25vh auto 35vh auto;
     }
 
@@ -247,7 +243,7 @@
 }
 
 @media screen and (max-width: 350px){
-    #page-title{
+    .page-title{
         font-size: 3.0rem;
     }
 }

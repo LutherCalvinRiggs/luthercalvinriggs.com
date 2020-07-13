@@ -151,9 +151,14 @@
             }
 
             .daw-template-spacer{
-                width: 45%;
+                width: 15%;
                 margin: 30px auto;
                 border: 1.5px solid white;
+            }
+
+            .template-audio-sample{
+                width: 100%;
+                margin: 0px auto 25px auto;
             }
 
             @media screen and (max-width: 1375px){
@@ -365,8 +370,8 @@
     </head>
 
     <body>
-        <nav id="nav-bar">
-            <ul id="nav-menu" class="nav-link-list">
+        <nav class="nav-bar">
+            <ul class="nav-link-list">
                 <li class="nav-link">
                     <a href="https://luthercalvinriggs.com/music">Music</a>
                 </li>
@@ -375,13 +380,13 @@
                 </li>
             </ul>
 
-            <div id="nav-logo-container">
+            <div class="nav-logo-container">
                 <a href="https://luthercalvinriggs.com">
-                    <img id="nav-bar-logo" src="images/white-logo.png">
+                    <img id="nav-bar-logo" src="images/logo-white-no-background.png">
                 </a>
             </div>
 
-            <ul id="nav-menu" class="nav-link-list">
+            <ul class="nav-link-list">
                 <li class="nav-link">
                     <a href="https://luthercalvinriggs.com/resources">Resources</a>
                 </li>
@@ -394,7 +399,7 @@
         <main>
             <div class="full-resource-list">
 
-                <div id="page-title">
+                <div class="page-title" id="resources-page-title">
                     <h1>Artist Resources</h1> 
                 </div>
                 
@@ -444,7 +449,9 @@
                                 <div class="template-description">
                                     <h4 class="template-title">Personal Production Template<br>(Ableton Live 10)</h4>
                                     <p class="description">My peronsal Ableton Live 10 music production template complete with digital audio routing and bussing, as well as FX processing chains and pre-loaded samples. This is the default session that I use to start all of my new ideas.</p>
-                                    <p class="audio-sample">Audio Sample</p>
+                                    <audio class="template-audio-sample" controls src="" type="audio/mpeg">
+                                        Audio Sample
+                                    </audio>
                                     <div class="daw-template-link">
                                         <a class="daw-template-btn" target="_blank" href="https://gum.co/HkAuh">Purchase Ableton Live Template</a>
                                     </div>
@@ -461,7 +468,9 @@
                                 <div class="template-description">
                                     <h4 class="template-title">Hip Hop Production Template<br>(Ableton Live 10)</h4>
                                     <p class="description">An Ableton Live 10 session template for mixing Hip Hop. Complete with audio stems, FX processing and digital audio routing. I have also included the master bounce to allow you to change the FX settings and compare them to the original production.</p>
-                                    <p class="audio-sample">Audio Sample</p>
+                                    <audio class="template-audio-sample" controls src="" type="audio/mpeg">
+                                        Audio Sample
+                                    </audio>
                                     <div class="resource-link">
                                         <a class="daw-template-btn" target="_blank"  href="https://gum.co/eoxGU">Purchase Ableton Live Session</a>
                                     </div>
@@ -490,7 +499,9 @@
                                 <div class="template-description">
                                     <h4 class="template-title">Personal Mixing Template<br>(Pro Tools 18.12)</h4>  
                                     <p class="description">My personal Pro Tools mixing template complete with I/O settings, digital audio routing, bussin and FX processing chains. This is the default template that I use when mixing music for clients.</p>
-                                    <p class="audio-sample">Audio Demo</p>
+                                    <audio class="template-audio-sample" controls src="" type="audio/mpeg">
+                                        Audio Sample
+                                    </audio>
                                     <div class="resource-link">
                                         <a class="daw-template-btn" target="_blank" href="https://gum.co/bFORD">Purchase Pro Tools Template</a>
                                     </div>
@@ -507,7 +518,9 @@
                                 <div class="template-description">
                                     <h4 class="template-title">Dance Music Mixing Template<br>(Pro Tools 18.12)</h4>
                                     <p class="description">A Pro Tools session template complete with audio stems, FX processing, bus routing and I/O settings. In this session, you can see how I process the audio using various plugins, audio and auxiliary tracks, track sends and I/O busses.</p>
-                                    <p class="audio-sample">Audio Sample</p>
+                                    <audio class="template-audio-sample" controls src="" type="audio/mpeg">
+                                        Audio Sample
+                                    </audio>
                                     <div class="resource-link">
                                         <a class="daw-template-btn" target="_blank" href="https://gum.co/zYPOu">Purchase Pro Tools Session</a>
                                     </div>
@@ -528,8 +541,8 @@
 
         </main>
 
-        <footer id="contact-footer-nav-bar" class="footer-nav-bar">
-            <ul id="footer-menu" class="footer-link-list">
+        <footer id="resources-footer-nav-bar" class="footer-nav-bar">
+            <ul class="footer-link-list">
                 <li class="footer-link">
                     <a id="links" target="_blank" href="https://twitter.com/LCRiggsMusic">
                         <img class="footer-social-icon" src="images/icon-twitter-240px-white-iconmonstr.png" alt="twitter logo">
