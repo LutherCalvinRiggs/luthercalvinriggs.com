@@ -105,6 +105,54 @@
     color: white;
 }
 
+/* Index Page CSS */
+#index-page-nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#index-page-footer-nav-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#index-page-content-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;                    
+    height: 100vh;
+    text-align: center;
+}
+
+#index-page-animated-logo{
+    margin: 43vh auto auto auto;
+    width: 18vw;
+    height: auto;
+    animation-name: thump-logo;
+    animation-duration: 480ms;
+    animation-iteration-count: infinite;
+}
+
+    /* Index Page Animation */
+    @keyframes thump-logo{
+        0%{
+            transform:scale(1.1);
+        }
+
+        100%{
+        }
+    }
+
+#index-page-audio-loop{
+    visibility: hidden;
+    width: 20%;
+    margin: 0 auto;
+}
+
 /* Music Page CSS */
 #music-page-content-area{
     text-align: center;
@@ -438,6 +486,12 @@
         width: 50px;
     }
 
+    /* Index Page CSS */
+    #index-page-animated-logo{
+        margin: 45vh auto auto auto;
+        width: 18vw; 
+    }
+
     /* Resources Page CSS */
     .section-heading{
         width: 50%;
@@ -491,7 +545,7 @@
     }
 }
 
-/* Medium & small tablets in Landscape mode - Large tablet in Portrait mode */
+/* Medium Tablet in Landscape */
 @media screen and (max-width: 1200px){
     /* Nav, Footer & Link CSS */
     .page-title{
@@ -501,6 +555,12 @@
 
     .footer-social-icon{
         width: 40px;
+    }
+
+    /* Index Page CSS */
+    #index-page-animated-logo{
+        margin: 45vh auto auto auto;
+        width: 18vw; 
     }
 
     /* Resources Page CSS */
@@ -544,6 +604,7 @@
     }
 }
 
+/* Small & Mini Tablet in Landscape Mode, Large Tablet in Portrait */
 @media screen and (max-width: 1050px){
     /* Nav, Footer & Link CSS */
     .page-title{
@@ -624,7 +685,7 @@
     }
 }
 
-/* Medium & small tablets in Portrait mode - Small web browser */
+/* Medium, Small and Mini Tablets in Portrait - Small Browser */
 @media screen and (max-width: 875px){
     /* Nav, Footer & Link CSS */
     .nav-link a{
@@ -638,6 +699,12 @@
     .page-title{
         margin: 45vh auto 35vh auto;
         font-size: 4rem;
+    }
+
+    /* Index Page CSS */
+    #index-page-animated-logo{
+        margin: 40vh auto auto auto;
+        width: 25vw; 
     }
 
     /* Resources Page CSS */
@@ -692,6 +759,12 @@
 
     .page-title{
         margin: 30vh auto 15vh auto;
+    }
+
+    /* Index Page CSS */
+    #index-page-animated-logo{
+        margin: 42vh auto auto auto;
+        width: 15vw; 
     }
 
     /* Contact Page CSS */
@@ -757,6 +830,12 @@
 
     .footer-social-icon{
         width: 30px;
+    }
+
+    /* Index Page CSS */
+    #index-page-animated-logo{
+        margin: 40vh auto auto auto;
+        width: 30vw; 
     }
 
     /* Music Page CSS */
