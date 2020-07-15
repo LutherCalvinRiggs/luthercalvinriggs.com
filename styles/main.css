@@ -839,7 +839,7 @@
     }
 
     .nav-link a{
-        font-size: 0.8rem;
+        font-size: 1.0rem;
     }
 
     .nav-link a:hover{
@@ -890,11 +890,11 @@
     }
 
     .free-resource-btn{
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .free-resource-btn:hover{
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .daw-section-label{
@@ -910,11 +910,11 @@
     }
 
     .template-link-btn{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .template-link-btn:hover{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     /* Services Page CSS */
