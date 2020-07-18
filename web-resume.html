@@ -18,12 +18,17 @@
                 color: black;
             }
 
+            .icon{
+                width: 100px;
+                height: auto;
+            }
+
             html{
 
             }
 
             body{
-                width: 95%;
+                width: 95%;                 /* Needs to be 100%, containers are 95% */
                 margin: 0 auto;
             }
 
@@ -102,6 +107,7 @@
             .skill-header{
                 font-size: 1.5rem;
                 text-align: center;
+                margin-top: 30px;
             }
 
             .technical-skill-list{
@@ -109,10 +115,11 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 padding: 20px;
+                text-align: center;
             }
 
             .skill-panel{
-                text-align: center;
+                width: 100px;
             }
 
             .skill-icon{
@@ -120,10 +127,41 @@
                 height: 75px;
             }
             
-            #web-portfolio-link-list{
+            #web-portfolio-container{
+                background-color: yellowgreen;
+                padding: 20px 0 50px 0;
+            }
+
+            #web-portfolio-preview-list{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
+                text-align: center;
+            }
+
+            .web-portfolio-preview-panel{
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px black;
+            }
+
+            .web-portfolio-preview-panel:hover{
+                background-color: rgb(68, 56, 53);
+                box-shadow: -2px -2px 5px black;
+            }
+
+            .website-preview{
+                width: 500px;
+                height: 275px;
+                margin: 10px;
+                border: 2px solid black;
+                /* padding: 20px; */
+                /* border: 2px solid black; */
+            }
+
+            .website-preview-caption{
+                font-size: 1.6rem;
+                padding-bottom: 20px;
             }
 
             .professional-experience-block{
@@ -264,6 +302,7 @@
 
             footer{
                 height: 65px;
+                width: 100%;
                 font-size: 1.2rem;
                 text-align: end;
                 background-color: black;
@@ -312,7 +351,7 @@
             <div class="contact-method-panel">
 
                 <div class="contact-method-object">
-                    <img href="" alt="telephone icon">
+                    <img class="icon" src="/images/resume-icons/icon-telephone1-512.png" alt="telephone icon">
                 </div>
 
                 <div class="contact-method-object">
@@ -322,21 +361,9 @@
             </div>
 
             <div class="contact-method-panel">
-                
-                <div class="contact-method-object">
-                    <img href="" alt="map-icon">
-                </div>
 
                 <div class="contact-method-object">
-                    New York, NY
-                </div> <!-- Add Google Map API -->
-
-            </div>
-
-            <div class="contact-method-panel">
-
-                <div class="contact-method-object">
-                    <img href="" alt="email icon">
+                    <img class="icon" src="/images/resume-icons/icon-envelope-512.png" alt="email icon">
                 </div>
 
                 <div class="contact-method-object">
@@ -345,17 +372,17 @@
 
             </div>
 
-            <!-- <div class="contact-method-panel"></div>
-
-                <div class="contact-method-object">
-                    <img href="" alt="linkedin icon">
-                </div>
+            <div class="contact-method-panel">
                 
                 <div class="contact-method-object">
-                    <a href="linkedin.com/in/lcriggs/" >LinkedIn Profile</a>
+                    <img class="icon" src="/images/resume-icons/icon-mappin1-512.png" alt="map icon">
                 </div>
 
-            </div> -->
+                <div class="contact-method-object">
+                    New York, NY 11103
+                </div> <!-- Add Google Map API -->
+
+            </div>
 
         </div>
 
@@ -379,75 +406,55 @@
 
             <ol class="technical-skill-list">
 
-                <li class="skill-panel">
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/icon-HTML5.png"></li>
-                        <li>HTML5</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-html5-512.png"></li>
+                    <li>HTML5</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>CSS3</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-css3-512.png"></li>
+                    <li>CSS3</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>JavaScript</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-javascript.png"></li>
+                    <li>JavaScript</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>DOM</li>
-                    </ol>
-                </li>
+                <!-- <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/"></li>
+                    <li>DOM</li>
+                </ol> -->
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>C++</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-cpp-512.png"></li>
+                    <li>C++</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>CLI</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-terminal-512.png"></li>
+                    <li>CLI</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>SquareSpace</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-git-512.png"></li>
+                    <li>Git</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Wix</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-squarespace-512.png"></li>
+                    <li>SquareSpace</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Dev Tools</li>
-                    </ol>
-                </li>
+                <!-- <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/"></li>
+                    <li>Dev Tools</li>
+                </ol> -->
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>SEO Optimization</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-seo-512.png"></li>
+                    <li>SEO Optimization</li>
+                </ol>
 
             </ol>
             
@@ -459,40 +466,30 @@
 
             <ol class="technical-skill-list">
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Photoshop</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-adobe-photoshop-512.png"></li>
+                    <li>Photoshop</li>
+                </ol>
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Illustrator</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Lightroom</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>iMovie</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>OBS</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-adobe-illustrator-512.png"></li>
+                    <li>Illustrator</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-adobe-lightroom-512.png"></li>
+                    <li>Lightroom</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-imovie-512.png"></li>
+                    <li>iMovie</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-obs-512.png"></li>
+                    <li>OBS</li>
+                </ol>
 
             </ol>
             
@@ -504,19 +501,15 @@
 
             <ol class="technical-skill-list">
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Ableton Live</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Pro Tools</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-ableton-512.png"></li>
+                    <li>Ableton Live</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-protools-512.png"></li>
+                    <li>Pro Tools</li>
+                </ol>
 
             </ol>
             
@@ -528,40 +521,30 @@
 
             <ol class="technical-skill-list">
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>GitHub</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>#Slack</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Monday</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>MS Office Suite</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>G Suite</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-github-512.png"></li>
+                    <li>GitHub</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-slack-512.png"></li>
+                    <li>#Slack</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-monday-logo-365.png"></li>
+                    <li>Monday</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-office365-512.png"></li>
+                    <li>MS Office Suite</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-gsuite-512.png"></li>
+                    <li>G Suite</li>
+                </ol>
 
             </ol>
             
@@ -573,40 +556,30 @@
 
             <ol class="technical-skill-list">
 
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Twitter</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Facebook</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Instagram</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>LinkedIn</li>
-                    </ol>
-                </li>
-
-                <li class="skill-panel"></li>
-                    <ol>
-                        <li><img class="skill-icon" src="images/resume-icons/"></li>
-                        <li>Twitch</li>
-                    </ol>
-                </li>
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-twitter-512.png"></li>
+                    <li>Twitter</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-facebook-512.png"></li>
+                    <li>Facebook</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-instagram-512.png"></li>
+                    <li>Instagram</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-linkedin-512.png"></li>
+                    <li>LinkedIn</li>
+                </ol>
+            
+                <ol class="skill-panel">
+                    <li><img class="skill-icon" src="images/resume-icons/icon-twitch-512.png"></li>
+                    <li>Twitch</li>
+                </ol>
 
             </ol>
             
@@ -618,10 +591,33 @@
 
         <h3 id="web-portfolio-header" class="section-header">Online Portfolio</h3>
 
-        <ol id="web-portfolio-link-list">
-            <li><a href="https://wwwluthercalvinriggs.com">luthercalvinriggs.com</a></li>
-            <li><a href="https://github.com/LutherCalvinRiggs">github.com/LutherCalvinRiggs</a></li>
-        </ol>
+        <div id="web-portfolio-preview-list">
+
+            <a href="https://www.luthercalvinriggs.com">
+
+                <div class="web-portfolio-preview-panel">
+
+                    <img class="website-preview" src="images/resume-icons/luthercalvinriggs-preview.png" alt="preview of my personal website">
+                    
+                    <p class="website-preview-caption">luthercalvinriggs.com</p>
+            
+                </div>
+
+            </a>
+
+            <a href="https://www.luthercalvinriggs.com">
+
+                <div class="web-portfolio-preview-panel">
+
+                    <img class="website-preview" src="images/resume-icons/github-preview.png" alt="preview of my github profile">
+
+                    <p class="website-preview-caption">github.com/LutherCalvinRiggs</p>
+
+                </div>
+                
+            </a>
+
+        </div>
     </div>
 
     <div id="professional-experience-container">
@@ -1110,14 +1106,15 @@
             <p>If you would like to experience more of my life highlights, check out my <a href=""></a>Instagram</a>.</p>
 
         </div>
+    </div>
         
-        <footer>
-            <p>Designed and developed by Luther Calvin Riggs - 2020</p>
-            <ol id="footer-nav-links">
-                <li class="footer-nav-link">Twitter</li>
-                <li class="footer-nav-link">GitHub</li>
-                <li class="footer-nav-link">LinkedIn</li>
-            </ol>
-        </footer>
+    <footer>
+        <p>Designed and developed by Luther Calvin Riggs - 2020</p>
+        <ol id="footer-nav-links">
+            <li class="footer-nav-link">Twitter</li>
+            <li class="footer-nav-link">GitHub</li>
+            <li class="footer-nav-link">LinkedIn</li>
+        </ol>
+    </footer>
 </body>
 </html>
