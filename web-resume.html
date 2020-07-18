@@ -14,52 +14,354 @@
         <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
 
         <style>
+            a{
+                color: black;
+            }
+
+            html{
+
+            }
+
+            body{
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            #name-header{
+                font-size: 4.5rem;
+                text-align: center;
+                padding: 20px 0 10px 0;
+            }
+
+            #position-title{
+                font-size: 3rem;
+                text-align: center;
+                padding: 10px 0 20px 0;
+            }
+
             #site-nav-bar{
-                height: 150px;
-                border: 2px solid black;
+                height: auto;
+                padding: 10px 5px;
+            }
+
+            #nav-link-list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                text-align: center;
+                margin: auto;
             }
 
             .resume-nav-link{
-                color: green;
-                font-size: 1rem;
+                color: black;
+                font-size: 1.2rem;
+                padding: 5px;
+                /* border: 1px solid orange; */
+            }
+
+            .resume-nav-link:hover{
+                background-color: grey;
+            }
+
+            .section-container{
+                margin: 50px auto;
+                border: 1px solid red;
+            }
+
+            .section-header{
+                text-align: center;
+                font-size: 2.4rem;
+                margin-bottom: 20px;
+            }
+
+            #contact-method-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                border: 1px solid blue;
+            }
+
+            .contact-method-panel{
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 25%;
+                margin: 0 auto;
+                border: 1px solid purple;
+            }
+
+            .contact-method-object{
+                text-align: center;
+                margin: 10px 20px;
+                background-color: lightgreen;
+            }
+
+            #objective-statement{
+                font-size: 1.6rem;
+            }
+
+            .skill-header{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .technical-skill-list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+
+            .skill-panel{
+                text-align: center;
+            }
+
+            .skill-icon{
+                width: 75px;
+                height: 75px;
+            }
+            
+            #web-portfolio-link-list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .professional-experience-block{
+                width: 50%;
+                margin: 50px auto;
+                line-height: 1.3;
+            }
+
+            .position-title{
+                font-size: 1.6rem;
+                text-transform: uppercase;
+            }
+
+            .position-details{
+                font-size: 1.4rem;
+                font-style: italic;
+            }
+
+            .experience-highlight-list{
+                font-size: 1.2rem;
+                padding-left: 20px;
+                list-style-type: circle;
+            }
+
+            .professional-work-portfolio{
+                padding-top: 15px;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+
+            .audio-portfolio-link{
+                text-decoration: underline;
+            }
+
+            .audio-portfolio-link:hover{
+                color: blue;
+            }
+
+            #production-client-block{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                border: 1px solid blue;
+            }
+
+            .client-list-header{
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+
+            #production-client-list{
+                margin: 20px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-size: 1.1rem;
+            }
+
+            #dj-client-block{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                border: 1px solid blue;
+            }
+
+            .dj-client-list{
+                font-size: 1.1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+
+            .dj-client-panel{
+                width: 200px;
+                border: 1px solid green;
+            }
+
+            #educational-studies-list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .educational-studies-panel{
+                width: 350px;
+                text-align: center;
+                border: 1px solid orange;
+            }
+
+            .topic-of-study{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            .education-provider{
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+
+            }
+
+            .location-of-study{
+                font-size: 1.2rem;
+            }
+
+            .education-link{
+                text-decoration: underline;
+            }
+
+            #value-added-skills{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .value-added-list{
+                list-style-type: circle;
+                font-size: 1.2rem;
+            }
+
+            #about-me-container{
+                font-size: 1.4rem;
+            }
+
+            #about-me-container p{
+                padding: 10px 0;
+            }
+
+            .profile-container{
+                margin: 50px auto;
+                width: 60%;
+            }
+
+            hr{
+                width: 200px;
+            }
+
+            footer{
+                height: 65px;
+                font-size: 1.2rem;
+                text-align: end;
+                background-color: black;
+                color: white;
+            }
+
+            #footer-nav-links{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .footer-nav-link{
+                padding: 0 20px;
             }
 
         </style>
 </head>
 <body>
+    
+    <h1 id="name-header">Luther Calvin Riggs</h1>
+    <h2 id="position-title">Web Developer</h2>
 
     <div id="site-nav-bar">
         <ol id="nav-link-list">
             <li class="resume-nav-link"><a href="#contact-info-container">Contact Information</a></li>
             <li class="resume-nav-link"><a href="#objective-statement-container">Objective Statement</a></li>
-            <li class="resume-nav-link"><a href="#technical-proficiency-container"></a>Technical Proficiency</a></li>
-            <li class="resume-nav-link"><a href="#web-portfolio-container"></a>Web Portfolio</a></li>
-            <li class="resume-nav-link"><a href="#professional-experience-container"></a>Professional Experience</a></li>
+            <li class="resume-nav-link"><a href="#technical-proficiency-container">Technical Proficiency</a></li>
+            <li class="resume-nav-link"><a href="#web-portfolio-container">Web Portfolio</a></li>
+            <li class="resume-nav-link"><a href="#professional-experience-container">Professional Experience</a></li>
             <!-- Can Professional Experience dropdown to the different position titles? -->
-            <li class="resume-nav-link"><a href="#educational-studies-container"></a>Educational Studies</a></li>
-            <li class="resume-nav-link"><a href="#value-added-container"></a>Value Added</a></li>
+            <li class="resume-nav-link"><a href="#educational-studies-container">Educational Studies</a></li>
+            <li class="resume-nav-link"><a href="#value-added-container">Value Added</a></li>
             <!-- <li class="resume-nav-link"><a href="#about-me">About Me</a></li> -->
             <!-- Can About Me dropdown to different personal topics? -->
         </ol>
     </div>
     
-    <h1 id="name-header">Luther Calvin Riggs</h1>
-    <h2 id="position-title">Web Developer</h2>
-
-    
-    <div id="contact-info-container"> 
+    <div id="contact-info-container" class="section-container"> 
         <!-- Make horizontal in a block with icons above the links -->  
 
         <h3 id="contact-info-header" class="section-header">Contact Information</h3>
 
-        <p id="phone-number"><a href="tel:9175764359">917-576-4359</a></p>
-        <p id="location">New York, NY</p> <!-- Add Google Map API -->
-        <p id="email"><a href="mailto:luther.c.riggs@gmail.com">luther.c.riggs@gmail.com</a></p>
-        <p id="linkedin-profile"><a href="linkedin.com/in/lcriggs/" >LinkedIn Profile</a></p>
+        <div id="contact-method-container">
+
+            <div class="contact-method-panel">
+
+                <div class="contact-method-object">
+                    <img href="" alt="telephone icon">
+                </div>
+
+                <div class="contact-method-object">
+                    <a href="tel:9175764359">917-576-4359</a>
+                </div>
+
+            </div>
+
+            <div class="contact-method-panel">
+                
+                <div class="contact-method-object">
+                    <img href="" alt="map-icon">
+                </div>
+
+                <div class="contact-method-object">
+                    New York, NY
+                </div> <!-- Add Google Map API -->
+
+            </div>
+
+            <div class="contact-method-panel">
+
+                <div class="contact-method-object">
+                    <img href="" alt="email icon">
+                </div>
+
+                <div class="contact-method-object">
+                    <a href="mailto:luther.c.riggs@gmail.com">luther.c.riggs@gmail.com</a>
+                </div>
+
+            </div>
+
+            <!-- <div class="contact-method-panel"></div>
+
+                <div class="contact-method-object">
+                    <img href="" alt="linkedin icon">
+                </div>
+                
+                <div class="contact-method-object">
+                    <a href="linkedin.com/in/lcriggs/" >LinkedIn Profile</a>
+                </div>
+
+            </div> -->
+
+        </div>
 
     </div>
 
-    <div id="objective-statement-container">
+    <div id="objective-statement-container" class="section-container">
         
         <h3 id="objective-statement-header" class="section-header">Objective Statement</h3>
 
@@ -67,7 +369,7 @@
 
     </div>
 
-    <div id="technical-proficiency-container">
+    <div id="technical-proficiency-container" class="section-container">
 
         <h3 id="technical-proficiency-header" class="section-header">Technical Proficiency</h3>
 
@@ -76,19 +378,77 @@
             <p class="skill-header">Web Development Languages & Tools</p>
 
             <ol class="technical-skill-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>DOM</li>
-                <li>C++</li>
-                <li>CLI</li>
-            </ol>
 
-            <ol class="technical-skill-list">
-                <li>SquareSpace</li>
-                <li>WIX</li>
-                <li>Dev Tools</li>
-                <li>SEO Optimization</li>
+                <li class="skill-panel">
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/icon-HTML5.png"></li>
+                        <li>HTML5</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>CSS3</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>JavaScript</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>DOM</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>C++</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>CLI</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>SquareSpace</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Wix</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Dev Tools</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>SEO Optimization</li>
+                    </ol>
+                </li>
+
             </ol>
             
         </div>
@@ -98,11 +458,42 @@
             <p class="skill-header">Photo & Video Editing</p>
 
             <ol class="technical-skill-list">
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Lightroom</li>
-                <li>iMovie</li>
-                <li>OBS</li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Photoshop</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Illustrator</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Lightroom</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>iMovie</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>OBS</li>
+                    </ol>
+                </li>
+
             </ol>
             
         </div>
@@ -112,8 +503,21 @@
             <p class="skill-header">Audio Production & Engineering</p>
 
             <ol class="technical-skill-list">
-                <li>Abletonn Live</li>
-                <li>Pro Tools</li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Ableton Live</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Pro Tools</li>
+                    </ol>
+                </li>
+
             </ol>
             
         </div>
@@ -123,11 +527,42 @@
             <p class="skill-header">Project Management Platforms</p>
 
             <ol class="technical-skill-list">
-                <li>Github</li>
-                <li>#Slack</li>
-                <li>Monday</li>
-                <li>MS Office Suite</li>
-                <li>G Suite</li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>GitHub</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>#Slack</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Monday</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>MS Office Suite</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>G Suite</li>
+                    </ol>
+                </li>
+
             </ol>
             
         </div>
@@ -137,18 +572,49 @@
             <p class="skill-header">Social Media Platforms</p>
 
             <ol class="technical-skill-list">
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>LinkedIn</li>
-                <li>Twitch</li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Twitter</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Facebook</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Instagram</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>LinkedIn</li>
+                    </ol>
+                </li>
+
+                <li class="skill-panel"></li>
+                    <ol>
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li>Twitch</li>
+                    </ol>
+                </li>
+
             </ol>
             
         </div>
 
     </div>
 
-    <div id="web-portfolio-container">
+    <div id="web-portfolio-container" class="section-container">
 
         <h3 id="web-portfolio-header" class="section-header">Online Portfolio</h3>
 
@@ -165,7 +631,7 @@
         <div class="professional-experience-block">
 
             <h4 class="position-title">Web Developer</h4>
-            <p class="position-details">Freelance - New York, NY / 2019 - Present</p>
+            <p class="position-details">Freelance - New York, NY / 2020 - Present</p>
 
             <ol class="experience-highlight-list">
                 <li class="experience-highlight">Develop and maintain websites for clients in diverse fields such as music production and lifestyle influencing, including elements such as media streaming, animation and blogs.</li>
@@ -197,7 +663,9 @@
                 
             </ol>
 
-            <p id="online-audio-portfolio" class="professional-work-portfolio">Check out my <a href="https://www.linkedin.com/in/lcriggs/detail/treasury/position:1519469866/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAA_z0YBB5T95McLxZvZDWq3HbqrUrXK7xY%2C1578583552715)&parentEntityUrn=urn%3Ali%3Afsd_profilePosition%3A(ACoAAAA_z0YBB5T95McLxZvZDWq3HbqrUrXK7xY%2C1519469866)&section=position%3A1519469866&treasuryCount=1&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Be7bluIJiTHSOynqs5GRtbw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-treasury_thumbnail_cell">audio portfolio</a>.</p>
+            <p id="online-audio-portfolio" class="professional-work-portfolio">
+                Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio">audio portfolio</a>.
+            </p>
 
         </div>
 
@@ -209,7 +677,7 @@
             <ol class="experience-highlight-list">
                 <li class="experience-highlight">Multi-track recording of vocals, instruments and voice-overs.</li>
                 <li class="experience-highlight">Comp, process and produce vocals for musical compositions and podcasts.</li>
-                <li class="experience-highlight"></li>Capture and process ambient recordings and sound effects.</li>
+                <li class="experience-highlight">Capture and process ambient recordings and sound effects.</li>
                 <li class="experience-highlight">Compose original music for local New York City songwriters and artists.</li>
                 <li class="experience-highlight">Process and design digital audio samples for music production.</li>
                 <li class="experience-highlight">Produce dance remixes of pop songs for distribution to club DJs.</li>
@@ -220,77 +688,303 @@
                 <li class="experience-highlight">Utilize cloud services to share audio files between collaborators. Organize and maintain audio archives on external hard drives.</li>
             </ol>
 
-            <p id="producion-client-list-header">Clients include:</p>
+        </div>
+
+        <div id="production-client-block">
+            <p id="production-client-list-header" class="client-list-header">Clients include:</p>
             <ol id="production-client-list">
-                <li class="production-client">She's Excited</li>
+
+                <li class="client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li>She's Excited</li>
+                    </ol>
+                </li>
+
+                <li class="client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li>ARADIA</li>
+                    </ol>
+                </li>
+
+                <li class="client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li>Vito Fun</li>
+                    </ol>
+                </li>
+
+                <li class="client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li>Select Vibes</li>
+                    </ol>
+                </li>
+
+                <li class="client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li>Miss Cookie Delight</li>
+                    </ol>
+                </li>
+
+                <li class="client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li>HD David</li>
+                    </ol>
+                </li>
+
+                <!-- <li class="production-client">She's Excited</li>
                 <li class="production-client">ARADIA</li>
                 <li class="production-client">Vito Fun</li>
                 <li class="production-client">Select Vibes</li>
                 <li class="production-client">Miss Cookie Delight</li>
-                <li class="production-client">HD David</li>
+                <li class="production-client">HD David</li> -->
             </ol>
-
-            <p id="personal-discography" class="professional-work-portfolio">Listen to my <a href="music.html">my music</a>!</p>
-
         </div>
+
+        <p id="personal-discography" class="professional-work-portfolio">
+            Listen to my <a class="audio-portfolio-link" target="_blank" href="music.html">my music</a>!
+        </p>
 
         <div class="professional-experience-block">
             <h4 class="position-title">Music Supervisor & DJ</h4>
             <p class="position-details">New York, NY / 2010 - March 2020</p>
 
-            <p class="experience-highlight">
-                Perform live DJ sets and curate in-house playlists for NYC nightlife, fashion designers, hospitality brands, corporations and charity organizations:
-            </p>
+            <ol class="experience-highlight-list">
+                <li class="experience-highlight">Perform live DJ sets and curate in-house playlists for NYC nightlife, fashion designers, hospitality brands, corporations and charity organizations:</li>
+            </ol>
 
-            <div id="dj-client-list">
-
-                <ol id="dj-nightlife-venues">
-                    <li class="dj-venue">Marquee, NYC</li>
-                    <li class="dj-venue">La Esquina SoHo, NYC</li>
-                    <li class="dj-venue">Louie & Chan, NYC</li>
-                    <li class="dj-venue">Downtime Bar, NYC</li>
-                    <li class="dj-venue">Spin Ping Pong Club, NYC</li>
-                    <li class="dj-venue">Whiskey Brooklyn, NYC</li>
-                    <li class="dj-venue">Sloppy Tuna, Montauk</li>
-                    <li class="dj-venue">Sandbar, Fire Island</li>
-                </ol>
-
-                <ol id="dj-hospitality-brands">
-                    <li class="hospitality-brand">Hotel Hugo: Tribeca</li>
-                    <li class="hospitality-brand">Sanctuary Hotel: Times Square</li>
-                    <li class="hospitality-brand">W Hotels: Times Square</li>
-                    <li class="hospitality-brand">E2 Hospitality Group</li>
-                </ol>
-
-                <ol id="dj-fashion-labels">
-                    <li class="fashion-label">Title of Work.</li>
-                    <li class="fashion-label">DESLA Couture</li>
-                </ol>
-
-                <ol id="dj-corporate-brands">
-                    <li class="corporate-brand">Equinox Fitness</li>
-                    <li class="corporate-brand">Lululemon</li>
-                    <li class="corporate-brand">Melia Hotels International</li>
-                    <li class="corporate-brand">305 Fitness</li>
-                    <li class="corporate-brand">DevaCurl</li>
-                    <li class="corporate-brand">& Pizza</li>
-                    <li class="corporate-brand">Meltshop</li>
-                    <li class="corporate-brand">Bond Collective</li> 
-                    <li class="corporate-brand">Kunjan Collective</li>
-                </ol>
-
-                <ol id="dj-charity-organizations">
-                    <li class="charity-org">World Wildlife Foundation</li>
-                    <li class="charity-org">Special Olympics</li>
-                    <li class="charity-org">Chabad's Children of Chernobyl</li>
-                    <li class="charity-org">Bidawee ...</li>
-                    <li class="charity-org">Heather Pendergast Fund</li>
-                </ol>
-
-            </div>
-            
         </div>
+        
+        <div id="dj-client-block">
 
+            <p id="dj-client-list-header" class="client-list-header">Venues and clients include:</p>
+
+            <ol id="dj-nightlife-venues" class="dj-client-list">
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Marquee<br>NYC</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">La Esquina SoHo<br>NYC</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Louie & Chan<br>NYC</li>
+                    </ol>
+                </li>
+                
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Downtime Bar<br>NYC</li>
+                    </ol>
+                </li>
+
+            <!-- </ol>
+            
+            <ol id="dj-nightlife-venues" class="dj-client-list"> -->
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Spin Ping Pong Club<br>NYC</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Whiskey Brooklyn<br>NYC</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Sloppy Tuna<br>Montauk</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="dj-venue">Sandbar<br>Fire Island</li>
+                    </ol>
+                </li>
+                
+            <!-- </ol>
+
+            <ol id="dj-hospitality-brands" class="dj-client-list"> -->
+                
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="hospitality-brand">Hotel Hugo<br>Tribeca</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="hospitality-brand">Sanctuary Hotel<br>Times Square</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="hospitality-brand">W Hotels<br>Times Square</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="hospitality-brand">E2 Hospitality Group<br>NYC</li>
+                    </ol>
+                </li>
+
+            <!-- </ol>
+
+            <ol id="dj-fashion-labels" class="dj-client-list"> -->
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="fashion-label">Title of Work.</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="fashion-label">DESLA Couture</li>
+                    </ol>
+                </li>
+    
+            <!-- </ol>
+
+            <ol id="dj-corporate-brands" class="dj-client-list"> -->
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">Equinox<br>Fitness</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">Lululemon</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">Melia Hotels<br>International</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">305 Fitness</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">DevaCurl</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">& Pizza</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">Meltshop</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">Bond<br>Collective</li> 
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="corporate-brand">Kunjan<br>Collective</li>
+                    </ol>
+                </li>
+                
+            <!-- </ol>
+
+            <ol id="dj-charity-organizations" class="dj-client-list"> -->
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="charity-org">World Wildlife<br>Foundation</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="charity-org">Special Olympics</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="charity-org">Chabad's Children<br>of Chernobyl</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="charity-org">Bidawee ...</li>
+                    </ol>
+                </li>
+
+                <li class="dj-client-panel">
+                    <ol>
+                        <li><img class="client-logo" src=""></li>
+                        <li class="charity-org">Heather Pendergast<br>Fund</li>
+                    </ol>
+                </li>
+
+            </ol>
+
+        </div>
+            
         <div class="professional-experience-block">
 
             <h4 class="position-title">Financial Assets Trader</h4>
@@ -304,72 +998,79 @@
 
     </div>
     
-    <div id="educational-studies-container">
+    <div id="educational-studies-container" class="section-container">
 
         <h3 id="educational-studies-header" class="section-header">Educational Studies</h3>
 
-        <div class="educational-studies-container">
-        
-            <h4 class="topic-of-study">Web Development</h4>
-            
-            <p class="education-provider">The Odin Project</p>
-            
-            <p class="location-of-study">
+        <div id="educational-studies-list">
 
-                <a href="https://www.theodinproject.com">theodinproject.com</a>
-
-            </p>
-
-        </div>
-
-        <div class="educational-studies-container">
-        
-            <h4 class="topic-of-study">Music Production & Audio Engineering</h4>
+            <div class="educational-studies-panel">
             
-            <p class="education-provider">Self-taught</p>
-            
-            <p class="location-of-study">New York, NY</p>
+                <h4 class="topic-of-study">Web Development</h4><br>
+                
+                
+                <p class="education-provider">The Odin Project</p>
+                
+                <p class="location-of-study">
 
-        </div>
+                    <a class="education-link" href="https://www.theodinproject.com">theodinproject.com</a>
 
-        <div class="educational-studies-container">
-        
-            <h4 class="topic-of-study">Bachelor of Science: Finance</h4>
-            <h4 class="topic-of-study">Minor: Architecture</h4>
+                </p>
+
+            </div>
+
+            <div class="educational-studies-panel">
             
-            <p class="education-provider">Iowa State University</p>
+                <h4 class="topic-of-study">Music Production &<br>Audio Engineering</h4>
+                
+                <p class="education-provider">Self-taught</p>
+                
+                <p class="location-of-study">New York, NY</p>
+
+            </div>
+
+            <div class="educational-studies-panel">
             
-            <p class="location-of-study">Ames, IA</p>
+                <h4 class="topic-of-study">BS: Finance<br>Minor: Architecture</h4>
+                
+                <p class="education-provider"><a class="education-link" target="_blank" href="https://www.iastate.edu">Iowa State University</a></p>
+                
+                <p class="location-of-study">Ames, IA</p>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div id="value-added-container">
+    <div id="value-added-container" class="section-container">
 
         <h3 id="value-added-header" class="section-header">Value Added</h3>
 
-        <ol id="value-added-list">
-            <li>Remote project management</li>
-            <li>Collaborative teamwork</li>
-            <li>Strong written and verbal communications</li>
-            <li>Multilingual</li>
-            <ol id="spoken-language-list">
+        <div id="value-added-skills">
+            <ol class="value-added-list">
+                <li>Remote project management</li>
+                <li>Collaborative teamwork</li>
+                <li>Strong written and verbal communications</li>
+            </ol>
+
+            <ol class="value-added-list">
                 <li>Fluent English</li>
                 <li>Conversational Spanish</li>
                 <li>Beginner Italian</li>
             </ol>
-        </ol>
+
+        </div>
 
     </div>
 
-    <div id="about-me-container"> 
+    <div id="about-me-container" class="section-container"> 
 
         <h3 id="about-me-header" class="section-header">About Me</h3>
 
-        <div id="my-story">
+        <div id="my-story" class="profile-container">
 
-            <p>When you stop and think about it, you can end up spending over 2000 hours each year in the presence of your coworkers. Now imagine that being someone you don't vibe with. <br>Since it can be hard to guage someone's personality from a resume, I wanted to take a moment and share a little about what makes me as a person.</p>
+            <p>When you stop and think about it, you can end up spending over 2000 hours each year in the presence of your coworkers. Now imagine that being someone you don't vibe with. Since it can be hard to guage someone's personality from a resume, I wanted to take a moment and share a little about what makes me as a person.</p>
 
             <p>To put it simply, I've seen a lot in life. I graduated with a degree in finance, only to take a job that would be wiped out three years later by a global market meltdown. At a time of massive, industry-wide layoffs, I humbly returned to one of my collegiate professions: tending bar. From there I found a passion in nightlife, took up DJing as a hobby and ultimately built myself a career in music production for the next decade.Then, as the music was playing its loudest, the plug was pulled on nightlife as the COVID-19 pandemic took the world by storm.</p>
             
@@ -383,15 +1084,21 @@
 
         </div>
 
-        <div id="im-a-camel">
+        <hr>
 
-            <p>Some interviewers like to ask a candidate which animal they think best represents them.<br>I am a camel.</p>
+        <div id="im-a-camel" class="profile-container">
+
+            <p>Some interviewers like to ask a candidate which animal they think best represents them.</p>
+            
+            <p>I am a camel.</p>
 
             <p>Though not the most aesthetially pleasing, camels are get the job done. They are serious workhorses that can handle pressure and extreme conditions. When the stiuation gets to hot to handle, the camel doesn't break. One step in front of the other, the camel gets it done.</p>
 
         </div>
 
-        <div id="personal-philosophy">
+        <hr>
+
+        <div id="personal-philosophy" class="profile-container">
             <P>It is common to think that the most creative people are better at "thinking outside the box". I, however, do not believe that the most creative people think outside of the box. I believe that they have filled their box with more life experiences. Therefore, let me share some of my life experiences with you!</P>
 
             <p>I was born in Witchita, Kansas and raised in Oskaloosa, Iowa. <!-- Include Map API --> Though I didn't grow up on a farm, my mother's family had over 100 acres and we spent a good amount of our childhood helping with chores. We were a typical midwest family that took road trips in a van and shot fireworks every 4th of July. I learned to play violin and piano, sang in the church choir and played varsity sports. I also participated in regional math competitions and wrote my first app for a guitar tuner on a floppy disk. In my teens, I developed an interest in architecture and drafting, and later began my college education as an architecture major. Later, after encouragement from family, I finished my undergraduate studies with a bachelor's degree in finance and a boarded a one-way flight to pursue a life in the Big Apple.</p>
@@ -405,11 +1112,11 @@
         </div>
         
         <footer>
-            <p>Site by Luther Calvin Riggs - 2020</p>
-            <ol>
-                <li>Twitter</li>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
+            <p>Designed and developed by Luther Calvin Riggs - 2020</p>
+            <ol id="footer-nav-links">
+                <li class="footer-nav-link">Twitter</li>
+                <li class="footer-nav-link">GitHub</li>
+                <li class="footer-nav-link">LinkedIn</li>
             </ol>
         </footer>
 </body>
