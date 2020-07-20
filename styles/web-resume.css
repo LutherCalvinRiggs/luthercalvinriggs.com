@@ -1,4 +1,25 @@
 /* Global CSS */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --background-white: white;
+    --background-parchment: beige;    
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-weight: 400;
+}
+    
+
+
 a{
     color: black;
 }
@@ -15,7 +36,7 @@ hr{
 }
 
 html{
-    background-color: white;
+    background-color: var(--background-white, white);
 }
 
 body{
@@ -75,23 +96,27 @@ body{
 #site-nav-bar{
     /* position: sticky;
     top: 0; */
-    background-color: white;
+    background-color: var(--background-white, white);
     height: auto;
     padding: 12px 5px;
     z-index: 100;
 }
 
 #nav-link-list{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4, 1fr); */
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .resume-nav-link{
     color: black;
     font-size: 2.2rem;
-    padding: 5px 10px;
+    /* margin: 5px auto; */
+    /* padding: 5px 10px; */
 }
 
 .section-container{
@@ -114,48 +139,9 @@ body{
 
 
 
-/* Contact Info Section */
-#contact-info-container{
-    background-color: white;
-    /* margin-top: 30px; */
-    /* position: sticky;
-    top: 50px;
-    z-index: -1; */
-}
-
-#contact-method-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.contact-method-panel{
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 525px;
-    margin: 0 auto;
-    background-color: beige;
-    border: 2px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
-}
-
-.contact-method-object{
-    text-align: center;
-    margin: 10px 20px;
-}
-
-
-
-
-
-
-
-
-
 /* Objective Statement section */
 #objective-statement-container{
-    background-color: white;
+    background-color: var(--background-parchment, beige);
     /* position: sticky;
     top: 363px;
     padding-bottom: 30vh;
@@ -175,11 +161,63 @@ body{
 
 
 
+
+
+/* Project Portfolio section */
+#project-portfolio-container{
+    background-color: var(--background-parchment, beige);
+    padding: 20px 0 50px 0;
+    /* margin-bottom: 50px; */
+    /* position: sticky;
+    top: 50px;
+    z-index: -1; */
+}
+
+#project-portfolio-preview-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.project-portfolio-preview-panel{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.project-portfolio-preview-panel:hover{
+    background-color: rgba(77, 88, 206, 0.418);
+    box-shadow: -2px -2px 5px black;
+}
+
+.project-preview{
+    width: 500px;
+    height: 275px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.project-preview-caption{
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Technnical Proficiency section */
 #technical-proficiency-container{
     z-index: 1;
     width: 100%;
-    background-color: beige;
+    background-color: var(--background-white, white);
 }
 
 .skill-header{
@@ -232,45 +270,35 @@ body{
 
 
 
-
-/* Web Portfolio section */
-#web-portfolio-container{
-    background-color: beige;
-    padding: 20px 0 50px 0;
-    /* margin-bottom: 50px; */
+/* Contact Info Section */
+#contact-info-container{
+    background-color: var(--background-parchment, beige);
+    /* margin-top: 30px; */
     /* position: sticky;
     top: 50px;
     z-index: -1; */
 }
 
-#web-portfolio-preview-list{
+#contact-method-container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.contact-method-panel{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 525px;
+    margin: 0 auto;
+    background-color: var(--background-white, white);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.contact-method-object{
     text-align: center;
-}
-
-.web-portfolio-preview-panel{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
-}
-
-.web-portfolio-preview-panel:hover{
-    background-color: rgba(77, 88, 206, 0.418);
-    box-shadow: -2px -2px 5px black;
-}
-
-.website-preview{
-    width: 500px;
-    height: 275px;
-    margin: 10px;
-    border: 2px solid black;
-}
-
-.website-preview-caption{
-    font-size: 2.2rem;
-    padding-bottom: 20px;
+    margin: 10px 20px;
 }
 
 
@@ -283,7 +311,7 @@ body{
 /* Professional Experience section */
 #professional-experience-container{
     padding-bottom: 100px;
-    background-color: white;
+    background-color: var(--background-white, white);
 }
 
 .professional-experience-block{
@@ -366,7 +394,7 @@ body{
 
 /* Educational Studies section */
 #educational-studies-container{
-    background-color: beige;
+    background-color: var(--background-parchment, beige);
 }
 
 #educational-studies-list{
@@ -380,7 +408,7 @@ body{
     text-align: center;
     margin: 5px;
     padding: 10px;
-    background-color: white;
+    background-color: var(--background-white, white);
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -413,7 +441,7 @@ body{
 
 /* Value Added section */
 #value-added-container{
-    background-color: white;
+    background-color: var(--background-parchment, beige);
 }
 
 #value-added-skills{
@@ -437,9 +465,9 @@ body{
 
 
 
-/* Value Added section */
+/* About Me section */
 #about-me-container{
-    background-color: beige; 
+    background-color: var(--background-white, white);
     font-size: 2rem;
 }
 
@@ -477,7 +505,8 @@ footer{
     font-size: 1.2rem;
     text-align: end;
     background-color: black;
-    color: white;
+    color: var(--background-white, white);
+    ;
 }
 
 #footer-note{
@@ -491,7 +520,7 @@ footer{
 }
 
 .footer-nav-link{
-    color: white;
+    color: var(--background-white, white);
     padding: 0 10px;
 }
 
@@ -530,6 +559,10 @@ footer{
         font-size: 1.6rem;
     }
 
+    .professional-work-portfolio{
+        font-size: 1.6rem;
+    }
+
     .client-block{
         width: 80%;
     }
@@ -550,10 +583,6 @@ footer{
 
     .position-details{
         font-size: 1.8rem;
-    }
-
-    .experience-highlight-list{
-        font-size: 1.6rem;
     }
 
     .client-list{
@@ -577,18 +606,18 @@ footer{
         margin: 0 4rem;
     }
 
-    #web-portfolio-container{
+    #project-portfolio-container{
         position: relative;
         top: 0;
     }
 
-    #web-portfolio-preview-list{
+    #project-portfolio-preview-list{
         flex-direction: column;
         width: 550px;
         margin: 0 auto;
     }
 
-    .web-portfolio-preview-panel{
+    .project-portfolio-preview-panel{
         margin-bottom: 20px;
     }
 
@@ -601,6 +630,10 @@ footer{
     }
 
     .experience-highlight-list{
+        font-size: 1.4rem;
+    }
+
+    .professional-work-portfolio{
         font-size: 1.4rem;
     }
 }
@@ -648,6 +681,10 @@ footer{
         font-size: 1.2rem;
     }
 
+    .professional-work-portfolio{
+        font-size: 1.2rem;
+    }
+
     #educational-studies-list{
         flex-direction: column;
         align-items: center;
@@ -663,13 +700,13 @@ footer{
 }            
 
 @media screen and (max-width: 750px){
-    #nav-link-list{
+    /* #nav-link-list{
         grid-template-columns: repeat(4, 1fr);
-    }
+    } */
     
-    .resume-nav-link{
+    /* .resume-nav-link{
         margin: 5px 1.5rem;
-    }
+    } */
     
     #contact-info-container{
         top: 100px;
@@ -716,6 +753,10 @@ footer{
         font-size: 1.3rem;
     }
 
+    .professional-work-portfolio{
+        font-size: 1.3rem;
+    }
+
     .client-block{
         width: 90%;
     }
@@ -732,10 +773,6 @@ footer{
         margin-top: 35vh;
         font-size: 3.5rem;
     }
-
-    .resume-nav-link{
-        margin: 5px .6rem;
-    }
     
     #av-skill-panel{
         margin: 0 4rem;
@@ -749,11 +786,11 @@ footer{
         margin: 0 4rem;
     }
 
-    #web-portfolio-preview-list{
+    #project-portfolio-preview-list{
         width: 93%;
     }
 
-    .website-preview{
+    .project-preview{
         width: 90%;
         height: 275px;
     }
@@ -777,6 +814,10 @@ footer{
         font-size: 2.5rem;
     }
 
+    .resume-nav-link{
+        margin: 5px 40px;
+    }
+
     #contact-method-container{
         flex-direction: column;
     }
@@ -795,12 +836,12 @@ footer{
         align-items: center;
     }
 
-    .website-preview{
+    .project-preview{
         width: 90%;
         height: auto;
     }
 
-    .website-preview-caption{
+    .project-preview-caption{
         font-size: 1.6rem;
     }
 
@@ -858,11 +899,15 @@ footer{
         font-size: 2rem;
     }
 
+    .resume-nav-link{
+        margin: 5px 30px;
+    }
+
     .section-header{
         font-size: 2rem;
     }
 
-    .website-preview-caption{
+    .project-preview-caption{
         font-size: 1.4rem;
     }
 
@@ -886,11 +931,15 @@ footer{
         font-size: 1.8rem;
     }
 
+    .resume-nav-link{
+        margin: 5px 20px;
+    }
+
     #objective-statement{
         font-size: 1.6rem;
     }
 
-    .website-preview-caption{
+    .project-preview-caption{
         font-size: 1.2rem;
     }
 
