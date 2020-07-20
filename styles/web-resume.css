@@ -1,0 +1,917 @@
+/* Global CSS */
+a{
+    color: black;
+}
+
+.icon{
+    width: 100px;
+    height: auto;
+}
+
+hr{
+    width: 200px;
+    border-bottom: 2px solid black;
+    margin: 70px auto;
+}
+
+html{
+
+}
+
+body{
+    width: 100%;                 
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Page landing */
+#header-image-box{
+    z-index: 0;
+    /* background-color: linear-gradient(transparent,black); */
+
+    /* display: sticky; */
+}
+
+.background-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+#header-photo{
+    width: auto;
+    height: 100vh;
+    /* margin: 0 auto; */
+    position: fixed;
+    background-position: center;
+    top: 0;
+    /* object-fit: cover; */
+    z-index: -1;
+    -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.5) 35%, black 70%);
+}
+
+.image-mask{
+    background: hsla(0, 0%, 0%, 0.6);
+    /* Make this a fade to black gradient */
+}
+
+#name-header{
+    color: black;
+    margin-top: 63vh;
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    z-index: 1;
+}
+
+#position-title{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    z-index: 1;
+}
+
+#site-nav-bar{
+    /* position: sticky;
+    top: 0; */
+    background-color: white;
+    height: auto;
+    padding: 12px 5px;
+    z-index: 100;
+}
+
+#nav-link-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+}
+
+.resume-nav-link{
+    color: black;
+    /* width: 75px; */
+    font-size: 2.2rem;
+    padding: 5px 10px;
+}
+
+.resume-nav-link:hover{
+    background-color: grey;
+}
+
+.section-container{
+    width: 100%;
+    padding: 50px 0;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.section-header{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Contact Info Section */
+#contact-info-container{
+    background-color: white;
+    /* margin-top: 30px; */
+    /* position: sticky;
+    top: 50px;
+    z-index: -1; */
+}
+
+#contact-method-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-method-panel{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 525px;
+    margin: 0 auto;
+    background-color: beige;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.contact-method-object{
+    /* width: 175px; */
+    text-align: center;
+    margin: 10px 20px;
+    
+}
+
+
+
+
+
+/* Objective Statement section */
+#objective-statement-container{
+    background-color: white;
+    /* position: sticky;
+    top: 363px;
+    padding-bottom: 30vh;
+    z-index: -1; */
+}
+
+#objective-statement{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+}
+
+/* #skills-photo-scroll-panel{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+} */
+
+/* #skills-photo{
+    width: 100vw;
+    object-fit: cover;
+} */
+
+
+
+
+
+/* Technnical Proficiency section */
+#technical-proficiency-container{
+    z-index: 1;
+    width: 100%;
+    background-color: beige;
+    /* border-radius: 20px; */
+    /* margin-bottom: 75px; */
+}
+
+.skill-header{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    border-bottom: 2px solid black;
+    width: 60%;
+}
+
+.technical-skill-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-panel{
+    width: 130px;
+    padding-bottom: 20px;
+}
+
+.skill-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.skill-name{
+    font-size: 1.5rem;
+}
+
+#linkedin-icon{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+#twitch-icon{
+    width: 100px;
+    height: 60px;
+    padding: 15px;
+}
+
+
+
+/* Web Portfolio section */
+#web-portfolio-container{
+    background-color: beige;
+    padding: 20px 0 50px 0;
+    /* margin-bottom: 50px; */
+    /* position: sticky;
+    top: 50px;
+    z-index: -1; */
+}
+
+#web-portfolio-preview-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.web-portfolio-preview-panel{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.web-portfolio-preview-panel:hover{
+    background-color: rgb(68, 56, 53);
+    box-shadow: -2px -2px 5px black;
+}
+
+.website-preview{
+    width: 500px;
+    height: 275px;
+    margin: 10px;
+    border: 2px solid black;
+    /* padding: 20px; */
+    /* border: 2px solid black; */
+}
+
+.website-preview-caption{
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/* Professional Experience section */
+#professional-experience-container{
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.professional-experience-block{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 30px;
+    line-height: 1.3;
+}
+
+.position-title{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.position-details{
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.experience-highlight-list{
+    font-size: 2rem;
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+.professional-work-portfolio{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.audio-portfolio-link{
+    text-decoration: underline;
+}
+
+.audio-portfolio-link:hover{
+    color: blue;
+}
+
+.client-block{
+    width: 70%;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.client-list{
+    /* border: 1px solid orange; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-items: center; */
+    font-size: 1.1rem;
+}
+
+.client-panel{
+    width: 250px;
+    margin: 35px auto;
+    /* border: 1px solid red; */
+}
+
+.client-list-header{
+    margin: 10px auto;
+    font-size: 2rem;
+}
+
+.client-logo{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.client-name{
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+/* Educational Studies section */
+#educational-studies-container{
+    background-color: beige;
+}
+
+#educational-studies-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.educational-studies-panel{
+    width: 450px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.topic-of-study{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.education-provider{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.location-of-study{
+    font-size: 1.8rem;
+}
+
+.education-link{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Value Added section */
+#value-added-container{
+    background-color: white;
+}
+
+#value-added-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.value-added-list{
+    list-style-type: circle;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* Value Added section */
+#about-me-container{
+    background-color: beige; /* linear gradient */
+    font-size: 2rem;
+}
+
+#about-me-container p{
+    padding: 10px 0;
+}
+
+.profile-container{
+    margin: 50px auto;
+    width: 75%;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: end;
+    background-color: black;
+    color: white;
+}
+
+.footer-info{
+    margin-right: 30px;
+}
+
+#footer-nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-nav-link{
+    padding: 5px 20px;
+}
+
+
+@media screen and (max-width: 1375px){
+    #name-header{
+        margin-top: 53vh;
+    }
+
+    .resume-nav-link{
+        font-size: 1.4rem;
+    }
+
+    .contact-method-panel{
+        width: 325px;
+    }
+
+    .position-title{
+        font-size: 2rem;
+    }
+
+    .position-details{
+        font-size: 1.8rem;
+    }
+
+    .experience-highlight-list{
+        font-size: 1.6rem;
+    }
+
+    .client-block{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .contact-method-panel{
+        width: 275px;
+    }
+
+    .professional-experience-block{
+        width: 70%;
+    }
+
+    .position-title{
+        font-size: 2rem;
+    }
+
+    .position-details{
+        font-size: 1.8rem;
+    }
+
+    .experience-highlight-list{
+        font-size: 1.6rem;
+    }
+
+    .client-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+@media screen and (max-width: 1050px){
+    #language-skill-panel{
+        margin: 0 4rem;
+    }
+
+    #av-skill-panel{
+        margin: 0 4rem;
+    }
+
+    #project-skill-panel{
+        margin: 0 4rem;
+    }
+
+    #social-skill-panel{
+        margin: 0 4rem;
+    }
+
+    #web-portfolio-container{
+        position: relative;
+        top: 0;
+    }
+
+    #web-portfolio-preview-list{
+        flex-direction: column;
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    .web-portfolio-preview-panel{
+        margin-bottom: 20px;
+    }
+
+    .position-title{
+        font-size: 1.8rem;
+    }
+
+    .position-details{
+        font-size: 1.6rem;
+    }
+
+    .experience-highlight-list{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #language-skill-panel{
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 875px){
+    #name-header{
+        margin-top: 43vh;
+    }
+
+    .resume-nav-link{
+        font-size: 1rem;
+    }
+
+    .contact-method-panel{
+        width: 225px;
+    }
+    
+    .skill-header{
+        width: 75%;
+    }
+
+    #language-skill-panel{
+        margin: 0 2.5rem;
+    }
+    
+    .client-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .position-title{
+        font-size: 1.6rem;
+    }
+
+    .position-details{
+        font-size: 1.4rem;
+    }
+
+    .experience-highlight-list{
+        font-size: 1.2rem;
+    }
+
+    #educational-studies-list{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .value-added-list{
+        font-size: 1.7rem;
+    }
+}            
+
+@media screen and (max-width: 750px){
+    #nav-link-list{
+        flex-wrap: wrap;
+        /* text-align: center; */
+    }
+    
+    .resume-nav-link{
+        margin: 5px 1.5rem;
+    }
+    
+    #contact-info-container{
+        top: 100px;
+    }
+
+    #contact-method-container{
+        /* flex-direction: column; */
+    }
+
+    .skill-header{
+        font-size: 1.8rem;
+        width: 85%;
+    }
+
+    /* #language-skill-panel{
+        margin: 0 2rem;
+    } */
+
+    #av-skill-panel{
+        margin: 0 5rem;
+    }
+
+    #project-skill-panel{
+        margin: 0 5rem;
+    }
+
+    #social-skill-panel{
+        margin: 0 5rem;
+    }
+
+    .position-title{
+        font-size: 1.3rem;
+    }
+
+    .position-details{
+        font-size: 1.1rem;
+    }
+
+    .professional-experience-block{
+        width: 90%;
+    }
+
+    .position-title{
+        font-size: 1.7rem;
+    }
+
+    .position-details{
+        font-size: 1.5rem;
+    }
+
+    .experience-highlight-list{
+        font-size: 1.3rem;
+    }
+
+    .client-block{
+        width: 90%;
+    }
+
+    #value-added-skills{
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* margin: 0 auto;
+        padding: 0 5rem; */
+    }
+}
+
+@media screen and (max-width: 600px){
+    #name-header{
+        margin-top: 35vh;
+        font-size: 3.5rem;
+    }
+
+    .resume-nav-link{
+        margin: 5px .6rem;
+    }
+    
+    #av-skill-panel{
+        margin: 0 4rem;
+    }
+
+    #project-skill-panel{
+        margin: 0 4rem;
+    }
+
+    #social-skill-panel{
+        margin: 0 4rem;
+    }
+    
+    /* #linkedin-icon{
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    }
+    
+    #twitch-icon{
+        width: 100px;
+        height: 60px;
+        padding: 15px;
+    } */
+
+    #web-portfolio-preview-list{
+        width: 93%;
+    }
+
+    .website-preview{
+        width: 90%;
+        height: 275px;
+    }
+
+    .professional-experience-block{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    #name-header{
+        margin-top: 65vh;
+        font-size: 2.8rem;
+    }
+
+    #position-title{
+        font-size: 2.5rem;
+    }
+
+    .section-header{
+        font-size: 2.5rem;
+    }
+
+    #contact-method-container{
+        flex-direction: column;
+    }
+
+    .contact-method-panel{
+        width: 225px;
+        margin-top: 20px;
+    }
+
+    #objective-statement{
+        font-size: 1.8rem;
+    }
+
+    .technical-skill-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* #language-skill-panel{
+        margin: 0 2rem;
+    } */
+
+    .website-preview{
+        width: 90%;
+        height: auto;
+    }
+
+    .website-preview-caption{
+        font-size: 1.6rem;
+    }
+
+    .client-panel{
+        width: 175px;
+    }
+
+    .client-logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .client-name{
+        font-size: 1.4rem;
+    }
+
+    #online-audio-portfolio{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .educational-studies-panel{
+        width: 80%;
+    }
+
+    .topic-of-study{
+        font-size: 1.6rem;
+    }
+
+    .education-provider{
+        font-size: 1.4rem;
+    }
+
+    .location-of-study{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        height: 120px;
+    }
+
+    .footer-info{
+        width: 60%;
+        margin-left: 100px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #name-header{
+        margin-top: 65vh;
+        font-size: 2.5rem;
+    }
+
+    #position-title{
+        font-size: 2rem;
+    }
+
+    .section-header{
+        font-size: 2rem;
+    }
+
+    .website-preview-caption{
+        font-size: 1.4rem;
+    }
+
+    .professional-work-portfolio{
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .client-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #name-header{
+        margin-top: 65vh;
+        font-size: 2rem;
+    }
+
+    #position-title{
+        font-size: 1.8rem;
+    }
+
+    #objective-statement{
+        font-size: 1.6rem;
+    }
+
+    .website-preview-caption{
+        font-size: 1.2rem;
+    }
+
+    .topic-of-study{
+        font-size: 1.4rem;
+    }
+
+    .education-provider{
+        font-size: 1.2rem;
+    }
+
+    .location-of-study{
+        font-size: 1rem;
+    }
+
+    footer{
+        height: 140px;
+    }
+
+    .footer-nav-link{
+        padding: 5px 10px;
+    }
+}

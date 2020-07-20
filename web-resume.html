@@ -11,438 +11,18 @@
         <!-- Style Sheets -->
         
         <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles/web-resume.css" rel="stylesheet" type="text/css" media="all"/>
 
         <style>
-            a{
-                color: black;
-            }
-
-            .icon{
-                width: 100px;
-                height: auto;
-            }
-
-            html{
-
-            }
-
-            body{
-                width: 100%;                 
-                margin: 0 auto;
-            }
-
-            #header-scroll-panel{
-                z-index: 0;
-                /* display: sticky; */
-            }
-
-            /* .background-image{
-                
-                z-index: -100;
-            } */
-
-            #header-photo{
-                width: 100vw;
-                position: fixed;
-                top: 0;
-                object-fit: cover;
-                z-index: -1;
-            }
-
-            .image-mask{
-                background: hsla(0, 0%, 0%, 0.6);
-            }
-
-            #name-header{
-                color: white;
-                margin-top: 55vh;
-                font-size: 4.5rem;
-                text-align: center;
-                padding: 20px 0 10px 0;
-                z-index: 1;
-            }
-
-            #position-title{
-                color: white;
-                font-size: 3rem;
-                text-align: center;
-                padding: 10px 0 20px 0;
-                z-index: 1;
-            }
-
-            #site-nav-bar{
-                position: sticky;
-                top: 0;
-                background-color: white;
-                height: auto;
-                padding: 12px 5px;
-                z-index: 100;
-            }
-
-            #nav-link-list{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                text-align: center;
-                margin: auto;
-            }
-
-            .resume-nav-link{
-                color: black;
-                font-size: 1.2rem;
-                padding: 5px;
-                /* border: 1px solid orange; */
-            }
-
-            .resume-nav-link:hover{
-                background-color: grey;
-            }
-
-            .section-container{
-                width: 100%;
-                padding: 50px 0;
-                margin: auto;
-                border: 1px solid red;
-            }
-
-            .section-header{
-                text-align: center;
-                font-size: 2.4rem;
-                margin-bottom: 20px;
-            }
-
-            #contact-info-container{
-                background-color: white;
-                /* margin-top: 30px; */
-                position: sticky;
-                top: 50px;
-                z-index: -1;
-            }
-
-            #contact-method-container{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                border: 1px solid blue;
-            }
-
-            .contact-method-panel{
-                flex-direction: column;
-                justify-content: space-evenly;
-                width: 25%;
-                margin: 0 auto;
-                border: 1px solid purple;
-            }
-
-            .contact-method-object{
-                text-align: center;
-                margin: 10px 20px;
-                background-color: lightgreen;
-            }
-
-            #objective-statement-container{
-                background-color: white;
-                position: sticky;
-                top: 363px;
-                z-index: -1;
-            }
-
-            #objective-statement{
-                font-size: 1.6rem;
-            }
-
-            #skills-photo-scroll-panel{
-                position: sticky;
-                top: 0;
-                z-index: -1;
-            }
-
-            #skills-photo{
-                width: 100vw;
-                object-fit: cover;
-            }
-
-            #technical-proficiency-container{
-                z-index: 1;
-                width: 95%;
-                background-color: rgba(255, 255, 255, 0.55);
-                border-radius: 20px;
-                margin-bottom: 75px;
-            }
-
-            .skill-header{
-                font-size: 1.5rem;
-                text-align: center;
-                margin-top: 30px;
-            }
-
-            .technical-skill-list{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .skill-panel{
-                width: 100px;
-            }
-
-            .skill-icon{
-                width: 75px;
-                height: 75px;
-            }
             
-            #web-portfolio-container{
-                background-color: yellowgreen;
-                padding: 20px 0 50px 0;
-                /* margin-bottom: 50px; */
-                position: sticky;
-                top: 50px;
-                z-index: -1;
-            }
-
-            #web-portfolio-preview-list{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                text-align: center;
-            }
-
-            .web-portfolio-preview-panel{
-                background-color: rgba(255, 255, 255, 0.7);
-                border-radius: 5px;
-                box-shadow: 2px 2px 5px black;
-            }
-
-            .web-portfolio-preview-panel:hover{
-                background-color: rgb(68, 56, 53);
-                box-shadow: -2px -2px 5px black;
-            }
-
-            .website-preview{
-                width: 500px;
-                height: 275px;
-                margin: 10px;
-                border: 2px solid black;
-                /* padding: 20px; */
-                /* border: 2px solid black; */
-            }
-
-            .website-preview-caption{
-                font-size: 1.6rem;
-                padding-bottom: 20px;
-            }
-
-            #professional-experience-container{
-                /* padding-top: 50px; */
-                background-color: white;
-            }
-
-            .professional-experience-block{
-                width: 90%;
-                margin: 0 auto;
-                padding: 0 30px;
-                line-height: 1.3;
-            }
-
-            #web-developer-block{
-                /* background: url(images/resume-icons/experience-image-web-developer.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                object-fit: cover; */
-                /* color: white; */
-                display: flex;
-                flex-direction: row;
-            }
-
-            #recording-engineer-block{
-                /* background: url(images/resume-icons/experience-image-recording-engineer.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                object-fit: cover; */
-                /* color: white; */
-            }
-
-            .position-details{
-                width: 60%;
-            }
-
-            /* #coding-image{
-                height: 500px;
-                width: auto;
-            } */
-
-            .position-title{
-                font-size: 2rem;
-                text-transform: uppercase;
-            }
-
-            .position-details{
-                font-size: 1.8rem;
-                font-style: italic;
-            }
-
-            .experience-highlight-list{
-                font-size: 1.6rem;
-                padding-left: 20px;
-                list-style-type: circle;
-            }
-
-            .professional-work-portfolio{
-                padding-top: 15px;
-                text-align: center;
-                font-size: 1.6rem;
-            }
-
-            .audio-portfolio-link{
-                text-decoration: underline;
-            }
-
-            .audio-portfolio-link:hover{
-                color: blue;
-            }
-
-            .client-block{
-                width: 80%;
-                margin: 30px auto;
-                text-align: center;
-                border: 1px solid blue;
-            }
-
-            /* #production-client-block{
-                width: 80%;
-                margin: auto;
-                text-align: center;
-                border: 1px solid blue;
-            } */
-
-            .client-list-header{
-                font-size: 1.6rem;
-                margin-bottom: 20px;
-            }
-
-            #production-client-list{
-                margin: 20px auto;
-                display: grid;
-                grid-template-columns: repeat(4, 1fr); /* change to repeat(2, 1fr) at 850px*/
-                font-size: 1.1rem;
-            }
-
-            .production-client-logo{
-                width: 150px;
-                height: 150px;
-                border: 4px solid black;
-                border-radius: 50%;
-            }
-
-            .client-name{
-                margin-top: 10px;
-            }
-
-            .dj-client-list{
-                font-size: 1.1rem;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-            }
-
-            .dj-client-panel{
-                width: 200px;
-                border: 1px solid green;
-            }
-
-            #educational-studies-list{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-
-            .educational-studies-panel{
-                width: 350px;
-                text-align: center;
-                border: 1px solid orange;
-            }
-
-            .topic-of-study{
-                font-size: 1.2rem;
-                text-transform: uppercase;
-                margin-bottom: 10px;
-            }
-
-            .education-provider{
-                font-size: 1.2rem;
-                margin-bottom: 10px;
-
-            }
-
-            .location-of-study{
-                font-size: 1.2rem;
-            }
-
-            .education-link{
-                text-decoration: underline;
-            }
-
-            #value-added-skills{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-
-            .value-added-list{
-                list-style-type: circle;
-                font-size: 1.2rem;
-            }
-
-            #about-me-container{
-                font-size: 1.4rem;
-            }
-
-            #about-me-container p{
-                padding: 10px 0;
-            }
-
-            .profile-container{
-                margin: 50px auto;
-                width: 60%;
-            }
-
-            hr{
-                width: 200px;
-                border-bottom: 2px solid black;
-                margin: 70px auto;
-            }
-
-            footer{
-                height: 65px;
-                width: 100%;
-                font-size: 1.2rem;
-                text-align: end;
-                background-color: black;
-                color: white;
-            }
-
-            #footer-nav-links{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-            }
-
-            .footer-nav-link{
-                padding: 0 20px;
-            }
-
         </style>
 </head>
 <body>
 
-    <div id="header-scroll-panel">
+    <div id="header-image-box">
         <div class="background-image">
             <img id="header-photo" src="images/resume-icons/page-image-header1.png" alt="Luther Calvin Riggs in Paris">
-            <div class="image-mask"></div>
+            <!-- <div class="image-mask"></div> -->
         </div>
         
         <div id="name-container" class="section-container">
@@ -452,18 +32,30 @@
     </div>
 
     <div id="site-nav-bar">
-        <ol id="nav-link-list">
-            <li class="resume-nav-link"><a href="#contact-info-container">Contact Information</a></li>
-            <li class="resume-nav-link"><a href="#objective-statement-container">Objective Statement</a></li>
-            <li class="resume-nav-link"><a href="#technical-proficiency-container">Technical Proficiency</a></li>
-            <li class="resume-nav-link"><a href="#web-portfolio-container">Web Portfolio</a></li>
-            <li class="resume-nav-link"><a href="#professional-experience-container">Professional Experience</a></li>
+
+        <div id="nav-link-list">
+            
+            <div class="resume-nav-link"><a href="#contact-info-container">Contact<br>Information</a></div>
+
+            <div class="resume-nav-link"><a href="#objective-statement-container">Objective<br>Statement</a></div>
+
+            <div class="resume-nav-link"><a href="#technical-proficiency-container">Technical<br>Proficiency</a></div>
+
+            <div class="resume-nav-link"><a href="#web-portfolio-container">Web<br>Portfolio</a></div>
+
+            <div class="resume-nav-link"><a href="#professional-experience-container">Professional<br>Experience</a></div>
+
             <!-- Can Professional Experience dropdown to the different position titles? -->
-            <li class="resume-nav-link"><a href="#educational-studies-container">Educational Studies</a></li>
-            <li class="resume-nav-link"><a href="#value-added-container">Value Added</a></li>
-            <!-- <li class="resume-nav-link"><a href="#about-me">About Me</a></li> -->
+
+            <div class="resume-nav-link"><a href="#educational-studies-container">Educational<br>Studies</a></div>
+
+            <div class="resume-nav-link"><a href="#value-added-container">Value<br>Added</a></div>
+
+            <!-- <div class="resume-nav-link"><a href="#about-me">About<br>Me</a></div> -->
             <!-- Can About Me dropdown to different personal topics? -->
-        </ol>
+
+        </div>
+        
     </div>
 
     <div id="contact-info-container" class="section-container"> 
@@ -521,12 +113,12 @@
 
     </div>
 
-    <div id="skills-photo-scroll-panel">
+    <!-- <div id="skills-photo-scroll-panel">
         <div class="background-image">
             <img id="skills-photo" src="images/resume-icons/page-image-study.png" alt="Luther Calvin Riggs working hard">
             <div class="image-mask"></div>
         </div>
-    </div>
+    </div> -->
 
     <div id="technical-proficiency-container" class="section-container">
 
@@ -538,55 +130,61 @@
 
             <ol class="technical-skill-list">
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-html5-512.png"></li>
-                    <li>HTML5</li>
-                </ol>
+                <!-- <ol> -->
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-html5-512.png"></li>
+                        <li class="skill-name">HTML5</li>
+                    </ol>
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-css3-512.png"></li>
-                    <li>CSS3</li>
-                </ol>
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-css3-512.png"></li>
+                        <li class="skill-name">CSS3</li>
+                    </ol>
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-javascript.png"></li>
-                    <li>JavaScript</li>
-                </ol>
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-javascript.png"></li>
+                        <li class="skill-name">JavaScript</li>
+                    </ol>
 
-                <!-- <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/"></li>
-                    <li>DOM</li>
-                </ol> -->
+                    <!-- <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li class="skill-name">DOM</li>
+                    </ol> -->
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-cpp-512.png"></li>
-                    <li>C++</li>
-                </ol>
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-cpp-512.png"></li>
+                        <li class="skill-name">C++</li>
+                    </ol>
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-terminal-512.png"></li>
-                    <li>CLI</li>
-                </ol>
+                <!-- </ol>
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-git-512.png"></li>
-                    <li>Git</li>
-                </ol>
+                <ol> -->
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-terminal-512.png"></li>
+                        <li class="skill-name">CLI</li>
+                    </ol>
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-squarespace-512.png"></li>
-                    <li>SquareSpace</li>
-                </ol>
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-git-512.png"></li>
+                        <li class="skill-name">Git</li>
+                    </ol>
 
-                <!-- <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/"></li>
-                    <li>Dev Tools</li>
-                </ol> -->
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-squarespace-512.png"></li>
+                        <li class="skill-name">SquareSpace</li>
+                    </ol>
 
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-seo-512.png"></li>
-                    <li>SEO Optimization</li>
-                </ol>
+                    <!-- <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/"></li>
+                        <li class="skill-name">Dev Tools</li>
+                    </ol> -->
+
+                    <ol id="language-skill-panel" class="skill-panel">
+                        <li><img class="skill-icon" src="images/resume-icons/icon-seo-512.png"></li>
+                        <li class="skill-name">SEO</li>
+                    </ol>
+
+                <!-- </ol> -->
 
             </ol>
             
@@ -598,29 +196,29 @@
 
             <ol class="technical-skill-list">
 
-                <ol class="skill-panel">
+                <ol id="av-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-adobe-photoshop-512.png"></li>
-                    <li>Photoshop</li>
+                    <li class="skill-name">Photoshop</li>
                 </ol>
 
-                <ol class="skill-panel">
+                <ol id="av-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-adobe-illustrator-512.png"></li>
-                    <li>Illustrator</li>
+                    <li class="skill-name">Illustrator</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="av-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-adobe-lightroom-512.png"></li>
-                    <li>Lightroom</li>
+                    <li class="skill-name">Lightroom</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="av-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-imovie-512.png"></li>
-                    <li>iMovie</li>
+                    <li class="skill-name">iMovie</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="av-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-obs-512.png"></li>
-                    <li>OBS</li>
+                    <li class="skill-name">OBS</li>
                 </ol>
 
             </ol>
@@ -633,14 +231,14 @@
 
             <ol class="technical-skill-list">
 
-                <ol class="skill-panel">
+                <ol id="audio-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-ableton-512.png"></li>
-                    <li>Ableton Live</li>
+                    <li class="skill-name">Ableton Live</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="audio-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-protools-512.png"></li>
-                    <li>Pro Tools</li>
+                    <li class="skill-name">Pro Tools</li>
                 </ol>
 
             </ol>
@@ -653,29 +251,29 @@
 
             <ol class="technical-skill-list">
 
-                <ol class="skill-panel">
+                <ol id="project-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-github-512.png"></li>
-                    <li>GitHub</li>
+                    <li class="skill-name">GitHub</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="project-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-slack-512.png"></li>
-                    <li>#Slack</li>
+                    <li class="skill-name">#Slack</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="project-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-monday-logo-365.png"></li>
-                    <li>Monday</li>
+                    <li class="skill-name">Monday</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="project-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-office365-512.png"></li>
-                    <li>MS Office Suite</li>
+                    <li class="skill-name">MS Office Suite</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="project-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-gsuite-512.png"></li>
-                    <li>G Suite</li>
+                    <li class="skill-name">G Suite</li>
                 </ol>
 
             </ol>
@@ -688,29 +286,29 @@
 
             <ol class="technical-skill-list">
 
-                <ol class="skill-panel">
+                <ol id="social-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-twitter-512.png"></li>
-                    <li>Twitter</li>
+                    <li class="skill-name">Twitter</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="social-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-facebook-512.png"></li>
-                    <li>Facebook</li>
+                    <li class="skill-name">Facebook</li>
                 </ol>
             
-                <ol class="skill-panel">
+                <ol id="social-skill-panel" class="skill-panel">
                     <li><img class="skill-icon" src="images/resume-icons/icon-instagram-512.png"></li>
-                    <li>Instagram</li>
+                    <li class="skill-name">Instagram</li>
                 </ol>
             
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-linkedin-512.png"></li>
-                    <li>LinkedIn</li>
+                <ol id="social-skill-panel" class="skill-panel">
+                    <li><img id="linkedin-icon" class="skill-icon" src="images/resume-icons/icon-linkedin-512.png"></li>
+                    <li class="skill-name">LinkedIn</li>
                 </ol>
             
-                <ol class="skill-panel">
-                    <li><img class="skill-icon" src="images/resume-icons/icon-twitch-512.png"></li>
-                    <li>Twitch</li>
+                <ol id="social-skill-panel" class="skill-panel">
+                    <li><img id="twitch-icon" class="skill-icon" src="images/resume-icons/icon-twitch-512.png"></li>
+                    <li class="skill-name">Twitch</li>
                 </ol>
 
             </ol>
@@ -797,15 +395,19 @@
                 
             </ol>
 
-            <p id="online-audio-portfolio" class="professional-work-portfolio">
-                Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio">audio portfolio</a>.
-            </p>
+            <div class="client-block">
+                
+                <p id="online-audio-portfolio" class="professional-work-portfolio">
+                    Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio">audio portfolio</a>.
+                </p>
+
+            </div>
 
         </div>
 
         <hr>
 
-        <div class="professional-experience-block">
+        <div id="music-producer-block" class="professional-experience-block">
 
             <h4 class="position-title">Record Producer & Recording Engineer</h4>
             <p class="position-details">Freelance - New York, NY / 2012 - Present</p>
@@ -829,23 +431,22 @@
         <div id="production-client-block" class="client-block">
             <p id="production-client-list-header" class="client-list-header">Clients include:</p>
 
-            <ol id="production-client-list">
+            <ol id="production-client-list" class="client-list">
 
-                <li class="production-client-panel">
+                <li class="client-panel">
                     
                     <div class="client-logo-box">
-                            <img class="production-client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/104433309_976939772765888_2576806290314456886_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=L3w2F4Iapf8AX8rzfMR&oh=277b7880662f06afffdf5d66953d3a77&oe=5F3BFBC8" alt="She's Excited Logo">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/104433309_976939772765888_2576806290314456886_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=L3w2F4Iapf8AX8rzfMR&oh=277b7880662f06afffdf5d66953d3a77&oe=5F3BFBC8" alt="She's Excited Logo">
                     </div>
 
                     <p class="client-name">She's Excited</p>
 
                 </li>
 
-                <li class="production-client-panel">
-
+                <li class="client-panel">
+                    
                     <div class="client-logo-box">
-
-                        <img class="production-client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/71542935_410433199625140_1679281497762168832_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=PUuFvw_rqxMAX9nI_pR&oh=a2fc55d2b9fbdcaaef4301efa4f4146b&oe=5F3E3E85" alt="Aradia Logo">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/71542935_410433199625140_1679281497762168832_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=PUuFvw_rqxMAX9nI_pR&oh=a2fc55d2b9fbdcaaef4301efa4f4146b&oe=5F3E3E85" alt="Aradia Logo">
 
                     </div>
 
@@ -853,47 +454,28 @@
 
                 </li>
 
-                <li class="production-client-panel">
-
+                <li class="client-panel">
+                    
                     <div class="client-logo-box">
-                        <img class="production-client-logo" src="https://yt3.ggpht.com/a/AATXAJwnHmVvxZ4arqwYd3clGrRIdDjWRzlPpayW41ODKQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Vito Fun Logo">
+                            <img class="client-logo" src="https://yt3.ggpht.com/a/AATXAJwnHmVvxZ4arqwYd3clGrRIdDjWRzlPpayW41ODKQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Vito Fun Logo">
                     </div>
 
                     <p class="client-name">Vito Fun</p>
 
                 </li>
 
-                <li class="production-client-panel">
-
+                <li class="client-panel">
+                    
                     <div class="client-logo-box">
-                        <img class="production-client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/111137131_576989846542070_8483191924399240728_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=oYAGZ8Gs3VQAX_b9Gur&oh=942005078c4e665d294bfe36cf7d860a&oe=5F3D7C06" alt="Select Vibes Logo">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/111137131_576989846542070_8483191924399240728_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=oYAGZ8Gs3VQAX_b9Gur&oh=942005078c4e665d294bfe36cf7d860a&oe=5F3D7C06" alt="Select Vibes Logo">
                     </div>
 
                     <p class="client-name">Select Vibes</p>
 
                 </li>
 
-                <!-- <li class="production-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li>Miss Cookie Delight</li>
-                    </ol>
-                </li>
-
-                <li class="production-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li>HD David</li>
-                    </ol>
-                </li> -->
-
-                <!-- <li class="production-client">She's Excited</li>
-                <li class="production-client">ARADIA</li>
-                <li class="production-client">Vito Fun</li>
-                <li class="production-client">Select Vibes</li>
-                <li class="production-client">Miss Cookie Delight</li>
-                <li class="production-client">HD David</li> -->
             </ol>
+
         </div>
 
         <p id="personal-discography" class="professional-work-portfolio">
@@ -916,228 +498,308 @@
 
             <p id="dj-client-list-header" class="client-list-header">Venues and clients include:</p>
 
-            <ol id="dj-nightlife-venues" class="dj-client-list">
+            <ol id="dj-client-list" class="client-list">
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Marquee<br>NYC</li>
-                    </ol>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/87608079_198672671208898_2212271863860559872_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=90O27PQTXdIAX9lVUG1&oh=4533c3c4b093265dd4d6bbfa344ccc13&oe=5F3CB6BC" alt="Marquee, New York City Logo">
+                    </div>
+
+                    <p class="client-name">Marquee<br>NYC</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">La Esquina SoHo<br>NYC</li>
-                    </ol>
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/22280899_345123969291376_9103866770866831360_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=qMtnAV-HagcAX_WeBeU&oh=aac6513d041159e6971d097ea5cd4257&oe=5F3E9388" alt="La Esquina, SoHo Logo">
+                    </div>
+
+                    <p class="client-name">La Equina<br>SoHo, NYC</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Louie & Chan<br>NYC</li>
-                    </ol>
-                </li>
-                
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Downtime Bar<br>NYC</li>
-                    </ol>
-                </li>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/45282020_305451506848067_6016303210854088704_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=rLwBcF9JrY8AX83ryZh&oh=903a02d9ba430ea06d04af3cb3b933b0&oe=5F3F533C" alt="Louie and Chan, New York City Logo">
+                    </div>
 
-            <!-- </ol>
-            
-            <ol id="dj-nightlife-venues" class="dj-client-list"> -->
+                    <p class="client-name">Louie & Chan<br>NYC</p>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Spin Ping Pong Club<br>NYC</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Whiskey Brooklyn<br>NYC</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Sloppy Tuna<br>Montauk</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="dj-venue">Sandbar<br>Fire Island</li>
-                    </ol>
                 </li>
                 
-            <!-- </ol>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/57407392_319090642116770_866154067330596864_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=cHrkF1AZAPUAX-LB_ou&oh=723a67897b3900cf10bac51b47dcda0e&oe=5F3ED7AA" alt="Downtime, New York City Logo">
+                    </div>
 
-            <ol id="dj-hospitality-brands" class="dj-client-list"> -->
-                
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="hospitality-brand">Hotel Hugo<br>Tribeca</li>
-                    </ol>
+                    <p class="client-name">Downtown Time<br>NYC</p>
+
+                </li> -->
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/73258580_2452564648357208_2260571747516416000_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=bJMZ8Zb5JEAAX95I_EH&oh=364153040644c0e1d4cb8ad0216af017&oe=5F3D618E" alt="Spin, New York City Logo">
+                    </div>
+
+                    <p class="client-name">Spin<br>NYC</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="hospitality-brand">Sanctuary Hotel<br>Times Square</li>
-                    </ol>
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://whiskeybrooklyn.com/wp-content/uploads/sites/6/2019/05/brooklyn-logo-300x289.png" alt="Whiskey Brooklyn, New York City Logo">
+                    </div>
+
+                    <p class="client-name">Whiskey Brooklyn<br>NYC</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="hospitality-brand">W Hotels<br>Times Square</li>
-                    </ol>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://www.nydailynews.com/resizer/XVt9q843ec-zw_qeiYl6puwCo28=/800x767/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/QDOB3GZGQBP7NI2OA6AJOXXH6U.jpg" alt="Sloppy Tuna, Montauk Logo">
+                    </div>
+
+                    <p class="client-name">Sloppy Tuna<br>Montauk</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="hospitality-brand">E2 Hospitality Group<br>NYC</li>
-                    </ol>
-                </li>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="http://www.70srockparade.com/wp-content/uploads/2019/06/sandbar-design2.jpg" alt="Sandbar, Fire Island Logo">
+                    </div>
 
-            <!-- </ol>
+                    <p class="client-name">Sandbar<br>Fire Island</p>
 
-            <ol id="dj-fashion-labels" class="dj-client-list"> -->
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="fashion-label">Title of Work.</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="fashion-label">DESLA Couture</li>
-                    </ol>
-                </li>
-    
-            <!-- </ol>
-
-            <ol id="dj-corporate-brands" class="dj-client-list"> -->
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">Equinox<br>Fitness</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">Lululemon</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">Melia Hotels<br>International</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">305 Fitness</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">DevaCurl</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">& Pizza</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">Meltshop</li>
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">Bond<br>Collective</li> 
-                    </ol>
-                </li>
-
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="corporate-brand">Kunjan<br>Collective</li>
-                    </ol>
                 </li>
                 
-            <!-- </ol>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/90090241_3008494949194513_3019013794614476800_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=C7fhVnVyVMMAX8Q67Eq&oh=e68d7e4e526c17486d0cb16039911c3a&oe=5F3C2A52" alt="Plaza Hotel, New York City Logo">
+                    </div>
 
-            <ol id="dj-charity-organizations" class="dj-client-list"> -->
+                    <p class="client-name">Plaza Hotel<br>NYC</p>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="charity-org">World Wildlife<br>Foundation</li>
-                    </ol>
+                </li> -->
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/53619824_329119234402669_5216749655194337280_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=BsRw73Ycl1YAX_V222F&oh=f24220c45f8bf18185daac9f8692e301&oe=5F3FF65F" alt="Melia Resorts, International Logo">
+                    </div>
+
+                    <p class="client-name">Melia International<br>Hotels & Resorts</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="charity-org">Special Olympics</li>
-                    </ol>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/13534167_1741691756099774_970794763_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=vtLeytezrZUAX8bw50M&oh=8f88f44861182c337328182aa5523d41&oe=5F3FAD08" alt="W Hotel, Times Sq Logo">
+                    </div>
+
+                    <p class="client-name">W Hotel<br>Times Square</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="charity-org">Chabad's Children<br>of Chernobyl</li>
-                    </ol>
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/45433902_587421395049778_5911707228049506304_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=KBOvK-U1cG0AX8IuSWz&oh=f277f7142fc6a523ae605c5100bbfa4a&oe=5F3DB968" alt="Hotel Hugo, SoHo Logo">
+                    </div>
+
+                    <p class="client-name">Hotel Hugo<br>SoHo</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="charity-org">Bidawee ...</li>
-                    </ol>
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://pbs.twimg.com/profile_images/2534957886/9uv2qwayksgnpi4iu8dw_400x400.jpeg" alt="Sanctuary Hotel, Times Square Logo">
+                    </div>
+
+                    <p class="client-name">Sanctuary Hotel<br>Times Sqaure</p>
+
                 </li>
 
-                <li class="dj-client-panel">
-                    <ol>
-                        <li><img class="client-logo" src=""></li>
-                        <li class="charity-org">Heather Pendergast<br>Fund</li>
-                    </ol>
+                
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/19623276_474162449618764_8996415420789424128_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=BuvMHrECD8QAX-OUnnD&oh=d91b026bbfad0f22311c915dc6a27993&oe=5F3F5178" alt="E-Squared Hospitality, International Logo">
+                    </div>
+
+                    <p class="client-name">E2 Hospitality<br>International</p>
+
                 </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/16465225_1849866925289540_6885976252264480768_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=Xurph62GNJIAX91BB7q&oh=0acb83e76f31aef168b9cffa16876a3c&oe=5F3DB413" alt="Title of Work Logo">
+                    </div>
+
+                    <p class="client-name">Title of Work.</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/11356895_427500487442428_474006998_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=5atbzc8d8HoAX8l_gAY&oh=8121690f25cc8858389f084b6debd60d&oe=5F3CE899" alt="DESLA Couture, New York City Logo">
+                    </div>
+
+                    <p class="client-name">DESLA Couture</p>
+
+                </li> -->
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/36546421_219172792140614_78506702181236736_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=z9C2amARYxAAX8DoDKY&oh=8d6213939f9e6c1209cfa69cf48c31cc&oe=5F3FC231" alt="Equinox Fitness Logo">
+                    </div>
+
+                    <p class="client-name">Equinox Fitness</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/13408769_758581124281883_1136165583_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=y1EFoHVs9CUAX-pQiJP&oh=569201a02a5bf0fd1bf0e745089d16c1&oe=5F3EB01D" alt="Lululemon Logo">
+                    </div>
+
+                    <p class="client-name">Lululemon</p>
+
+                </li>
+
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/47582443_218826732330772_7212320614877495296_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=z31jSgnZWPMAX-Io0WS&oh=a57d932d3e7d3911eecd4f436f33caa6&oe=5F3F920B" alt="305 Fitness Logo">
+                    </div>
+
+                    <p class="client-name">305 Fitness</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/71281969_455808468360761_2502172823376625664_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=MTd6GT6TpngAX8jT89P&oh=93664a071b186c698c3af3bc2f9367eb&oe=5F3E2C08" alt="DevaCurl Logo">
+                    </div>
+
+                    <p class="client-name">DevaCurl</p>
+
+                </li> -->
+
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/106695055_277867966617974_989935927097930855_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=Gc82FniGxZsAX9x1Xea&oh=6fe293d8caccbb616a61068d1b5fdd83&oe=5F3CDF37" alt="&Pizza Logo">
+                    </div>
+
+                    <p class="client-name">&Pizza</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/66476680_470668560147885_3841433511344996352_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=P9AshAwPcNEAX-4Z4QD&oh=7b26cdc8d1b59bbe0f361c5c2bbc0223&oe=5F3C54EC" alt="Melt Shop Logo">
+                    </div>
+
+                    <p class="client-name">Meltshop</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/65847715_2299709333691175_6680967455952601088_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=UcD-PYeIi6sAX92-zwZ&oh=768cb625f921511e9e7a411067fc70ac&oe=5F3CF383" alt="Bond Collective Logo">
+                    </div>
+
+                    <p class="client-name">Bond Collective</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/11356545_936307706412397_797582978_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=di9MMyP15V4AX8Ep71q&oh=c3f846f1e588277ba57228bb16104ec0&oe=5F3D3CF8" alt="Kunjan Collective Logo">
+                    </div>
+
+                    <p class="client-name">Kunjan Collective</p>
+
+                </li> -->
+                
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/11849174_762333850559474_23528203_a.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=lflevXUWUEkAX89-pbV&oh=24285695be03daf33451d30afb4bdf3d&oe=5F3D1EED" alt="World Wildlife Foundation Logo">
+                    </div>
+
+                    <p class="client-name">World Wildlife<br>Foundation</p>
+
+                </li>
+
+                <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/83239515_316120289409067_404778500636928196_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=GW-C5VOtIFcAX9uMr5Y&oh=522d8f066de0b3ecc268671a54b952f8&oe=5F3DC015" alt="Special Olympics Logo">
+                    </div>
+
+                    <p class="client-name">Special Olympics</p>
+
+                </li>
+
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://www.facebook.com/90983446097/photos/90986476097/" alt="Chabad's Children of Chernobyl Logo">
+                    </div>
+
+                    <p class="client-name">Chabad's Children<br>of Chernobyl</p>
+
+                </li> -->
+
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="https://instagram.fphl1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/65397149_331891871035057_5394031873515061248_n.jpg?_nc_ht=instagram.fphl1-1.fna.fbcdn.net&_nc_ohc=RDcLtoNnkD4AX_u9_x4&oh=7fef9f17025e85dc44490f8d71388bc6&oe=5F3C54E9" alt="Bidawee Logo">
+                    </div>
+
+                    <p class="client-name">Bidawee</p>
+
+                </li> -->
+
+                <!-- <li class="client-panel">
+                        
+                    <div class="client-logo-box">
+                            <img class="client-logo" src="" alt="Heather Pendergast Foundation Logo">
+                    </div>
+
+                    <p class="client-name">Heather Pendergast<br>Foundation</p>
+
+                </li> -->
 
             </ol>
 
         </div>
-            
+          
+        <p id="personal-discography" class="professional-work-portfolio">
+            Et al.
+        </p>
+
         <hr>
 
         <div class="professional-experience-block">
@@ -1161,14 +823,15 @@
 
             <div class="educational-studies-panel">
             
-                <h4 class="topic-of-study">Web Development</h4><br>
+                <h4 class="topic-of-study">Web<br>Development</h4>
                 
                 
                 <p class="education-provider">The Odin Project</p>
                 
                 <p class="location-of-study">
 
-                    <a class="education-link" href="https://www.theodinproject.com">theodinproject.com</a>
+                    theodinproject.com
+                    <!-- <a class="education-link" href="https://www.theodinproject.com">theodinproject.com</a> -->
 
                 </p>
 
@@ -1188,7 +851,12 @@
             
                 <h4 class="topic-of-study">BS: Finance<br>Minor: Architecture</h4>
                 
-                <p class="education-provider"><a class="education-link" target="_blank" href="https://www.iastate.edu">Iowa State University</a></p>
+                <p class="education-provider">
+                    
+                    Iowa State University
+                    <!-- <a class="education-link" target="_blank" href="https://www.iastate.edu">Iowa State University</a> -->
+                
+                </p>
                 
                 <p class="location-of-study">Ames, IA</p>
 
@@ -1206,7 +874,7 @@
             <ol class="value-added-list">
                 <li>Remote project management</li>
                 <li>Collaborative teamwork</li>
-                <li>Strong written and verbal communications</li>
+                <li>Strong written and verbal skills</li>
             </ol>
 
             <ol class="value-added-list">
@@ -1268,12 +936,17 @@
     </div>
         
     <footer>
-        <p>Designed and developed by Luther Calvin Riggs - 2020</p>
-        <ol id="footer-nav-links">
-            <li class="footer-nav-link">Twitter</li>
-            <li class="footer-nav-link">GitHub</li>
-            <li class="footer-nav-link">LinkedIn</li>
-        </ol>
+        <div class="footer-info">
+
+            <p >Designed and developed by Luther Calvin Riggs - 2020</p>
+            <ol id="footer-nav-links">
+                <li class="footer-nav-link">Twitter</li>
+                <li class="footer-nav-link">GitHub</li>
+                <li class="footer-nav-link">LinkedIn</li>
+            </ol>
+
+        </div>
+        
     </footer>
 </body>
 </html>
