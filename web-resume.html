@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Luther Calvin Riggs: Web Resume</title>
+        <title>Luther Calvin Riggs: Web Developter Resume</title>
         <meta charset="UTF-8">
         <meta name="description" content="Web Developer resume for Luther Calvin Riggs.">
         <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -22,7 +22,6 @@
     <div id="header-image-box">
         <div class="background-image">
             <img id="header-photo" src="images/resume-icons/page-image-header1.png" alt="Luther Calvin Riggs in Paris">
-            <!-- <div class="image-mask"></div> -->
         </div>
         
         <div id="name-container" class="section-container">
@@ -51,7 +50,7 @@
 
             <div class="resume-nav-link"><a href="#value-added-container">Value<br>Added</a></div>
 
-            <!-- <div class="resume-nav-link"><a href="#about-me">About<br>Me</a></div> -->
+            <div class="resume-nav-link"><a href="#about-me-container">About<br>Me</a></div>
             <!-- Can About Me dropdown to different personal topics? -->
 
         </div>
@@ -59,7 +58,6 @@
     </div>
 
     <div id="contact-info-container" class="section-container"> 
-        <!-- Make horizontal in a block with icons above the links -->  
 
         <h3 id="contact-info-header" class="section-header">Contact Information</h3>
 
@@ -97,7 +95,7 @@
 
                 <div class="contact-method-object">
                     New York, NY 11103
-                </div> <!-- Add Google Map API -->
+                </div> 
 
             </div>
 
@@ -113,13 +111,6 @@
 
     </div>
 
-    <!-- <div id="skills-photo-scroll-panel">
-        <div class="background-image">
-            <img id="skills-photo" src="images/resume-icons/page-image-study.png" alt="Luther Calvin Riggs working hard">
-            <div class="image-mask"></div>
-        </div>
-    </div> -->
-
     <div id="technical-proficiency-container" class="section-container">
 
         <h3 id="technical-proficiency-header" class="section-header">Technical Proficiency</h3>
@@ -130,7 +121,6 @@
 
             <ol class="technical-skill-list">
 
-                <!-- <ol> -->
                     <ol id="language-skill-panel" class="skill-panel">
                         <li><img class="skill-icon" src="images/resume-icons/icon-HTML5-512.png"></li>
                         <li class="skill-name">HTML5</li>
@@ -156,9 +146,6 @@
                         <li class="skill-name">C++</li>
                     </ol>
 
-                <!-- </ol>
-
-                <ol> -->
                     <ol id="language-skill-panel" class="skill-panel">
                         <li><img class="skill-icon" src="images/resume-icons/icon-terminal-512.png"></li>
                         <li class="skill-name">CLI</li>
@@ -183,8 +170,6 @@
                         <li><img class="skill-icon" src="images/resume-icons/icon-seo-512.png"></li>
                         <li class="skill-name">SEO</li>
                     </ol>
-
-                <!-- </ol> -->
 
             </ol>
             
@@ -373,8 +358,6 @@
                 </ol>
             </div>
 
-            <!-- <img id="coding-image" src="images/resume-icons/image-coding.jpeg" alt="image of computer code"> -->
-
         </div>
 
         <hr>
@@ -398,7 +381,7 @@
             <div class="client-block">
                 
                 <p id="online-audio-portfolio" class="professional-work-portfolio">
-                    Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio">audio portfolio</a>.
+                    Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio/s-e9qnx">audio portfolio</a>.
                 </p>
 
             </div>
@@ -479,7 +462,7 @@
         </div>
 
         <p id="personal-discography" class="professional-work-portfolio">
-            Listen to my <a class="audio-portfolio-link" target="_blank" href="music.html">my music</a>!
+            Listen to <a class="audio-portfolio-link" target="_blank" href="music.html">my music</a>!
         </p>
 
         <hr>
@@ -825,15 +808,9 @@
             
                 <h4 class="topic-of-study">Web<br>Development</h4>
                 
-                
                 <p class="education-provider">The Odin Project</p>
                 
-                <p class="location-of-study">
-
-                    theodinproject.com
-                    <!-- <a class="education-link" href="https://www.theodinproject.com">theodinproject.com</a> -->
-
-                </p>
+                <p class="location-of-study">theodinproject.com</p>
 
             </div>
 
@@ -851,12 +828,7 @@
             
                 <h4 class="topic-of-study">BS: Finance<br>Minor: Architecture</h4>
                 
-                <p class="education-provider">
-                    
-                    Iowa State University
-                    <!-- <a class="education-link" target="_blank" href="https://www.iastate.edu">Iowa State University</a> -->
-                
-                </p>
+                <p class="education-provider">Iowa State University</p>
                 
                 <p class="location-of-study">Ames, IA</p>
 
@@ -900,8 +872,15 @@
             <p>Once again, I returned to my roots, pursuing another creative passion from the past: coding. I can remember the time of dial-up and dot-matrix printers. The original car phones and floppy disks. I wrote my first 'app' in high school so that I could tune my guitar at home. I constructed financial trading algorithms in Excel to test market strategies with historical prices. I even designed my first DJ website using a 'For Dummies" book.</p>
 
 
-            <q>"I'm a artist. You give me a tuba and I'll get something out of it."</q>
-            <cite>John Lennon, year</cite>
+            <blockquote>
+
+                <p>"I'm an artist, and if you give me a tuba, I'll bring you something out of it."</p>
+
+                <cite>- John Lennon, 1971</cite>
+
+            </blockquote>
+
+            
 
             <p>I have always been a creative and I have always been a builder. Whether audio or visual, analog or digital, I'm an artist. And I look forward to creating something amazing with you.</p>
 
@@ -913,7 +892,7 @@
 
             <p>Some interviewers like to ask a candidate which animal they think best represents them.</p>
             
-            <p>I am a camel.</p>
+            <p id="camel-line">I am a camel.</p>
 
             <p>Though not the most aesthetially pleasing, camels are get the job done. They are serious workhorses that can handle pressure and extreme conditions. When the stiuation gets to hot to handle, the camel doesn't break. One step in front of the other, the camel gets it done.</p>
 
@@ -924,13 +903,13 @@
         <div id="personal-philosophy" class="profile-container">
             <P>It is common to think that the most creative people are better at "thinking outside the box". I, however, do not believe that the most creative people think outside of the box. I believe that they have filled their box with more life experiences. Therefore, let me share some of my life experiences with you!</P>
 
-            <p>I was born in Witchita, Kansas and raised in Oskaloosa, Iowa. <!-- Include Map API --> Though I didn't grow up on a farm, my mother's family had over 100 acres and we spent a good amount of our childhood helping with chores. We were a typical midwest family that took road trips in a van and shot fireworks every 4th of July. I learned to play violin and piano, sang in the church choir and played varsity sports. I also participated in regional math competitions and wrote my first app for a guitar tuner on a floppy disk. In my teens, I developed an interest in architecture and drafting, and later began my college education as an architecture major. Later, after encouragement from family, I finished my undergraduate studies with a bachelor's degree in finance and a boarded a one-way flight to pursue a life in the Big Apple.</p>
+            <p>I was born in Witchita, Kansas and raised in Oskaloosa, Iowa. Though I didn't grow up on a farm, my mother's family had over 100 acres and we spent a good amount of our childhood helping with chores. We were a typical midwest family that took road trips in a van and shot fireworks every 4th of July. I learned to play violin and piano, sang in the church choir and played varsity sports. I also participated in regional math competitions and wrote my first app for a guitar tuner on a floppy disk. In my teens, I developed an interest in architecture and drafting, and later began my college education as an architecture major. Later, after encouragement from family, I finished my undergraduate studies with a bachelor's degree in finance and a boarded a one-way flight to pursue a life in the Big Apple.</p>
 
             <p>After a stretch on Wall Street, I was swept up in the waves of layoffs due to the financial market collapse. Knowing the opportunity that New York City still held, I began bartending and looking for my next opportunity. Some friends introduced me to DJing, I caught the bug, and so began a return to my musical roots. Only this time, I didn't want to simply play the songs, I wanted to make my songs. Over the next decade, I played countless DJ gigs and wrote albums with of music.</p>
 
             <p>My hobbies include music, travel, photography, athletics, linguistics and cultural explorations. From "what make people tick" to 'why is coffee so good', I constantly want to understand and live everything that I can. I've experienced a lot in life. Let those experiences work for you.</p>
 
-            <p>If you would like to experience more of my life highlights, check out my <a href=""></a>Instagram</a>.</p>
+            <p>If you would like to experience more of my life highlights, check out my <a target="_blank" href="https://www.instagram.com/luthercalvinriggs/">Instagram</a>.</p>
 
         </div>
     </div>
@@ -938,25 +917,25 @@
     <footer>
         <div class="footer-info">
 
-            <p>Designed and developed by Luther Calvin Riggs - 2020</p>
+            <div id="footer-note">Designed and developed by Luther Calvin Riggs - 2020</div>
 
-            <ol id="footer-nav-links">
+            <ol id="footer-links">
 
                 <li class="footer-nav-link">
 
-                    <a class="footer-nav-link" href="https://twitter.com/LCRiggsMusic">Twitter</a>
+                    <a class="footer-nav-link" target="_blank" href="https://twitter.com/LCRiggsMusic">Twitter</a>
 
                 </li>
 
                 <li class="footer-nav-link">
 
-                    <a class="footer-nav-link" href="https://github.com/LutherCalvinRiggs">GitHub</a>
+                    <a class="footer-nav-link" target="_blank" href="https://github.com/LutherCalvinRiggs">GitHub</a>
 
                 </li>
 
                 <li class="footer-nav-link">
 
-                    <a class="footer-nav-link" href="https://www.linkedin.com/in/lcriggs/">LinkedIn</a>
+                    <a class="footer-nav-link" target="_blank" href="https://www.linkedin.com/in/lcriggs/">LinkedIn</a>
 
                 </li>
 

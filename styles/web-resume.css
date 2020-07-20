@@ -27,11 +27,14 @@ body{
 
 
 
+
+
+
+
+
 /* Page landing */
 #header-image-box{
     z-index: 0;
-    /* background-color: linear-gradient(transparent,black); */
-
     /* display: sticky; */
 }
 
@@ -45,18 +48,11 @@ body{
 #header-photo{
     width: auto;
     height: 100vh;
-    /* margin: 0 auto; */
     position: fixed;
     background-position: center;
     top: 0;
-    /* object-fit: cover; */
     z-index: -1;
     -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.5) 35%, black 70%);
-}
-
-.image-mask{
-    background: hsla(0, 0%, 0%, 0.6);
-    /* Make this a fade to black gradient */
 }
 
 #name-header{
@@ -86,29 +82,22 @@ body{
 }
 
 #nav-link-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     text-align: center;
     margin: auto;
 }
 
 .resume-nav-link{
     color: black;
-    /* width: 75px; */
     font-size: 2.2rem;
     padding: 5px 10px;
-}
-
-.resume-nav-link:hover{
-    background-color: grey;
 }
 
 .section-container{
     width: 100%;
     padding: 50px 0;
     margin: auto;
-    /* border: 1px solid red; */
 }
 
 .section-header{
@@ -116,6 +105,10 @@ body{
     font-size: 3rem;
     margin-bottom: 20px;
 }
+
+
+
+
 
 
 
@@ -148,11 +141,13 @@ body{
 }
 
 .contact-method-object{
-    /* width: 175px; */
     text-align: center;
     margin: 10px 20px;
-    
 }
+
+
+
+
 
 
 
@@ -173,16 +168,8 @@ body{
     font-size: 2.2rem;
 }
 
-/* #skills-photo-scroll-panel{
-    position: sticky;
-    top: 0;
-    z-index: -1;
-} */
 
-/* #skills-photo{
-    width: 100vw;
-    object-fit: cover;
-} */
+
 
 
 
@@ -193,8 +180,6 @@ body{
     z-index: 1;
     width: 100%;
     background-color: beige;
-    /* border-radius: 20px; */
-    /* margin-bottom: 75px; */
 }
 
 .skill-header{
@@ -242,6 +227,12 @@ body{
 
 
 
+
+
+
+
+
+
 /* Web Portfolio section */
 #web-portfolio-container{
     background-color: beige;
@@ -275,14 +266,15 @@ body{
     height: 275px;
     margin: 10px;
     border: 2px solid black;
-    /* padding: 20px; */
-    /* border: 2px solid black; */
 }
 
 .website-preview-caption{
     font-size: 2.2rem;
     padding-bottom: 20px;
 }
+
+
+
 
 
 
@@ -338,17 +330,14 @@ body{
 }
 
 .client-list{
-    /* border: 1px solid orange; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* justify-items: center; */
     font-size: 1.1rem;
 }
 
 .client-panel{
     width: 250px;
     margin: 35px auto;
-    /* border: 1px solid red; */
 }
 
 .client-list-header{
@@ -367,6 +356,8 @@ body{
     margin-top: 10px;
     font-size: 1.8rem;
 }
+
+
 
 
 
@@ -417,6 +408,9 @@ body{
 
 
 
+
+
+
 /* Value Added section */
 #value-added-container{
     background-color: white;
@@ -428,7 +422,6 @@ body{
     justify-content: space-evenly;
     width: 90%;
     margin: 0 auto;
-    /* border: 2px solid red; */
 }
 
 .value-added-list{
@@ -440,9 +433,13 @@ body{
 
 
 
+
+
+
+
 /* Value Added section */
 #about-me-container{
-    background-color: beige; /* linear gradient */
+    background-color: beige; 
     font-size: 2rem;
 }
 
@@ -455,8 +452,25 @@ body{
     width: 75%;
 }
 
+blockquote{
+    margin: 20px 0;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 1.1;
+}
+
+cite{
+    margin-top: 15px;
+    font-style: italic;
+}
+
+#camel-line{
+    font-weight: bold;
+}
+
 footer{
-    height: 80px;
+    height: 100px;
     width: 100%;
     padding-top: 10px;
     line-height: 1.5;
@@ -466,20 +480,29 @@ footer{
     color: white;
 }
 
-.footer-info{
-    margin-right: 30px;
+#footer-note{
+    text-align: center;
 }
 
-#footer-nav-links{
+#footer-links{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .footer-nav-link{
     color: white;
-    padding: 5px 20px;
+    padding: 0 10px;
 }
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1375px){
@@ -633,12 +656,15 @@ footer{
     .value-added-list{
         font-size: 1.7rem;
     }
+
+    footer{
+        height: 75px;
+    }
 }            
 
 @media screen and (max-width: 750px){
     #nav-link-list{
-        flex-wrap: wrap;
-        /* text-align: center; */
+        grid-template-columns: repeat(4, 1fr);
     }
     
     .resume-nav-link{
@@ -649,18 +675,10 @@ footer{
         top: 100px;
     }
 
-    #contact-method-container{
-        /* flex-direction: column; */
-    }
-
     .skill-header{
         font-size: 1.8rem;
         width: 85%;
     }
-
-    /* #language-skill-panel{
-        margin: 0 2rem;
-    } */
 
     #av-skill-panel{
         margin: 0 5rem;
@@ -706,8 +724,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        /* margin: 0 auto;
-        padding: 0 5rem; */
     }
 }
 
@@ -732,18 +748,6 @@ footer{
     #social-skill-panel{
         margin: 0 4rem;
     }
-    
-    /* #linkedin-icon{
-        width: 70px;
-        height: 70px;
-        padding: 10px;
-    }
-    
-    #twitch-icon{
-        width: 100px;
-        height: 60px;
-        padding: 15px;
-    } */
 
     #web-portfolio-preview-list{
         width: 93%;
@@ -757,7 +761,6 @@ footer{
     .professional-experience-block{
         width: 80%;
     }
-
 }
 
 @media screen and (max-width: 500px){
@@ -791,9 +794,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    /* #language-skill-panel{
-        margin: 0 2rem;
-    } */
 
     .website-preview{
         width: 90%;
@@ -839,13 +839,12 @@ footer{
     }
 
     footer{
-        height: 120px;
+        height: 100px;
     }
 
-    .footer-info{
-        width: 60%;
-        margin-left: 100px;
-        margin-right: 0;
+    #footer-note{
+        width: 250px;
+        margin: auto;
     }
 }
 
@@ -905,13 +904,5 @@ footer{
 
     .location-of-study{
         font-size: 1rem;
-    }
-
-    footer{
-        height: 140px;
-    }
-
-    .footer-nav-link{
-        padding: 5px 10px;
     }
 }
