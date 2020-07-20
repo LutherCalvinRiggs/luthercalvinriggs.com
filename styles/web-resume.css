@@ -15,7 +15,7 @@ hr{
 }
 
 html{
-
+    background-color: white;
 }
 
 body{
@@ -266,7 +266,7 @@ body{
 }
 
 .web-portfolio-preview-panel:hover{
-    background-color: rgb(68, 56, 53);
+    background-color: rgba(77, 88, 206, 0.418);
     box-shadow: -2px -2px 5px black;
 }
 
@@ -328,14 +328,13 @@ body{
 }
 
 .audio-portfolio-link:hover{
-    color: blue;
+    color: grey;
 }
 
 .client-block{
     width: 70%;
     margin: 30px auto 10px auto;
     text-align: center;
-    border: 1px solid blue;
 }
 
 .client-list{
@@ -478,6 +477,7 @@ footer{
 }
 
 .footer-nav-link{
+    color: white;
     padding: 5px 20px;
 }
 
