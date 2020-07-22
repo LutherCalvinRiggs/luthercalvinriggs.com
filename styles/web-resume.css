@@ -11,15 +11,6 @@
     --background-parchment: beige;    
 }
 
-*{
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    text-wrap: wrap;
-    font-weight: 400;
-}
-    
-
-
 a{
     color: black;
 }
@@ -42,6 +33,11 @@ html{
 body{
     width: 100%;                 
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 
@@ -114,7 +110,7 @@ body{
 
 .resume-nav-link{
     color: black;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     /* margin: 5px auto; */
     /* padding: 5px 10px; */
 }
@@ -127,7 +123,7 @@ body{
 
 .section-header{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 20px;
 }
 
@@ -151,7 +147,7 @@ body{
 #objective-statement{
     width: 80%;
     margin: 0 auto;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
 }
 
 
@@ -199,7 +195,7 @@ body{
 }
 
 .project-preview-caption{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     padding-bottom: 20px;
 }
 
@@ -221,7 +217,7 @@ body{
 }
 
 .skill-header{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-align: center;
     margin: 30px auto 0 auto;
     border-bottom: 2px solid black;
@@ -248,7 +244,7 @@ body{
 }
 
 .skill-name{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 #linkedin-icon{
@@ -322,17 +318,17 @@ body{
 }
 
 .position-title{
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 .position-details{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-style: italic;
 }
 
 .experience-highlight-list{
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-left: 20px;
     list-style-type: circle;
 }
@@ -340,7 +336,7 @@ body{
 .professional-work-portfolio{
     padding-top: 10px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .audio-portfolio-link{
@@ -360,7 +356,7 @@ body{
 .client-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    font-size: 1.1rem;
+    font-size: 0.7rem;
 }
 
 .client-panel{
@@ -370,7 +366,7 @@ body{
 
 .client-list-header{
     margin: 10px auto;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .client-logo{
@@ -382,7 +378,7 @@ body{
 
 .client-name{
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 
@@ -414,18 +410,18 @@ body{
 }
 
 .topic-of-study{
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .education-provider{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
 .location-of-study{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .education-link{
@@ -454,7 +450,7 @@ body{
 
 .value-added-list{
     list-style-type: circle;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 
@@ -468,7 +464,7 @@ body{
 /* About Me section */
 #about-me-container{
     background-color: var(--background-white, white);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #about-me-container p{
@@ -485,7 +481,7 @@ blockquote{
     padding: 15px 0;
     text-align: center;
     border-radius: 10px;
-    line-height: 1.1;
+    line-height: 1.3;
 }
 
 cite{
@@ -502,7 +498,7 @@ footer{
     width: 100%;
     padding-top: 10px;
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-align: end;
     background-color: black;
     color: var(--background-white, white);
@@ -548,19 +544,19 @@ footer{
     }
 
     .position-title{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .position-details{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .experience-highlight-list{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .professional-work-portfolio{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .client-block{
@@ -578,11 +574,11 @@ footer{
     }
 
     .position-title{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .position-details{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .client-list{
@@ -622,19 +618,19 @@ footer{
     }
 
     .position-title{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .position-details{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .experience-highlight-list{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 
     .professional-work-portfolio{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -650,7 +646,7 @@ footer{
     }
 
     .resume-nav-link{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .contact-method-panel{
@@ -670,19 +666,19 @@ footer{
     }
 
     .position-title{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .position-details{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 
     .experience-highlight-list{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .professional-work-portfolio{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     #educational-studies-list{
@@ -691,7 +687,7 @@ footer{
     } 
 
     .value-added-list{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     footer{
@@ -700,20 +696,13 @@ footer{
 }            
 
 @media screen and (max-width: 750px){
-    /* #nav-link-list{
-        grid-template-columns: repeat(4, 1fr);
-    } */
-    
-    /* .resume-nav-link{
-        margin: 5px 1.5rem;
-    } */
     
     #contact-info-container{
         top: 100px;
     }
 
     .skill-header{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         width: 85%;
     }
 
@@ -730,11 +719,11 @@ footer{
     }
 
     .position-title{
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     .position-details{
-        font-size: 1.1rem;
+        font-size: 0.7rem;
     }
 
     .professional-experience-block{
@@ -742,19 +731,19 @@ footer{
     }
 
     .position-title{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .position-details{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .experience-highlight-list{
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     .professional-work-portfolio{
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     .client-block{
@@ -803,19 +792,20 @@ footer{
 @media screen and (max-width: 500px){
     #name-header{
         margin-top: 65vh;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     #position-title{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .section-header{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .resume-nav-link{
-        margin: 5px 40px;
+        font-size: 1.0rem;
+        margin: 10px 40px;
     }
 
     #contact-method-container{
@@ -828,7 +818,7 @@ footer{
     }
 
     #objective-statement{
-        font-size: 1.8rem;
+        font-size: 1.0rem;
     }
 
     .technical-skill-list{
@@ -842,7 +832,7 @@ footer{
     }
 
     .project-preview-caption{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .client-panel{
@@ -855,7 +845,7 @@ footer{
     }
 
     .client-name{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 
     #online-audio-portfolio{
@@ -868,15 +858,15 @@ footer{
     }
 
     .topic-of-study{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .education-provider{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 
     .location-of-study{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     footer{
@@ -884,7 +874,7 @@ footer{
     }
 
     #footer-note{
-        width: 250px;
+        width: 200px;
         margin: auto;
     }
 }
@@ -892,23 +882,23 @@ footer{
 @media screen and (max-width: 400px){
     #name-header{
         margin-top: 65vh;
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     #position-title{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .resume-nav-link{
-        margin: 5px 30px;
+        margin: 10px 50px;
     }
 
     .section-header{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .project-preview-caption{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 
     .professional-work-portfolio{
@@ -924,34 +914,34 @@ footer{
 @media screen and (max-width: 350px){
     #name-header{
         margin-top: 65vh;
-        font-size: 2rem;
-    }
-
-    #position-title{
-        font-size: 1.8rem;
-    }
-
-    .resume-nav-link{
-        margin: 5px 20px;
-    }
-
-    #objective-statement{
         font-size: 1.6rem;
     }
 
-    .project-preview-caption{
-        font-size: 1.2rem;
-    }
-
-    .topic-of-study{
+    #position-title{
         font-size: 1.4rem;
     }
 
+    .resume-nav-link{
+        margin: 10px 30px;
+    }
+
+    #objective-statement{
+        font-size: 0.8rem;
+    }
+
+    .project-preview-caption{
+        font-size: 0.8rem;
+    }
+
+    .topic-of-study{
+        font-size: 1.0rem;
+    }
+
     .education-provider{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .location-of-study{
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 }
