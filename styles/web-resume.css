@@ -7,8 +7,12 @@
 }
 
 :root {
-    --background-white: white;
-    --background-parchment: beige;    
+    --snow: rgb(255,250,250);
+    --navajo-white: rgb(255,222,173);
+    --steel-blue: rgb(70,130,180, 0.8);
+
+    --papayawhip: rgb(255,239,213);
+    --azure: rgb(240,255,255);
 }
 
 a{
@@ -27,7 +31,7 @@ hr{
 }
 
 html{
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
 }
 
 body{
@@ -92,7 +96,7 @@ body{
 #site-nav-bar{
     /* position: sticky;
     top: 0; */
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
     height: auto;
     padding: 12px 5px;
     z-index: 100;
@@ -103,16 +107,12 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* grid-template-columns: repeat(4, 1fr); */
     text-align: center;
-    /* margin: auto; */
 }
 
 .resume-nav-link{
     color: black;
     font-size: 1.4rem;
-    /* margin: 5px auto; */
-    /* padding: 5px 10px; */
 }
 
 .section-container{
@@ -137,7 +137,7 @@ body{
 
 /* Objective Statement section */
 #objective-statement-container{
-    background-color: var(--background-parchment, beige);
+    background-color: var(--navajo-white, beige);
     /* position: sticky;
     top: 363px;
     padding-bottom: 30vh;
@@ -161,9 +161,8 @@ body{
 
 /* Project Portfolio section */
 #project-portfolio-container{
-    background-color: var(--background-parchment, beige);
+    background-color: var(--navajo-white, beige);
     padding: 20px 0 50px 0;
-    /* margin-bottom: 50px; */
     /* position: sticky;
     top: 50px;
     z-index: -1; */
@@ -183,7 +182,8 @@ body{
 }
 
 .project-portfolio-preview-panel:hover{
-    background-color: rgba(77, 88, 206, 0.418);
+    color: white;
+    background-color: var(--steel-blue, lightblue);;
     box-shadow: -2px -2px 5px black;
 }
 
@@ -213,7 +213,7 @@ body{
 #technical-proficiency-container{
     z-index: 1;
     width: 100%;
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
 }
 
 .skill-header{
@@ -225,22 +225,24 @@ body{
 }
 
 .technical-skill-list{
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 .skill-panel{
-    width: 130px;
-    padding-bottom: 20px;
+    width: 95px;
+    padding: 0 20px 20px 20px;
 }
 
 .skill-icon{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 .skill-name{
@@ -248,15 +250,17 @@ body{
 }
 
 #linkedin-icon{
-    width: 70px;
-    height: 70px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    margin: 1px 0 0 0;
 }
 
 #twitch-icon{
-    width: 100px;
-    height: 60px;
-    padding: 15px;
+    width: 85px;
+    height: 50px;
+    padding: 10px;
+    margin: 6px 0 0 0;
 }
 
 
@@ -268,7 +272,7 @@ body{
 
 /* Contact Info Section */
 #contact-info-container{
-    background-color: var(--background-parchment, beige);
+    background-color: var(--navajo-white, beige);
     /* margin-top: 30px; */
     /* position: sticky;
     top: 50px;
@@ -286,7 +290,7 @@ body{
     justify-content: space-evenly;
     width: 525px;
     margin: 0 auto;
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
     border: 2px solid grey;
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
@@ -307,7 +311,7 @@ body{
 /* Professional Experience section */
 #professional-experience-container{
     padding-bottom: 100px;
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
 }
 
 .professional-experience-block{
@@ -390,7 +394,7 @@ body{
 
 /* Educational Studies section */
 #educational-studies-container{
-    background-color: var(--background-parchment, beige);
+    background-color: var(--navajo-white, beige);
 }
 
 #educational-studies-list{
@@ -404,7 +408,7 @@ body{
     text-align: center;
     margin: 5px;
     padding: 10px;
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -437,7 +441,7 @@ body{
 
 /* Value Added section */
 #value-added-container{
-    background-color: var(--background-parchment, beige);
+    background-color: var(--navajo-white, beige);
 }
 
 #value-added-skills{
@@ -463,7 +467,7 @@ body{
 
 /* About Me section */
 #about-me-container{
-    background-color: var(--background-white, white);
+    background-color: var(--snow, white);
     font-size: 1.5rem;
 }
 
@@ -501,7 +505,7 @@ footer{
     font-size: 0.8rem;
     text-align: end;
     background-color: black;
-    color: var(--background-white, white);
+    color: var(--snow, white);
     ;
 }
 
@@ -516,11 +520,9 @@ footer{
 }
 
 .footer-nav-link{
-    color: var(--background-white, white);
+    color: var(--snow, white);
     padding: 0 10px;
 }
-
-
 
 
 
@@ -565,6 +567,34 @@ footer{
 }
 
 @media screen and (max-width: 1200px){
+    .technical-skill-list{
+        width: 90%;
+    }
+    
+    .skill-panel{
+        width: 95px;
+        padding: 0 10px 20px 10px;
+    }
+    
+    .skill-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    #linkedin-icon{
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+        margin: 0 0 0 0;
+    }
+    
+    #twitch-icon{
+        width: 65px;
+        height: 40px;
+        padding: 6px;
+        margin: 0 0 0 0;
+    }
+    
     .contact-method-panel{
         width: 275px;
     }
@@ -586,22 +616,6 @@ footer{
     }
 
 @media screen and (max-width: 1050px){
-    #language-skill-panel{
-        margin: 0 4rem;
-    }
-
-    #av-skill-panel{
-        margin: 0 4rem;
-    }
-
-    #project-skill-panel{
-        margin: 0 4rem;
-    }
-
-    #social-skill-panel{
-        margin: 0 4rem;
-    }
-
     #project-portfolio-container{
         position: relative;
         top: 0;
@@ -634,12 +648,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 950px){
-    #language-skill-panel{
-        margin: 0 3rem;
-    }
-}
-
 @media screen and (max-width: 875px){
     #name-header{
         margin-top: 43vh;
@@ -657,8 +665,18 @@ footer{
         width: 75%;
     }
 
-    #language-skill-panel{
-        margin: 0 2.5rem;
+    #linkedin-icon{
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+        margin: 0 0 0 0;
+    }
+    
+    #twitch-icon{
+        width: 65px;
+        height: 37px;
+        padding: 6px;
+        margin: 0 0 0 0;
     }
     
     .client-list{
@@ -686,6 +704,10 @@ footer{
         align-items: center;
     } 
 
+    .educational-studies-panel{
+        width: 350px;
+    }
+
     .value-added-list{
         font-size: 1.3rem;
     }
@@ -704,18 +726,6 @@ footer{
     .skill-header{
         font-size: 1.4rem;
         width: 85%;
-    }
-
-    #av-skill-panel{
-        margin: 0 5rem;
-    }
-
-    #project-skill-panel{
-        margin: 0 5rem;
-    }
-
-    #social-skill-panel{
-        margin: 0 5rem;
     }
 
     .position-title{
@@ -763,18 +773,6 @@ footer{
         font-size: 3.5rem;
     }
     
-    #av-skill-panel{
-        margin: 0 4rem;
-    }
-
-    #project-skill-panel{
-        margin: 0 4rem;
-    }
-
-    #social-skill-panel{
-        margin: 0 4rem;
-    }
-
     #project-portfolio-preview-list{
         width: 93%;
     }
@@ -819,11 +817,6 @@ footer{
 
     #objective-statement{
         font-size: 1.0rem;
-    }
-
-    .technical-skill-list{
-        flex-direction: column;
-        align-items: center;
     }
 
     .project-preview{
