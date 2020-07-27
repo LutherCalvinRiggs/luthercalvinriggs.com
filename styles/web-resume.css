@@ -169,10 +169,14 @@ body{
 }
 
 #project-portfolio-preview-list{
+    text-align: center;
+}
+
+.project-portfolio-list-row{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
+    margin-top: 50px;
 }
 
 .project-portfolio-preview-panel{
