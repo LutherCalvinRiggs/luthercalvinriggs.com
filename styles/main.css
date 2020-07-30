@@ -180,7 +180,7 @@
     border-radius: 5px;
 }
 
-.audio-track-cover-art:hover{
+.audio-track-cover-art:active{              /* May need to add a new class .playing to the DOM */
     border: 2px solid white;
     animation-name: thump;
     animation-duration: 480ms;
