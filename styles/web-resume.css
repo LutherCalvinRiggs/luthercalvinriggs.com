@@ -148,6 +148,7 @@ body{
     width: 80%;
     margin: 0 auto;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 
@@ -629,6 +630,10 @@ footer{
         flex-direction: column;
         width: 550px;
         margin: 0 auto;
+    }
+
+    .project-portfolio-list-row{
+        flex-direction: column;
     }
 
     .project-portfolio-preview-panel{
