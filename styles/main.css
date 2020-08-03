@@ -239,7 +239,7 @@
     border-radius: 5px;
 }
 
-.audio-track-block a:hover{
+/* .audio-track-block a:hover{
     color: black;
     background-color: var(--nav-white);
     font-size: 1rem;
@@ -247,7 +247,7 @@
     animation-name: button-hover;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-}
+} */
 
 .audio-download-gate-link{
     visibility: hidden;
