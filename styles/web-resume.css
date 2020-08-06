@@ -1,14 +1,7 @@
 /* Global CSS */
-@font-face {
-    font-family: 'Open Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
     --snow: rgb(255,250,250);
-    --navajo-white: rgb(255,222,173);
+    --navajo-white: rgb(252, 239, 221);
     --steel-blue: rgb(70,130,180, 0.8);
 
     --papayawhip: rgb(255,239,213);
@@ -25,9 +18,9 @@ a{
 }
 
 hr{
-    width: 200px;
+    width: 100px;
     border-bottom: 2px solid black;
-    margin: 70px auto;
+    margin: 40px auto;
 }
 
 html{
@@ -37,7 +30,7 @@ html{
 body{
     width: 100%;                 
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     text-decoration: none;
     text-wrap: wrap;
     font-weight: 400;
@@ -54,51 +47,40 @@ body{
 
 
 /* Page landing */
-#header-image-box{
-    z-index: 0;
-    /* display: sticky; */
-}
-
-.background-image{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-}
-
-#header-photo{
-    width: auto;
+#site-landing-area {
     height: 100vh;
-    position: fixed;
+    background-color: var(--snow), white);
+    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%),
+                      url('/images/web-resume-images/page-image-header1.png');
+    background-attachment: fixed;
     background-position: center;
-    top: 0;
-    z-index: -1;
-    -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.5) 35%, black 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#name-container {
+    text-align: center;
+    position: absolute;
+    bottom: 6vh;
 }
 
 #name-header{
     color: black;
-    margin-top: 63vh;
     font-size: 4.5rem;
-    text-align: center;
-    padding: 20px 0 10px 0;
-    z-index: 1;
 }
 
 #position-title{
     color: black;
     font-size: 3rem;
-    text-align: center;
-    padding: 10px 0 20px 0;
-    z-index: 1;
 }
 
 #site-nav-bar{
-    /* position: sticky;
-    top: 0; */
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: var(--snow, white);
+    border-bottom: 1px solid black;
     height: auto;
-    padding: 12px 5px;
     z-index: 100;
 }
 
@@ -107,25 +89,30 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    text-align: center;
+    padding: 10px;
 }
 
-.resume-nav-link{
+.resume-nav-link-box{
     color: black;
+}
+
+.nav-link {
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
 .section-container{
     width: 100%;
-    padding: 50px 0;
+    padding-top: 50px;
     margin: auto;
 }
 
 .section-header{
     text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
+
 
 
 
@@ -138,17 +125,19 @@ body{
 /* Objective Statement section */
 #objective-statement-container{
     background-color: var(--navajo-white, beige);
-    /* position: sticky;
-    top: 363px;
-    padding-bottom: 30vh;
-    z-index: -1; */
+    padding-bottom: 50px;
 }
 
 #objective-statement{
-    width: 80%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 20px auto;
     font-size: 1.4rem;
+}
+
+#hashtag-container {
     text-align: center;
+    font-size: 1.4rem;
+    padding: 10px 0;
 }
 
 
@@ -162,46 +151,264 @@ body{
 
 /* Project Portfolio section */
 #project-portfolio-container{
-    background-color: var(--navajo-white, beige);
-    padding: 20px 0 50px 0;
-    /* position: sticky;
-    top: 50px;
-    z-index: -1; */
+    padding-top: 10px;
+    background: linear-gradient(180deg, var(--navajo-white, beige) 5%, black 12%);
 }
 
-#project-portfolio-preview-list{
-    text-align: center;
+#project-portfolio-header{
+    color: black;
+    border-bottom: 5px solid var(--snow, white);
 }
 
-.project-portfolio-list-row{
+.project-block {
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 50px;
+    align-items: center;
+    border-bottom: 5px solid var(--snow, white);
 }
 
 .project-portfolio-preview-panel{
-    background-color: rgba(255, 255, 255, 0.7);
+    width: 500px;
+    height: 275px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
 }
 
-.project-portfolio-preview-panel:hover{
-    color: white;
-    background-color: var(--steel-blue, lightblue);;
-    box-shadow: -2px -2px 5px black;
-}
-
-.project-preview{
-    width: 500px;
-    height: 275px;
+.project-preview {
+    width: 475px;
+    height: 250px;
     margin: 10px;
     border: 2px solid black;
 }
 
-.project-preview-caption{
-    font-size: 1.8rem;
-    padding-bottom: 20px;
+.project-description-container {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+.project-description-text {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.project-link {
+    padding: 0 10px 10px 10px;
+}
+
+#luthercalvinriggs {
+    background-image: url('/images/web-resume-images/project-background-dj.png');
+}
+
+#thingspresidentssay {
+    background-image: url('/images/web-resume-images/project-background-american-flag.png');
+}
+
+#github {
+    background-image: url('/images/web-resume-images/project-background-js-code.png');
+}
+
+
+
+
+
+
+
+
+/* Professional Experience section */
+#professional-experience-container{
+    padding-bottom: 100px;
+    background-color: var(--snow, white);
+}
+
+.professional-experience-block{
+    width: 60%;
+    margin: 20px auto;
+    padding: 0 30px;
+    line-height: 1.3;
+}
+
+.position-title{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.position-details{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.experience-highlight-list{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+.professional-work-portfolio{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+.audio-portfolio-link{
+    text-decoration: underline;
+}
+
+.audio-portfolio-link:hover{
+    color: grey;
+}
+
+.client-block{
+    width: 70%;
+    margin: 0px auto 10px auto;
+    text-align: center;
+}
+
+.client-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 0.7rem;
+}
+
+.client-panel{
+    width: 250px;
+    margin: 35px auto;
+}
+
+.client-list-header{
+    margin: 10px auto;
+    font-size: 1.6rem;
+}
+
+.client-logo{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.client-name{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+/* Educational Studies section */
+#educational-studies-container{
+    background-color: var(--navajo-white, beige);
+}
+
+#educational-studies-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.educational-studies-panel{
+    width: 350px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--snow, white);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px black;
+
+}
+
+.topic-of-study{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.education-provider{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.location-of-study{
+    font-size: 1.4rem;
+}
+
+.education-link{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Value Added section */
+#value-added-container{
+    background-color: var(--navajo-white, beige);
+}
+
+#value-added-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.value-added-list{
+    list-style-type: circle;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+/* Contact Info Section */
+#contact-info-container{
+    background-color: var(--navajo-white, beige);
+}
+
+#contact-method-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.contact-method-panel{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 225px;
+    margin: 0 auto;
+    background-color: var(--snow, white);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px black;
+}
+
+.contact-icon {
+    width: 75px;
+    height: auto;
+}
+
+.contact-method-object{
+    text-align: center;
+    margin: 10px 20px;
 }
 
 
@@ -275,214 +482,29 @@ body{
 
 
 
-/* Contact Info Section */
-#contact-info-container{
-    background-color: var(--navajo-white, beige);
-    /* margin-top: 30px; */
-    /* position: sticky;
-    top: 50px;
-    z-index: -1; */
-}
-
-#contact-method-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.contact-method-panel{
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 525px;
-    margin: 0 auto;
-    background-color: var(--snow, white);
-    border: 2px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
-}
-
-.contact-method-object{
-    text-align: center;
-    margin: 10px 20px;
-}
-
-
-
-
-
-
-
-
-/* Professional Experience section */
-#professional-experience-container{
-    padding-bottom: 100px;
-    background-color: var(--snow, white);
-}
-
-.professional-experience-block{
-    width: 60%;
-    margin: 0 auto;
-    padding: 0 30px;
-    line-height: 1.3;
-}
-
-.position-title{
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.position-details{
-    font-size: 1.8rem;
-    font-style: italic;
-}
-
-.experience-highlight-list{
-    font-size: 1.6rem;
-    padding-left: 20px;
-    list-style-type: circle;
-}
-
-.professional-work-portfolio{
-    padding-top: 10px;
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-.audio-portfolio-link{
-    text-decoration: underline;
-}
-
-.audio-portfolio-link:hover{
-    color: grey;
-}
-
-.client-block{
-    width: 70%;
-    margin: 30px auto 10px auto;
-    text-align: center;
-}
-
-.client-list{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 0.7rem;
-}
-
-.client-panel{
-    width: 250px;
-    margin: 35px auto;
-}
-
-.client-list-header{
-    margin: 10px auto;
-    font-size: 1.6rem;
-}
-
-.client-logo{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-.client-name{
-    margin-top: 10px;
-    font-size: 1.4rem;
-}
-
-
-
-
-
-
-
-
-/* Educational Studies section */
-#educational-studies-container{
-    background-color: var(--navajo-white, beige);
-}
-
-#educational-studies-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.educational-studies-panel{
-    width: 450px;
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
-    background-color: var(--snow, white);
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.topic-of-study{
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.education-provider{
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.location-of-study{
-    font-size: 1.4rem;
-}
-
-.education-link{
-    text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-/* Value Added section */
-#value-added-container{
-    background-color: var(--navajo-white, beige);
-}
-
-#value-added-skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.value-added-list{
-    list-style-type: circle;
-    font-size: 1.6rem;
-}
-
-
-
-
-
-
-
-
 
 /* About Me section */
 #about-me-container{
     background-color: var(--snow, white);
-    font-size: 1.5rem;
+    font-size: 1.0rem;
+    border-top: 2px solid black;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #about-me-container p{
-    padding: 10px 0;
+    padding: 10px 0 30px 0;
 }
 
 .profile-container{
-    margin: 50px auto;
+    margin: 0px auto;
     width: 75%;
+}
+
+.about-me-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 15px;
 }
 
 blockquote{
@@ -503,7 +525,7 @@ cite{
 }
 
 footer{
-    height: 100px;
+    height: 70px;
     width: 100%;
     padding-top: 10px;
     line-height: 1.5;
@@ -511,7 +533,6 @@ footer{
     text-align: end;
     background-color: black;
     color: var(--snow, white);
-    ;
 }
 
 #footer-note{
@@ -529,43 +550,7 @@ footer{
     padding: 0 10px;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1375px){
-    #name-header{
-        margin-top: 53vh;
-    }
-
-    .resume-nav-link{
-        font-size: 1.4rem;
-    }
-
-    .contact-method-panel{
-        width: 325px;
-    }
-
-    .position-title{
-        font-size: 1.6rem;
-    }
-
-    .position-details{
-        font-size: 1.4rem;
-    }
-
-    .experience-highlight-list{
-        font-size: 1.2rem;
-    }
-
-    .professional-work-portfolio{
-        font-size: 1.2rem;
-    }
-
     .client-block{
         width: 80%;
     }
@@ -608,62 +593,41 @@ footer{
         width: 70%;
     }
 
-    .position-title{
-        font-size: 1.6rem;
-    }
-
-    .position-details{
-        font-size: 1.4rem;
-    }
-
     .client-list{
         grid-template-columns: repeat(2, 1fr);
     }
 
 @media screen and (max-width: 1050px){
-    #project-portfolio-container{
-        position: relative;
-        top: 0;
-    }
 
-    #project-portfolio-preview-list{
-        flex-direction: column;
-        width: 550px;
-        margin: 0 auto;
-    }
-
-    .project-portfolio-list-row{
-        flex-direction: column;
-    }
-
-    .project-portfolio-preview-panel{
-        margin-bottom: 20px;
-    }
-
-    .position-title{
-        font-size: 1.4rem;
-    }
-
-    .position-details{
-        font-size: 1.2rem;
-    }
-
-    .experience-highlight-list{
-        font-size: 1.0rem;
-    }
-
-    .professional-work-portfolio{
-        font-size: 1.0rem;
-    }
 }
 
 @media screen and (max-width: 875px){
     #name-header{
-        margin-top: 43vh;
+        font-size: 4rem;
     }
 
-    .resume-nav-link{
-        font-size: 0.8rem;
+    #position-title {
+        font-size: 2.5rem;
+    }
+
+    .project-block {
+        height: 500px;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    #educational-studies-list{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .educational-studies-panel{
+        width: 350px;
+    }
+
+    #value-added-skills {
+        width: 40%;
+        flex-direction: column;
     }
 
     .contact-method-panel{
@@ -692,42 +656,44 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .position-title{
-        font-size: 1.2rem;
-    }
-
-    .position-details{
-        font-size: 1.0rem;
-    }
-
-    .experience-highlight-list{
-        font-size: 0.8rem;
-    }
-
-    .professional-work-portfolio{
-        font-size: 0.8rem;
-    }
-
-    #educational-studies-list{
-        flex-direction: column;
-        align-items: center;
-    } 
-
-    .educational-studies-panel{
-        width: 350px;
-    }
-
-    .value-added-list{
-        font-size: 1.3rem;
-    }
-
     footer{
         height: 75px;
     }
 }            
 
 @media screen and (max-width: 750px){
-    
+    #name-header{
+        font-size: 3.2rem;
+    }
+
+    #position-title {
+        font-size: 2.0rem;
+    }
+
+    .nav-link {
+        font-size: 1.0rem;
+    }
+
+    .section-header{
+        font-size: 2.2rem;
+    }
+
+    .topic-of-study{
+        font-size: 1.4rem;
+    }
+
+    .education-provider{
+        font-size: 1.2rem;
+    }
+
+    .location-of-study{
+        font-size: 1.2rem;
+    }
+
+    #value-added-skills {
+        width: 55%;
+    }
+
     #contact-info-container{
         top: 100px;
     }
@@ -737,104 +703,67 @@ footer{
         width: 85%;
     }
 
-    .position-title{
-        font-size: 0.9rem;
-    }
-
-    .position-details{
-        font-size: 0.7rem;
-    }
-
     .professional-experience-block{
         width: 90%;
-    }
-
-    .position-title{
-        font-size: 1.3rem;
-    }
-
-    .position-details{
-        font-size: 1.1rem;
-    }
-
-    .experience-highlight-list{
-        font-size: 0.9rem;
-    }
-
-    .professional-work-portfolio{
-        font-size: 0.9rem;
     }
 
     .client-block{
         width: 90%;
     }
-
-    #value-added-skills{
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 600px){
-    #name-header{
-        margin-top: 35vh;
-        font-size: 3.5rem;
-    }
-    
-    #project-portfolio-preview-list{
-        width: 93%;
-    }
-
-    .project-preview{
-        width: 90%;
-        height: 275px;
-    }
-
     .professional-experience-block{
         width: 80%;
+    }
+
+    #contact-method-container {
+        flex-direction: column;
+    }
+
+    .contact-method-panel {
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 500px){
     #name-header{
-        margin-top: 65vh;
         font-size: 2.4rem;
     }
 
-    #position-title{
-        font-size: 2.1rem;
+    #position-title {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
     }
 
     .section-header{
-        font-size: 2.1rem;
+        font-size: 2.0rem;
     }
 
-    .resume-nav-link{
-        font-size: 1.0rem;
-        margin: 10px 40px;
-    }
-
-    #contact-method-container{
-        flex-direction: column;
-    }
-
-    .contact-method-panel{
-        width: 225px;
-        margin-top: 20px;
+    #value-added-skills {
+        width: 70%;
     }
 
     #objective-statement{
-        font-size: 1.0rem;
+        font-size: 1.4rem;
     }
 
-    .project-preview{
-        width: 90%;
-        height: auto;
+    .project-portfolio-preview-panel{
+        width: 400px;
+        height: 240px;
+        text-align: center;
     }
 
-    .project-preview-caption{
-        font-size: 1.2rem;
+    .project-preview {
+        width: 375px;
+        height: 215px;
+    }
+
+    .project-description-container {
+        width: 370px;
     }
 
     .client-panel{
@@ -859,18 +788,6 @@ footer{
         width: 80%;
     }
 
-    .topic-of-study{
-        font-size: 1.2rem;
-    }
-
-    .education-provider{
-        font-size: 1.0rem;
-    }
-
-    .location-of-study{
-        font-size: 0.8rem;
-    }
-
     footer{
         height: 100px;
     }
@@ -883,24 +800,33 @@ footer{
 
 @media screen and (max-width: 400px){
     #name-header{
-        margin-top: 65vh;
-        font-size: 2.1rem;
+        font-size: 2.2rem;
     }
 
-    #position-title{
-        font-size: 1.8rem;
-    }
-
-    .resume-nav-link{
-        margin: 10px 50px;
+    #position-title {
+        font-size: 1.4rem;
     }
 
     .section-header{
         font-size: 1.8rem;
     }
 
-    .project-preview-caption{
+    #objective-statment {
         font-size: 1.0rem;
+    }
+
+    .project-portfolio-preview-panel{
+        width: 350px;
+        height: 200px;
+    }
+
+    .project-preview {
+        width: 325px;
+        height: 175px;
+    }
+
+    .project-description-container {
+        width: 320px;
     }
 
     .professional-work-portfolio{
@@ -911,39 +837,60 @@ footer{
     .client-list{
         grid-template-columns: 1fr;
     }
+
+    .value-added-list {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 350px){
     #name-header{
-        margin-top: 65vh;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
-    #position-title{
-        font-size: 1.4rem;
-    }
-
-    .resume-nav-link{
-        margin: 10px 30px;
-    }
-
-    #objective-statement{
-        font-size: 0.8rem;
-    }
-
-    .project-preview-caption{
-        font-size: 0.8rem;
-    }
-
-    .topic-of-study{
+    #position-title {
         font-size: 1.0rem;
     }
 
+    .section-header {
+        font-size: 1.6rem;
+    }
+
+    #objective-statement{
+        font-size: 1.2rem;
+    }
+
+    #hashtag-container {
+        font-size: 1.2rem;
+    }
+
+    .project-portfolio-preview-panel{
+        width: 300px;
+        height: 175px;
+    }
+
+    .project-preview {
+        width: 275px;
+        height: 150px;
+    }
+
+    .project-description-container {
+        width: 280px;
+    }
+
+    .topic-of-study{
+        font-size: 1.2rem;
+    }
+
     .education-provider{
-        font-size: 0.8rem;
+        font-size: 1.0rem;
     }
 
     .location-of-study{
-        font-size: 0.6rem;
+        font-size: 1.0rem;
+    }
+
+    .value-added-list {
+        font-size: 1.0rem;
     }
 }

@@ -23,7 +23,7 @@
         <link href="styles/web-resume.css" rel="stylesheet" type="text/css" media="all"/>
 
         <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
         <style>
             
@@ -31,28 +31,32 @@
 </head>
 <body>
 
-    <div id="header-image-box">
-        <div class="background-image">
-            <img id="header-photo" src="images/web-resume-images/page-image-header1.png" alt="Luther Calvin Riggs in Paris">
-        </div>
-        
+    <div id="site-landing-area">
+
         <div id="name-container" class="section-container">
+
             <h1 id="name-header">Luther Calvin Riggs</h1>
             <h2 id="position-title">Front End Web Developer</h2>
+
         </div>
+
     </div>
 
     <div id="site-nav-bar">
 
         <div id="nav-link-list">
             
-            <div class="resume-nav-link"><a href="#objective-statement-container">Objective<br>Statement</a></div>
-            
-            <div class="resume-nav-link"><a href="#project-portfolio-container">Project<br>Portfolio</a></div>
-            
-            <div class="resume-nav-link"><a href="#technical-proficiency-container">Technical<br>Proficiency</a></div>
+            <div class="resume-nav-link-box">
+                <a class='nav-link' href="#project-portfolio-container">Portfolio</a>
+            </div>
 
-            <div class="resume-nav-link"><a href="#professional-experience-container">Professional<br>Experience</a></div>
+            <div class="resume-nav-link-box">
+                <a class='nav-link' href="#professional-experience-container">Experience</a>
+            </div>
+
+            <div class="resume-nav-link-box">
+                <a class='nav-link' href="#educational-studies-container">Education</a>
+            </div>
 
         </div>
         
@@ -62,7 +66,8 @@
         
         <h3 id="objective-statement-header" class="section-header">Objective Statement</h3>
 
-        <p id="objective-statement">Front end web developer looking to create interactive and visually interesting web pages and applications.</p>
+        <p id="objective-statement">Front end web developer looking to create interactive and visually stimulating websites and web applications. Experience with UX/UI, testing and debugging.</p>
+        <p id="hashtag-container">#opentowork<br>#readytowork</p>
 
     </div>
 
@@ -72,51 +77,274 @@
 
         <div id="project-portfolio-preview-list">
 
-            <div class="project-portfolio-list-row">
+            <div id='luthercalvinriggs' class='project-block'>     
 
-                <a href="https://www.luthercalvinriggs.com" target="_blank">
+                <div class="project-portfolio-preview-panel">
+                    <a target="_blank" href="http://luthercalvinriggs.com/">
+                        <img class="project-preview" src="images/web-resume-images/site-preview-luthercalvinriggs.png" alt="preview of my luthercalvinriggs.com">
+                    </a>
+                </div>
 
-                    <div class="project-portfolio-preview-panel">
-
-                        <img class="project-preview" src="images/web-resume-images/site-preview-luthercalvinriggs.png" alt="preview of my personal website">
-                        
-                        <p class="project-preview-caption">LutherCalvinRiggs.com</p>
-                
+                <div class='project-description-container'>
+                    <p class='project-description-text'>Artist website for American record&nbspproducer and DJ,<br>Luther Calvin Riggs.</p>
+                    <div class='project-link'>
+                        <a target="_blank" href="http://luthercalvinriggs.com/">
+                            luthercalvinriggs.com</a>
                     </div>
-
-                </a>
-
-                <a href="http://www.thingspresidentssay.com" target="_blank">
-
-                    <div class="project-portfolio-preview-panel">
-
-                        <img class="project-preview" src="images/web-resume-images/site-preview-thingspresidentssay.png" alt="preview of my github profile">
-
-                        <p class="project-preview-caption">ThingsPresidentsSay.com</p>
-
-                    </div>
-                    
-                </a>
+                </div>
 
             </div>
 
-            <div class="project-portfolio-list-row">
 
-                <a href="https://github.com/luthercalvinriggs/" target="_blank">
+            <div id='thingspresidentssay' class='project-block'>     
+                
+                <div class="project-portfolio-preview-panel">
+                    <a target="_blank" href="http://thingspresidentssay.com/">
+                        <img class="project-preview" src="images/web-resume-images/site-preview-thingspresidentssay.png" alt="preview of thingspresidentssay.com">
+                    </a>
+                </div>
 
-                    <div class="project-portfolio-preview-panel">
-
-                        <img class="project-preview" src="images/web-resume-images/site-preview-github.png" alt="preview of my github profile">
-
-                        <p class="project-preview-caption">GitHub - LutherCalvinRiggs</p>
-
+                <div class='project-description-container'>
+                    <p class='project-description-text'>Interactive website displaying quotes from the President of the United&nbspStates using JavaScript, arrays and DOM manipulation.</p>
+                    <div class='project-link'>
+                        <a target="_blank" href="http://thingspresidentssay.com/">
+                            thingspresidentssay.com</a>
                     </div>
-                    
-                </a>
-            
+                </div>
+
+            </div>
+
+
+            <div id='github' class='project-block'>
+                
+                <div class="project-portfolio-preview-panel">
+                    <a target="_blank" href="https://github.com/luthercalvinriggs/">
+                        <img class="project-preview" src="images/web-resume-images/site-preview-github.png" alt="preview of github.com/LutherCalvinRiggs">
+                    </a>
+                </div>
+
+                <div class='project-description-container'>
+                    <p class='project-description-text'>My GitHub page where you can see all of my repositories&nbspand&nbspcode.</p>
+                    <div class='project-link'>
+                        <a target="_blank" href="https://github.com/luthercalvinriggs/">
+                            github.com/LutherCalvinRiggs</a>
+                    </div>
+                </div>
+
             </div>
 
         </div>
+
+    </div>
+
+    <div id="professional-experience-container" class="section-container">
+
+        <h3 id="professional-experience-header" class="section-header">Professional Experience</h3>
+
+        <div id="web-developer-block" class="professional-experience-block">
+
+            <div class="position-detals">
+                <h4 class="position-title">Front End Web Developer</h4>
+                <p class="position-details">Freelance - New&nbspYork,&nbspNY&nbsp/&nbsp2020&nbsp-&nbspPresent</p>
+
+                <ol class="experience-highlight-list">
+                    <li class="experience-highlight">Create interactive websites for music production and lifestyle influencing clients.</li>
+                    <li class="experience-highlight">Write self-contained, reusable and testable code.</li>
+                    <li class="experience-highlight">Implement test-driven development (TDD) processes agile software development using Jasmine.</li>
+                    <li class="experience-highlight">Ensure cross-browser and  multi-device compatibility of websites.</li>
+                    <li class="experience-highlight">Update and track pre-existing source code using version control software.</li>
+                    <li class="experience-highlight">Meet with clients, plan project ‘sprints’, and ensure deliverable milestones are met.</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="recording-engineer-block" class="professional-experience-block">
+
+            <h4 class="position-title">Recording Engineer</h4>
+            <p class="position-details">Downtown Music Studio - New&nbspYork,&nbspNY&nbsp/&nbsp2019&nbsp-&nbspMarch&nbsp2020</p>
+
+            <ol class="experience-highlight-list">
+                <li class="experience-highlight">Multi-track recording sessions for artists and record labels, including Joey Badass, Rich Brian, The Roots, and RZA.</li>
+                <li class="experience-highlight">Managed recording and mixing sessions, microphone and instrument rentals, session setup and strike, scheduling and project budgets.</li>
+                <li class="experience-highlight">Provided expert audio technical support and troubleshooting.</li>
+                <li class="experience-highlight">Maintained studios and gear, assisting with software updates and hardware repairs; including Neve 8014 Console and Neve 1084 mic pre-amps/EQs, UREI 1176LN, and Teletronix LA-2A.</li>
+            </ol>
+
+            <div class="client-block">
+                
+                <p id="online-audio-portfolio" class="professional-work-portfolio">
+                    Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio/s-e9qnx">audio portfolio</a>.
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="music-producer-block" class="professional-experience-block">
+
+            <h4 class="position-title">Record Producer & Recording Engineer</h4>
+            <p class="position-details">Luther Calvin Riggs, LLC - New&nbspYork,&nbspNY&nbsp/&nbsp2012&nbsp-&nbspMarch&nbsp2020</p>
+
+            <ol class="experience-highlight-list">
+                <li class="experience-highlight">Composed original music for local New York City songwriters and artists.</li>
+                <li class="experience-highlight">Multi-tracked recordings of vocals, instruments and voice-overs.</li>
+                <li class="experience-highlight">Comped, processed and produced vocals for musical compositions and podcasts. Mixed and mastered recording sessions for online publication and distribution.</li>
+                <li class="experience-highlight">Remotely collaborated with songwriters, producers and corporate clients in New York City, Los Angeles and Houston.</li>
+            </ol>
+
+            <div class="client-block">
+
+                <p id="personal-discography" class="professional-work-portfolio">
+                    Listen to <a class="audio-portfolio-link" target="_blank" href="music.html">my music</a>!
+                </p>
+
+            </div>
+
+        </div>
+
+        
+
+        <hr>
+
+        <div class="professional-experience-block">
+            <h4 class="position-title">Music Supervisor & DJ</h4>
+            <p class="position-details">Luther Calvin Riggs, LLC - New&nbspYork,&nbspNY&nbsp/&nbsp2010&nbsp-&nbspMarch&nbsp2020</p>
+
+            <ol class="experience-highlight-list">
+                <li class="experience-highlight">Sourced in-house playlists for hospitality brands, including Esquared Hospitality, Hotel Hugo Tribeca and Sanctuary Hotel Times Square.</li>
+                <li class="experience-highlight">Curated live DJ sets for fitness instructors and fashion designers, including Equinox, 305 Fitness, DevaCurl, DESLA Couture and Title of Work.</li>
+                <li class="experience-highlight">Preferred DJ for charity organizations, including World Wildlife Foundation, Special Olympics, Chabad’s Children of Chernobyl and Heather Pendergast Fund.</li>
+            </ol>
+
+        </div>
+
+        <hr>
+
+        <div class="professional-experience-block">
+
+            <h4 class="position-title">Financial Assets Trader</h4>
+            <p class="position-details">MF Global - New&nbspYork,&nbspNY&nbsp/&nbsp2006&nbsp-&nbsp2009</p>
+
+            <ol class="experience-highlight-list">
+                <li class="experience-highlight">Traded equities and futures contract.</li>
+                <li class="experience-highlight">Managed $5,000,000 in assets.</li>
+                <li class="experience-highlight">Analyzed global and domestic market trends.</li>
+            </ol>
+
+        </div>
+
+    </div>
+
+    <div id="educational-studies-container" class="section-container">
+
+        <h3 id="educational-studies-header" class="section-header">Educational Studies</h3>
+
+        <div id="educational-studies-list">
+
+            <div class="educational-studies-panel">
+            
+                <h4 class="topic-of-study">Front End<br>Web Development</h4>
+                
+                <p class="education-provider">The Odin Project</p>
+                
+                <p class="location-of-study">theodinproject.com</p>
+
+            </div>
+
+            <div class="educational-studies-panel">
+            
+                <h4 class="topic-of-study">Music Production &<br>Audio Engineering</h4>
+                
+                <p class="education-provider">Self-taught</p>
+                
+                <p class="location-of-study">New York, NY</p>
+
+            </div>
+
+            <div class="educational-studies-panel">
+            
+                <h4 class="topic-of-study">BS: Finance<br>Minor: Architecture</h4>
+                
+                <p class="education-provider">Iowa State University</p>
+                
+                <p class="location-of-study">Ames, IA</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="value-added-container" class="section-container">
+
+        <h3 id="value-added-header" class="section-header">Value Added</h3>
+
+        <div id="value-added-skills">
+            <ol class="value-added-list">
+                <li>Scrum project management</li>
+                <li>Extreme programming (XP)</li>
+                <li>Attention to detail</li>
+                <li>Strong written and verbal&nbspcommunication</li>
+            </ol>
+            <ol class="value-added-list">
+                <li>Fluent English</li>
+                <li>Conversational Spanish</li>
+                <li>Beginner Italian</li>
+            </ol>
+
+        </div>
+
+    </div>
+
+    <div id="contact-info-container" class="section-container"> 
+
+        <h3 id="contact-info-header" class="section-header">Contact Information</h3>
+
+        <div id="contact-method-container">
+
+            <div class="contact-method-panel">
+
+                <div class="contact-method-object">
+                    <img class="contact-icon" src="images/web-resume-images/icon-telephone1-512.png" alt="telephone icon">
+                </div>
+
+                <div class="contact-method-object">
+                    <a href="tel:9175764359">917-576-4359</a>
+                </div>
+
+            </div>
+
+            <div class="contact-method-panel">
+
+                <div class="contact-method-object">
+                    <img class="contact-icon" src="images/web-resume-images/icon-envelope-512.png" alt="email icon">
+                </div>
+
+                <div class="contact-method-object">
+                    <a href="mailto:luther.c.riggs@gmail.com">luther.c.riggs@gmail.com</a>
+                </div>
+
+            </div>
+
+            <div class="contact-method-panel">
+                
+                <div class="contact-method-object">
+                    <img class="contact-icon" src="images/web-resume-images/icon-mappin1-512.png" alt="map icon">
+                </div>
+
+                <div class="contact-method-object">
+                    New York, NY 11103
+                </div> 
+
+            </div>
+
+        </div>
+
     </div>
 
     <div id="technical-proficiency-container" class="section-container">
@@ -164,20 +392,20 @@
                         <li class="skill-name">Git</li>
                     </ol>
 
-                    <ol id="language-skill-panel" class="skill-panel">
+                    <!-- <ol id="language-skill-panel" class="skill-panel">
                         <li><img class="skill-icon" src="images/web-resume-images/icon-squarespace-512.png"></li>
                         <li class="skill-name">SquareSpace</li>
-                    </ol>
+                    </ol> -->
 
                     <!-- <ol id="language-skill-panel" class="skill-panel">
                         <li><img class="skill-icon" src="images/web-resume-images/"></li>
                         <li class="skill-name">Dev Tools</li>
                     </ol> -->
 
-                    <ol id="language-skill-panel" class="skill-panel">
+                    <!-- <ol id="language-skill-panel" class="skill-panel">
                         <li><img class="skill-icon" src="images/web-resume-images/icon-seo-512.png"></li>
                         <li class="skill-name">SEO</li>
-                    </ol>
+                    </ol> -->
 
             </ol>
             
@@ -310,227 +538,17 @@
 
     </div>
 
-    <div id="contact-info-container" class="section-container"> 
-
-        <h3 id="contact-info-header" class="section-header">Contact Information</h3>
-
-        <div id="contact-method-container">
-
-            <div class="contact-method-panel">
-
-                <div class="contact-method-object">
-                    <img class="icon" src="images/web-resume-images/icon-telephone1-512.png" alt="telephone icon">
-                </div>
-
-                <div class="contact-method-object">
-                    <a href="tel:9175764359">917-576-4359</a>
-                </div>
-
-            </div>
-
-            <div class="contact-method-panel">
-
-                <div class="contact-method-object">
-                    <img class="icon" src="images/web-resume-images/icon-envelope-512.png" alt="email icon">
-                </div>
-
-                <div class="contact-method-object">
-                    <a href="mailto:luther.c.riggs@gmail.com">luther.c.riggs@gmail.com</a>
-                </div>
-
-            </div>
-
-            <div class="contact-method-panel">
-                
-                <div class="contact-method-object">
-                    <img class="icon" src="images/web-resume-images/icon-mappin1-512.png" alt="map icon">
-                </div>
-
-                <div class="contact-method-object">
-                    New York, NY 11103
-                </div> 
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div id="professional-experience-container" class="section-container">
-
-        <h3 id="professional-experience-header" class="section-header">Professional Experience</h3>
-
-        <div id="web-developer-block" class="professional-experience-block">
-
-            <div class="position-detals">
-                <h4 class="position-title">Front End Web Developer</h4>
-                <p class="position-details">Freelance - New York, NY / 2020 - Present</p>
-
-                <ol class="experience-highlight-list">
-                    <li class="experience-highlight">Develop and maintain websites for clients in diverse fields such as music production and lifestyle influencing, including elements such as media streaming, animation and blogs.</li>
-                    <li class="experience-highlight">Fix bugs from existing websites and implemented enhancements that significantly improved functionality.</li>
-                    <li class="experience-highlight">Integrate third-party APIs.</li>
-                    <li class="experience-highlight">Test website responsiveness to ensure device compatibility, page views, and user experience.</li>
-                    <li class="experience-highlight">Meet with clients to gather requirements, design sites, and ensure deliverable milestones are met.</li>
-                    <li class="experience-highlight">Apply version control software to track, test, and update pre-existing source code.</li>
-                    <li class="experience-highlight">Maintain websites and applications, including content updates, feature enhancements, debugging and testing.</li>
-                    <li class="experience-highlight">Ensure cross-browser and cross-device compatibility.</li>
-                    <li class="experience-highlight">Create logos and graphics for web applications.</li>
-                </ol>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div id="recording-engineer-block" class="professional-experience-block">
-
-            <h4 class="position-title">Recording Engineer</h4>
-            <p class="position-details">Downtown Music Studio - New York, NY / 2019 - March 2020</p>
-
-            <ol class="experience-highlight-list">
-                <li class="experience-highlight">Select, place and conduct mic tests to record live performances, voice-overs, and instrument overdubs.</li>
-                <li class="experience-highlight">Scrubbed ambience and background noise from field recordings.</li>
-                <li class="experience-highlight">Provided expert technical support and working knowledge of analog and digital audio signal flow when troubleshooting audio issues.</li>
-                <li class="experience-highlight">Managed recording and mixing sessions, microphone and instrument rentals, session setup and strike, scheduling and project budgets.</li>
-                <li class="experience-highlight">Maintained studios and gear, assisting with software updates and hardware repairs; including Neve 8014 Console and Neve 1084 mic pre-amps/EQs, UREI 1176LN, and Teletronix LA-2A.</li>
-                <li class="experience-highlight">Organized and managed album listening sessions for artists, labels and media.</li>
-                <li class="experience-highlight">Fulfilled session technical riders.</li>
-                
-            </ol>
-
-            <div class="client-block">
-                
-                <p id="online-audio-portfolio" class="professional-work-portfolio">
-                    Check out my <a class="audio-portfolio-link" target="_blank" href="https://soundcloud.com/lutherriggs/sets/audio-portfolio/s-e9qnx">audio portfolio</a>.
-                </p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div id="music-producer-block" class="professional-experience-block">
-
-            <h4 class="position-title">Record Producer & Recording Engineer</h4>
-            <p class="position-details">Freelance - New York, NY / 2012 - Present</p>
-
-            <ol class="experience-highlight-list">
-                <li class="experience-highlight">Multi-track recording of vocals, instruments and voice-overs.</li>
-                <li class="experience-highlight">Comp, process and produce vocals for musical compositions and podcasts.</li>
-                <li class="experience-highlight">Capture and process ambient recordings and sound effects.</li>
-                <li class="experience-highlight">Compose original music for local New York City songwriters and artists.</li>
-                <li class="experience-highlight">Process and design digital audio samples for music production.</li>
-                <li class="experience-highlight">Produce dance remixes of pop songs for distribution to club DJs.</li>
-                <li class="experience-highlight">Edit, tune and process audio.</li>
-                <li class="experience-highlight">Mix and master recording sessions for online publication and distribution.</li>
-                <li class="experience-highlight">Remotely collaborate with songwriters, producers and corporate clients in New York City, Los Angeles and Houston.</li>
-                <li class="experience-highlight">Manage and complete multiple projects simultaneously</li>
-                <li class="experience-highlight">Utilize cloud services to share audio files between collaborators. Organize and maintain audio archives on external hard drives.</li>
-            </ol>
-
-        </div>
-
-        <p id="personal-discography" class="professional-work-portfolio">
-            Listen to <a class="audio-portfolio-link" target="_blank" href="music.html">my music</a>!
-        </p>
-
-        <hr>
-
-        <div class="professional-experience-block">
-            <h4 class="position-title">Music Supervisor & DJ</h4>
-            <p class="position-details">New York, NY / 2010 - March 2020</p>
-
-            <ol class="experience-highlight-list">
-                <li class="experience-highlight">Perform live DJ sets and curate in-house playlists for NYC nightlife, fashion designers, hospitality brands, corporations and charity organizations:</li>
-            </ol>
-
-        </div>
-
-        <hr>
-
-        <div class="professional-experience-block">
-
-            <h4 class="position-title">Financial Assets Trader</h4>
-            <p class="position-details">MF Global - New York, NY / 2006 - 2009</p>
-
-            <ol class="experience-highlight-list">
-                <li id="trader-job-description" class="experience-highlight">Equity and futures proprietary trader. Downsized during the financial market collapse of 2009.</li>
-            </ol>
-
-        </div>
-
-    </div>
     
-    <div id="educational-studies-container" class="section-container">
-
-        <h3 id="educational-studies-header" class="section-header">Educational Studies</h3>
-
-        <div id="educational-studies-list">
-
-            <div class="educational-studies-panel">
-            
-                <h4 class="topic-of-study">Front End<br>Web Development</h4>
-                
-                <p class="education-provider">The Odin Project</p>
-                
-                <p class="location-of-study">theodinproject.com</p>
-
-            </div>
-
-            <div class="educational-studies-panel">
-            
-                <h4 class="topic-of-study">Music Production &<br>Audio Engineering</h4>
-                
-                <p class="education-provider">Self-taught</p>
-                
-                <p class="location-of-study">New York, NY</p>
-
-            </div>
-
-            <div class="educational-studies-panel">
-            
-                <h4 class="topic-of-study">BS: Finance<br>Minor: Architecture</h4>
-                
-                <p class="education-provider">Iowa State University</p>
-                
-                <p class="location-of-study">Ames, IA</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div id="value-added-container" class="section-container">
-
-        <h3 id="value-added-header" class="section-header">Value Added</h3>
-
-        <div id="value-added-skills">
-            <ol class="value-added-list">
-                <li>Remote project management</li>
-                <li>Collaborative teamwork</li>
-                <li>Strong written and verbal skills</li>
-            </ol>
-
-            <ol class="value-added-list">
-                <li>Fluent English</li>
-                <li>Conversational Spanish</li>
-                <li>Beginner Italian</li>
-            </ol>
-
-        </div>
-
-    </div>
 
     <div id="about-me-container" class="section-container"> 
 
-        <h3 id="about-me-header" class="section-header">About Me</h3>
+        <!-- <h3 id="about-me-header" class="section-header">About Me</h3> -->
 
         <div id="my-story" class="profile-container">
 
-            <p>When you stop and think about it, you can end up spending over 2000 hours each year in the presence of your coworkers. Now imagine that being someone you don't vibe with. Since it can be hard to guage someone's personality from a resume, I wanted to take a moment and share a little about what makes me as a person.</p>
+            <h3 class='about-me-heading'>Hi! I'm Luther.</h3>
+
+            <p>When you stop and think about it, you can end up spending over 2000 hours each year in the presence of your coworkers. Now imagine that being someone you don't vibe with. Since it can be hard to gauge someone's personality from a resume, I wanted to take a moment and share a little about what makes me as a person.</p>
 
             <p>To put it simply, I've seen a lot in life. I graduated with a degree in finance, only to take a job that would be wiped out three years later by a global market meltdown. At a time of massive, industry-wide layoffs, I humbly returned to one of my collegiate professions: tending bar. From there I found a passion in nightlife, took up DJing as a hobby and ultimately built myself a career in music production for the next decade.Then, as the music was playing its loudest, the plug was pulled on nightlife as the COVID-19 pandemic took the world by storm.</p>
             
@@ -555,17 +573,17 @@
 
         <div id="im-a-camel" class="profile-container">
 
-            <p>Some interviewers like to ask a candidate which animal they think best represents them.</p>
+            <h3 class='about-me-heading'>I Am a Camel</h3>
             
-            <p id="camel-line">I am a camel.</p>
-
-            <p>Though not the most aesthetially pleasing, camels get the job done. They are serious workhorses that can handle pressure and extreme conditions. When the stiuation gets to hot to handle, the camel doesn't break. One step in front of the other, the camel gets it done.</p>
+            <p>Camels get the job done. They are serious workhorses that can handle pressure and extreme conditions. When the stiuation gets to hot to handle, the camel doesn't break. One step in front of the other, the camel gets it done.</p>
 
         </div>
 
         <hr>
 
         <div id="personal-philosophy" class="profile-container">
+            <h3 class='about-me-heading'>Thinking Outside the Box</h3>
+
             <P>It is common to think that the most creative people are better at "thinking outside the box". I, however, do not believe that the most creative people think outside of the box. I believe that they have filled their box with more life experiences. Therefore, let me share some of my life experiences with you!</P>
 
             <p>I was born in Witchita, Kansas and raised in Oskaloosa, Iowa. Though I didn't grow up on a farm, my mother's family had over 100 acres and we spent a good amount of our childhood helping with chores. We were a typical midwest family that took road trips in a van and shot fireworks every 4th of July. I learned to play violin and piano, sang in the church choir and played varsity sports. I also participated in regional math competitions and wrote my first app for a guitar tuner on a floppy disk. In my teens, I developed an interest in architecture and drafting, and later began my college education as an architecture major. Later, after encouragement from family, I finished my undergraduate studies with a bachelor's degree in finance and a boarded a one-way flight to pursue a life in the Big Apple.</p>
