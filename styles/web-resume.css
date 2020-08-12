@@ -49,13 +49,16 @@ body{
 /* Page landing */
 #site-landing-area {
     height: 100vh;
-    background-color: var(--snow), white);
-    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%),
-                      url('/images/web-resume-images/page-image-header1.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-color: var(--snow), white;
+    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%),
+                      url('/images/web-resume-images/page-image-header1.png');
+    
 }
 
 #name-container {
@@ -89,11 +92,19 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 10px;
 }
 
 .resume-nav-link-box{
     color: black;
+    width: 33%;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+}
+
+.resume-nav-link-box:hover {
+    background-color: var(--navajo-white, beige);
+    transition: background-color .2s ease-in;
 }
 
 .nav-link {
@@ -152,27 +163,25 @@ body{
 /* Project Portfolio section */
 #project-portfolio-container{
     padding-top: 10px;
-    background: linear-gradient(180deg, var(--navajo-white, beige) 5%, black 12%);
+    background-color: var(--navajo-white, beige);
 }
 
 #project-portfolio-header{
     color: black;
-    border-bottom: 5px solid var(--snow, white);
 }
 
 .project-block {
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 5px solid var(--snow, white);
 }
 
 .project-portfolio-preview-panel{
     width: 500px;
     height: 275px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--snow, white);
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
 }
@@ -188,7 +197,7 @@ body{
     width: 400px;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--snow, white);
     box-shadow: 2px 2px 5px black;
     text-align: center;
 }
@@ -202,7 +211,7 @@ body{
     padding: 0 10px 10px 10px;
 }
 
-#luthercalvinriggs {
+/* #luthercalvinriggs {
     background-image: url('/images/web-resume-images/project-background-dj.png');
 }
 
@@ -212,7 +221,7 @@ body{
 
 #github {
     background-image: url('/images/web-resume-images/project-background-js-code.png');
-}
+} */
 
 
 
@@ -413,8 +422,55 @@ body{
 
 
 
+/* Accordian CSS */
+#accordian-button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+button {
+    text-align: left;
+    width: 50%;
+    height: auto;          
+    border: 1px solid black;
+    border-top: 1px solid var(--navajo-white, beige);
+    border-radius: none;
+    background-color: var(--navajo-white, beige);
+    font-size: 2rem;
+    padding: 20px 20px 5px 20px;
+}
 
+button::after {
+    content: '\254B';  /* Find smaller icons */
+    float: right;
+}
+
+button.active { 
+    border-bottom: none;
+    border-top: 2px solid black;
+    background-color: var(--snow, white);
+}
+
+button.active::after { 
+    content: '\2501';  /* Find smaller icons */
+}
+
+.spacer {
+    height: 50px;
+}
+
+.accordian-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+
+.accordian-content.active-content {
+    max-height: 5000px;
+    transition: max-height 1.5s;   
+    transition-delay: 0.2s;   
+}
 
 
 
@@ -431,7 +487,7 @@ body{
 .skill-header{
     font-size: 1.8rem;
     text-align: center;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
     border-bottom: 2px solid black;
     width: 60%;
 }
@@ -488,8 +544,6 @@ body{
     background-color: var(--snow, white);
     font-size: 1.0rem;
     border-top: 2px solid black;
-    padding-top: 50px;
-    padding-bottom: 30px;
 }
 
 #about-me-container p{
@@ -531,7 +585,7 @@ footer{
     line-height: 1.5;
     font-size: 0.8rem;
     text-align: end;
-    background-color: black;
+    background-color: rgb(58, 58, 58);
     color: var(--snow, white);
 }
 
@@ -698,6 +752,10 @@ footer{
         top: 100px;
     }
 
+    button {
+        font-size: 1.5rem;
+    }
+
     .skill-header{
         font-size: 1.4rem;
         width: 85%;
@@ -788,6 +846,11 @@ footer{
         width: 80%;
     }
 
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px 5px 10px;
+    }
+
     footer{
         height: 100px;
     }
@@ -841,6 +904,11 @@ footer{
     .value-added-list {
         font-size: 1.2rem;
     }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px 5px 10px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -892,5 +960,10 @@ footer{
 
     .value-added-list {
         font-size: 1.0rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 10px 20px 5px 10px;
     }
 }
