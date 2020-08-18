@@ -49,15 +49,15 @@ body{
 /* Page landing */
 #site-landing-area {
     height: 100vh;
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-clip: border-box;
+    background-repeat: no-repeat;
     background-origin: border-box;
+    background-clip: border-box;
+    background-attachment: fixed;
     background-color: var(--snow), white;
-    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%),
-                      url('/images/web-resume-images/page-image-header1.png');
+
     
 }
 
