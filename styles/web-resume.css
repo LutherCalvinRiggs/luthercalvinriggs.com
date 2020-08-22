@@ -716,6 +716,10 @@ footer{
 }            
 
 @media screen and (max-width: 750px){
+    #site-landing-area {
+        background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header-750px.png');
+    }
+    
     #name-header{
         font-size: 3.2rem;
     }
