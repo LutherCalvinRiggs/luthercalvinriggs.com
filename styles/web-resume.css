@@ -2,7 +2,7 @@
 :root {
     --snow: rgb(255,250,250);
     --navajo-white: rgb(252, 239, 221);
-    --steel-blue: rgb(70,130,180, 0.8);
+    --steel-blue: rgba(123, 177, 221, 0.8);
 
     --papayawhip: rgb(255,239,213);
     --azure: rgb(240,255,255);
@@ -49,16 +49,28 @@ body{
 /* Page landing */
 #site-landing-area {
     height: 100vh;
+
+    -moz-background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+    -moz-background-position: center;
+    -moz-background-size: cover;
+    -moz-background-repeat: no-repeat;
+    -moz-background-origin: border-box;
+    -moz-background-clip: border-box;
+
+    -webkit-background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+    -webkit-background-position: center;
+    -webkit-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-origin: border-box;
+    -webkit-background-clip: border-box;
+
     background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
-    background-attachment: fixed;
-    background-color: var(--snow), white;
-
-    
+    background-color: var(--snow), white;    
 }
 
 #name-container {
@@ -658,10 +670,12 @@ footer{
 @media screen and (max-width: 875px){
     #name-header{
         font-size: 4rem;
+        color: white;
     }
 
     #position-title {
         font-size: 2.5rem;
+        color:white;
     }
 
     .project-block {
@@ -716,10 +730,6 @@ footer{
 }            
 
 @media screen and (max-width: 750px){
-    #site-landing-area {
-        background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header-750px.png');
-    }
-    
     #name-header{
         font-size: 3.2rem;
     }
