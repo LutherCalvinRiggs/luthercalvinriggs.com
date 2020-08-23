@@ -223,17 +223,6 @@ body{
     padding: 0 10px 10px 10px;
 }
 
-/* #luthercalvinriggs {
-    background-image: url('/images/web-resume-images/project-background-dj.png');
-}
-
-#thingspresidentssay {
-    background-image: url('/images/web-resume-images/project-background-american-flag.png');
-}
-
-#github {
-    background-image: url('/images/web-resume-images/project-background-js-code.png');
-} */
 
 
 
@@ -668,14 +657,18 @@ footer{
 }
 
 @media screen and (max-width: 875px){
+    #site-landing-area {
+        -moz-background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+        -webkit-background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+        background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+    }
+
     #name-header{
         font-size: 4rem;
-        color: white;
     }
 
     #position-title {
         font-size: 2.5rem;
-        color:white;
     }
 
     .project-block {
