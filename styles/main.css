@@ -935,6 +935,10 @@
         font-size: 1.5rem;
     }
 
+    .template-image{
+        width: 90%;
+    }
+
     .template-description{
         font-size: 1.2rem;
     }
