@@ -50,21 +50,21 @@ body{
 #site-landing-area {
     height: 100vh;
 
-    -moz-background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+    -moz-background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header.jp2');
     -moz-background-position: center;
     -moz-background-size: cover;
     -moz-background-repeat: no-repeat;
     -moz-background-origin: border-box;
     -moz-background-clip: border-box;
 
-    -webkit-background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+    -webkit-background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header.jp2');
     -webkit-background-position: center;
     -webkit-background-size: cover;
     -webkit-background-repeat: no-repeat;
     -webkit-background-origin: border-box;
     -webkit-background-clip: border-box;
 
-    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+    background-image: linear-gradient(to bottom, transparent 45%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header.jp2');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,13 +245,20 @@ body{
 }
 
 .position-title{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .position-details{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     font-style: italic;
+}
+
+.position-blurb{
+    font-size: 1.3rem;
+    padding: 5px 0px;
 }
 
 .experience-highlight-list{
@@ -664,9 +671,9 @@ footer{
 
 @media screen and (max-width: 875px){
     #site-landing-area {
-        -moz-background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
-        -webkit-background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
-        background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header1.png');
+        -moz-background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header.jp2');
+        -webkit-background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header.jp2');
+        background-image: linear-gradient(to bottom, transparent 35%, var(--navajo-white, beige) 100%), url('/images/web-resume-images/page-image-header.jp2');
     }
 
     #name-header{
